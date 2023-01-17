@@ -16,8 +16,13 @@ Quando em marcha, o eixo do motor ligado às rodas é usado nas travagens, em lu
 
 Já a rede pública, são todos os carregadores que podem ser usados mas não pertencem ao condutor. Por exemplo, rede *mobi.e*, *destination chargers*, redes de supermercados ou shoppings, Tesla Superchargers, etc.
 
+Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC (corrente alternada, similar à que alimenta as nossas casas) e DC (corrente contínua, tipo as que existe em pilhas).
+
+Tecnicamente designados Posto de Carregamento Normal (PCN), tem potências de 2.3kWh até 22kWh, e tem uma ficha designada tipo 2 ou Mennekes.
 
 
 
 
 ## Condução
+
+
