@@ -14,12 +14,10 @@ Quando em marcha, o eixo do motor ligado às rodas é usado nas travagens, em lu
 
 ### Rede Pública
 
-Já a rede pública, são todos os carregadores que podem ser usados mas não pertencem ao condutor. Por exemplo, rede mobi.e, destination chargers, redes de supermercados ou shoppings, Tesla Superchargers, etc.
+Já a rede pública, são todos os carregadores que podem ser usados mas não pertencem ao condutor. Por exemplo, rede *mobi.e*, *destination chargers*, redes de supermercados ou shoppings, Tesla Superchargers, etc.
 
 
 
 
 
 ## Condução
-
-
