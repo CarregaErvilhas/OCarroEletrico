@@ -1,5 +1,17 @@
 # O Carro Elétrico
 
+<!-- TOC -->
+
+- [O Carro Elétrico](#o-carro-el%C3%A9trico)
+    - [Carregamento](#carregamento)
+        - [Regeneração](#regenera%C3%A7%C3%A3o)
+        - [Rede Pública](#rede-p%C3%BAblica)
+            - [MOBI.E](#mobie)
+        - [Carregar em Casa](#carregar-em-casa)
+    - [Condução](#condu%C3%A7%C3%A3o)
+
+<!-- /TOC -->
+
 Este site pretende ajudar condutores que estão agora a iniciar o seu contacto com carros elétricos (BEV) bem como esclarecer dúvidas e boas práticas no uso desta nova forma de transporte.
 
 ## Carregamento
@@ -27,6 +39,16 @@ Existem também as CHAdeMO e Mennekes (em AC).
 Por ultimo, em termos de potência disponível, os  Postos de Carregamento Super-Rápido (PCSR) até 160 kWh e Ultrarrápido (PCUR) até 350kWh.
 
 
+#### MOBI.E
+
+Em Portugal, ao contrário do resto da Europa, a rede pública de carregadores é gerida por uma entidade designada MOBI.E (https://www.mobie.pt/). Pensa nela como o equivalente da SIBS a gerir a rede de multibancos (ATMs).
+
+Enquanto noutros países é comum cada rede ter o seu próprio explorador e precisar de uma forma de contrato com cada operador (seja cartão RFID, App, etc), ou no melhor dos casos simplesmente aceitar cartão de crédito, cá qualquer carregador que esteja na via pública ou parques, terá que obrigatoriamente ser ligado à rede MOBI.E.
+
+
+
+
+### Carregar em Casa
+
+
 ## Condução
-
-
