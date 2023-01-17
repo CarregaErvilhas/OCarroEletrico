@@ -30,7 +30,7 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 0 # amount of posts to show
+paginate: 1 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -91,7 +91,7 @@ footer:
 defaults:
   # _posts
   - scope:
-      path: "blog/welcome/"
+      path: ""
       type: posts
     values:
       layout: single
