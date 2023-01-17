@@ -16,7 +16,7 @@
 title: O Carro Elétrico
 description: Esclarecer dúvidas e boas práticas no uso desta nova forma de transporte.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.ocarroeletrico.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ocarroeletrico.com/" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: OCarroEletrico # the GitHub repo name for your project
 github_username: FernandoMiguel
 
