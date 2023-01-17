@@ -21,7 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: FernandoMiguel
 minimal_mistakes_skin: dirt
 search: true
-baseurl: /blog/welcome
+url: "https://ocarroeletrico.com"
+baseurl: "/blog/welcome"
 locale: "pt-PT"
 
 # Build settings
