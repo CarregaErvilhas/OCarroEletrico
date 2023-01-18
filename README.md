@@ -64,7 +64,7 @@ Uma lista dos comercializadores disponíveis pode ser encontrada em:
 
 Alguns comercializadores tem descontos quando conjugado com os tarifários residenciais, como a EDP e Galp.
 
-Exemplos são a [https://www.miio.pt/](https://www.miio.pt/) e [https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
+Exemplos de Apps são a [https://www.miio.pt/](https://www.miio.pt/) e [https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
 
 > Nota
 > Um utilizador por ter conta em vários comercializadores e várias apps. Na sua grande maioria, não há custo nas contas. Isto permite optar pela melhor oferta num determinado momento.
@@ -77,8 +77,10 @@ A muito alto nível, os preços de carregamento na rede de postos públicos liga
 * CEME, o comercializador de energia (pensa em EDP ou Galp). É quem te vende a energia que carrega o teu carro. Normalmente há um custo de ativação (0,035€) e depois o custo por kW de energia consumida. Em alguns casos pode ser ao minuto.
 
 * OPC, quem monta e explora o posto que vais utilizar. Normalmente há um custo de ativação (~0,30€) e depois o custo ao minuto pelo tempo que se está a utilizar o posto, mesmo que já tenhas acabado de carregar, pois estás a ocupar o lugar que outra pessoa podia precisar de usar. Em alguns casos pode ser cobrado em kW da energia fornecida. Em casos extremos pode ser cobrado ambos ao minuto e kW (uma parte é para a entidade que detém o local físico onde é montado o posto).
+
 * tarifa EGME, Entidade Gestora da rede de Mobilidade Elétrica, aka MOBI.E. Uma taxa que permita cobrir os custos da sua atividade regulada, aplicada a CEMEs, OPCs e DPCs. Coisas como o custo dos SIM cards para comunicação dos postos, etc. Este valor vem das parcelas de ativação dos dois itens anteriores.
-* Estado Português. Imposto especial sobre o consumo de energia elétrica (IEC) e o imposto sobre o valor acrescentado (IVA)
+
+* Estado Português. Imposto especial sobre o consumo de energia elétrica (IEC) e o imposto sobre o valor acrescentado (IVA). 
 
 Parece complicado (e caro) não é? Vamos a um exemplo:
 
@@ -100,7 +102,7 @@ Ora, `45 * (80-20)% = 27kW` de energia necessária. Se o teu comercializador for
 Num carregador da EDP a 50kWh, seriam precisos 33 minutos, cobrados a 0,09€/min.
 `33*0,09 = 2,97€`.
 
-Junta a isto `0,035 + 0,297€` de activação/EGME, IEC e IVA.
+Junta a isto `0,035 + 0,297€` de activação/EGME, IEC e IVA.  
 E depois TAR que pode ser aditiva ou negativa.
 
 Fun, right?
