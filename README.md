@@ -7,6 +7,7 @@
         - [Regeneração](#regenera%C3%A7%C3%A3o)
         - [Rede Pública](#rede-p%C3%BAblica)
             - [MOBI.E](#mobie)
+            - [Preços de carregamento MOBI.E](#pre%C3%A7os-de-carregamento-mobie)
         - [Carregar em Casa](#carregar-em-casa)
     - [Condução](#condu%C3%A7%C3%A3o)
 
@@ -18,11 +19,9 @@ Este site pretende ajudar condutores que estão agora a iniciar o seu contacto c
 
 Os veículos elétricos (BEV) podem recarregar a sua bateria de 3 formas diferentes, pontos de carregamento privados, rede de carregadores públicos e regeneração baseada na desaceleração do veículo.
 
-
 ### Regeneração
 
 Quando em marcha, o eixo do motor ligado às rodas é usado nas travagens, em lugar dos calços dos travões na assistência à redução de velocidade, e essa força das rodas gira o motor e gera energia que é usada para recarregar a bateria do veículo. Diferente tipo de carros tem diferentes capacidades de energia regenerada, mas é possível em certas viagens ter mais energia na bateria do que no início da viagem. O mesmo fenômeno apresenta uma limitação, de que quando a bateria está completamente carregada, deixa de ser eficiente travar o veículo com o motor porque não tem para onde direcionar a energia gerada, e pode mesmo não travar corretamente.
-
 
 ### Rede Pública
 
@@ -38,17 +37,23 @@ Existem também as CHAdeMO e Mennekes (em AC).
 
 Por ultimo, em termos de potência disponível, os  Postos de Carregamento Super-Rápido (PCSR) até 160 kWh e Ultrarrápido (PCUR) até 350kWh.
 
-
 #### MOBI.E
 
 Em Portugal, ao contrário do resto da Europa, a rede pública de carregadores é gerida por uma entidade designada MOBI.E [https://www.mobie.pt/](https://www.mobie.pt/). Pensa nela como o equivalente da SIBS a gerir a rede de multibancos (ATMs).
 
 Enquanto noutros países é comum cada rede ter o seu próprio explorador e precisar de uma forma de contrato com cada operador (seja cartão RFID, App, etc), ou no melhor dos casos simplesmente aceitar cartão de crédito, cá qualquer carregador que esteja na via pública ou parques, terá que obrigatoriamente ser ligado à rede MOBI.E.
 
+Se por um lado há benefícios para o utilizador, por poder usar qualquer posto com qualquer fornecedor, por outro lado limita um pouco aparecer algumas formas concorrentes. É uma das razões pelas quais não há mais postos Tesla Supercharge a serem abertos, e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir.
+
+Retirado do site da mobi.e
+> A MOBI.E, S.A., é uma empresa pública que atua, desde 2015, como Entidade Gestora da Rede de Mobilidade Elétrica (EGME), assumindo a responsabilidade da gestão e monitorização da rede de postos de carregamento elétricos, designadamente em termos de fluxos energéticos, de informação e financeiros.
+
+#### Preços de carregamento MOBI.E
 
 
 
 ### Carregar em Casa
 
-
 ## Condução
+
+
