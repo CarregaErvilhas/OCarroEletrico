@@ -95,10 +95,12 @@ Em 2022, a sua oferta ficou bastante mais cara, situando-se entre 0,22 e 0,32€
 Mas em 2023 com um maior do Estado, ao ter uma tarifas de acesso às redes de energia elétrica (TAR) **negativas**, a Miio voltou a ter uma oferta que deve ser considerada, tendo alturas do dia em q o custo é inferior a 0,01€/kW.
 
 Ok, então para uma viatura com uma bateria com capacidade usável de 45kW, que tem no momento que chega ao posto de carregamento com 20% restante, e se pretende carregar até 80%, quanto vais custar?
-Ora, 45*(80-20)% = 27kW de energia necessária. Se o teu comercializador for a ViaVerde, será te cobrado 0,1616€/kW. 27*0,1616 = ~4,37€
-Num carregador da EDP a 50kWh, seriam precisos 33 minutos, cobrados a 0,09€/min.  33*0,09 = 2,97€.
+Ora, `45 * (80-20)% = 27kW` de energia necessária. Se o teu comercializador for a ViaVerde, será te cobrado 0,1616€/kW.
+`27*0,1616 = ~4,37€`
+Num carregador da EDP a 50kWh, seriam precisos 33 minutos, cobrados a 0,09€/min.
+`33*0,09 = 2,97€`.
 
-Junta a isto 0,035+0,297€ de activação/EGME, IEC e IVA.
+Junta a isto `0,035 + 0,297€` de activação/EGME, IEC e IVA.
 E depois TAR que pode ser aditiva ou negativa.
 
 Fun, right?
@@ -106,15 +108,13 @@ Fun, right?
 Eu normalmente uso a App da [Miio](https://www.miio.pt/) para simular os custos, é mais fácil.
 A Miio não só te diz quanto pagarias usando o serviço deles, como também permite adicionar tarifários da concorrência, e assim podes comparar directamente.
 
-E neste exemplo, com a TAR no momento em que escrevo isto a *-*1,79€, o total deste carregamento seria, de acordo com a App da Miio, 8,19€.
+E neste exemplo, com a TAR no momento em que escrevo isto a **-** 1,79€, o total deste carregamento seria, de acordo com a App da Miio, 8,19€.
 
-Se a viatura tiver um consumo médio de 17kW / 100 km, os 27kW de energia que pusemos na bateria permitiriam percorrer 159km.
-Os 8,19€ dão 0,05€/km, ou 5€/100km.
+Se a viatura tiver um consumo médio de `17kW / 100 km`, os 27kW de energia que pusemos na bateria permitiriam percorrer 159km.
+Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
 Há que ter em consideração os ganhos por regeneração.
 
 ### Carregar em Casa
 
 ## Condução
-
-
