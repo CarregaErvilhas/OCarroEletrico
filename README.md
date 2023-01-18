@@ -7,7 +7,8 @@
         - [Regeneração](#regenera%C3%A7%C3%A3o)
         - [Rede Pública](#rede-p%C3%BAblica)
             - [MOBI.E](#mobie)
-            - [Preços de carregamento MOBI.E](#pre%C3%A7os-de-carregamento-mobie)
+                - [Como carregar na rede MOBI.E](#como-carregar-na-rede-mobie)
+                - [Preços de carregamento MOBI.E](#pre%C3%A7os-de-carregamento-mobie)
         - [Carregar em Casa](#carregar-em-casa)
     - [Condução](#condu%C3%A7%C3%A3o)
 
@@ -48,7 +49,24 @@ Se por um lado há benefícios para o utilizador, por poder usar qualquer posto 
 Retirado do site da mobi.e
 > A MOBI.E, S.A., é uma empresa pública que atua, desde 2015, como Entidade Gestora da Rede de Mobilidade Elétrica (EGME), assumindo a responsabilidade da gestão e monitorização da rede de postos de carregamento elétricos, designadamente em termos de fluxos energéticos, de informação e financeiros.
 
-#### Preços de carregamento MOBI.E
+##### Como carregar na rede MOBI.E
+
+Para iniciar o carregamento num posto é preciso ter um contracto estabelecido com um CEME, um comercializador de energia.
+Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless).
+Em alternativa pode ser usada uma App no telemóvel para o mesmo efeito.
+Alguns contractos envolvem papeis assinados, outros podem ser feitos totalmente numa App em regime de pré-carregamento, cartão de crédito, ou Débito Direto em pós-pagamento mensal.
+
+> Importante
+> A rede MOBI.E não permite atualmente usar um cartão Multibanco ou de Crédito para iniciar a carga.
+
+Uma lista dos comercializadores disponíveis pode ser encontrada em:
+[https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores](https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores)
+
+Alguns comercializadores tem descontos quando conjugado com os tarifários residenciais, como a EDP e Galp.
+
+Exemplos são a [https://www.miio.pt/](https://www.miio.pt/) e [https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
+
+##### Preços de carregamento MOBI.E
 
 OK, isto não vai ser fácil de explicar... vou tentar, mas nem que colocasse aqui os [detalhes técnicos]( https://www.mobie.pt/pt/redemobie/estrutura-tarifaria), a maioria de vocês não ia conseguir fazer as contas.
 
