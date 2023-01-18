@@ -50,6 +50,16 @@ Retirado do site da mobi.e
 
 #### Preços de carregamento MOBI.E
 
+OK, isto não vai ser fácil de explicar... vou tentar, mas nem que colocasse aqui os [detalhes técnicos]( https://www.mobie.pt/pt/redemobie/estrutura-tarifaria), a maioria de vocês não ia conseguir fazer as contas.
+
+A muito alto nível, os preços de carregamento na rede de postos públicos ligados à MOBI.E é composto por 4 grandes partes:
+* CEME, o comercializador de energia (pensa em EDP ou Galp). É quem te vende a energia que carrega o teu carro. Normalmente há um custo de ativação (0,30€) e depois o custo por kW de energia consumida. Em alguns casos pode ser ao minuto.
+* OPC, quem monta e explora o posto que vais utilizar. Normalmente há um custo de ativação (0,30€) e depois o custo ao minuto pelo tempo que se está a utilizar o posto, mesmo que já tenhas acabado de carregar, pois estás a ocupar o lugar que outra pessoa podia precisar de usar. Em alguns casos pode ser cobrado em kW da energia fornecida. Em casos extremos pode ser cobrado ambos ao minuto e kW (uma parte é para a entidade que detém o local físico onde é montado o posto).
+* tarifa EGME, Entidade Gestora da rede de Mobilidade Elétrica, aka MOBI.E. Uma taxa que permita cobrir os custos da sua atividade regulada, aplicada a CEMEs, OPCs e DPCs. Coisas como o custo dos SIM cards para comunicação dos postos, etc. Este valor vem das parcelas de ativação dos dois itens anteriores.
+* Estado Português. Imposto especial sobre o consumo de energia elétrica (IEC) e o imposto sobre o valor acrescentado (IVA)
+
+Parece complicado (e caro) não é? Vamos a um exemplo:
+
 
 
 ### Carregar em Casa
