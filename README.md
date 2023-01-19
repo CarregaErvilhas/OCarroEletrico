@@ -28,7 +28,7 @@ O mesmo fenômeno apresenta uma limitação, de que quando a bateria está compl
 
 ### Rede Pública
 
-Já a rede pública, são todos os carregadores que podem ser usados mas não pertencem ao condutor. Por exemplo, rede *mobi.e*, *destination chargers*, redes de supermercados ou shoppings, Tesla Superchargers, etc.
+Já a rede pública, são todos os carregadores que podem ser usados mas não pertencem ao condutor. Por exemplo, rede [*MOBI.E*](#mobie), *destination chargers*, redes de supermercados ou shoppings, Tesla Superchargers, etc.
 
 Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC (corrente alternada, similar à que alimenta as nossas casas) e DC (corrente contínua, tipo as que existe em pilhas).
 
@@ -49,7 +49,7 @@ Enquanto noutros países é comum cada rede ter o seu próprio explorador e prec
 Se por um lado há benefícios para o utilizador, por poder usar qualquer posto com qualquer fornecedor, por outro lado limita um pouco aparecer algumas formas concorrentes.  
 É uma das razões pelas quais não há mais postos Tesla Supercharge a serem abertos, e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir.
 
-Retirado do site da mobi.e
+Retirado do site da MOBI.E
 > A MOBI.E, S.A., é uma empresa pública que atua, desde 2015, como Entidade Gestora da Rede de Mobilidade Elétrica (EGME), assumindo a responsabilidade da gestão e monitorização da rede de postos de carregamento elétricos, designadamente em termos de fluxos energéticos, de informação e financeiros.
 
 ##### Como carregar na rede MOBI.E
@@ -60,6 +60,7 @@ Em alternativa pode ser usada uma App no telemóvel para o mesmo efeito.
 Alguns contractos envolvem papeis assinados, outros podem ser feitos totalmente numa App em regime de pré-carregamento, cartão de crédito, ou Débito Direto em pós-pagamento mensal.
 
 > Importante
+>
 > A rede MOBI.E não permite atualmente usar um cartão Multibanco ou de Crédito para iniciar a carga.
 
 Uma lista dos comercializadores disponíveis pode ser encontrada em:
@@ -70,6 +71,7 @@ Alguns comercializadores tem descontos quando conjugado com os tarifários resid
 Exemplos de Apps são a [https://www.miio.pt/](https://www.miio.pt/) e [https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
 
 > Nota
+>
 > Um utilizador por ter conta em vários comercializadores e várias apps. Na sua grande maioria, não há custo nas contas. Isto permite optar pela melhor oferta num determinado momento.
 
 ##### Preços de carregamento MOBI.E
