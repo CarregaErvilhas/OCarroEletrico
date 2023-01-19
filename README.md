@@ -22,7 +22,9 @@ Os veículos elétricos (BEV) podem recarregar a sua bateria de 3 formas diferen
 
 ### Regeneração
 
-Quando em marcha, o eixo do motor ligado às rodas é usado nas travagens, em lugar dos calços dos travões na assistência à redução de velocidade, e essa força das rodas gira o motor e gera energia que é usada para recarregar a bateria do veículo. Diferente tipo de carros tem diferentes capacidades de energia regenerada, mas é possível em certas viagens ter mais energia na bateria do que no início da viagem. O mesmo fenômeno apresenta uma limitação, de que quando a bateria está completamente carregada, deixa de ser eficiente travar o veículo com o motor porque não tem para onde direcionar a energia gerada, e pode mesmo não travar corretamente.
+Quando em marcha, o eixo do motor ligado às rodas é usado nas travagens, em lugar dos calços dos travões na assistência à redução de velocidade, e essa força das rodas gira o motor e gera energia que é usada para recarregar a bateria do veículo.  
+Diferente tipo de carros tem diferentes capacidades de energia regenerada, mas é possível em certas viagens ter mais energia na bateria do que no início da viagem.  
+O mesmo fenômeno apresenta uma limitação, de que quando a bateria está completamente carregada, deixa de ser eficiente travar o veículo com o motor porque não tem para onde direcionar a energia gerada, e pode mesmo não travar corretamente.
 
 ### Rede Pública
 
@@ -32,8 +34,8 @@ Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC
 
 Tecnicamente designados por Postos de Carregamento Normal (PCN), tem potências de 2.3kWh até 22kWh alimentados em AC, e tem uma ficha designada tipo 2 ou Mennekes.
 
-Seguem-lhe os Postos de Carregamento Rápido (PCR), que tem potencias até 50kWh. Normalmente em DC, mas é possível encontrar alguns raros em AC.
-A ficha que ganho como standard é a CCS2 / CCS Combo.
+Seguem-lhe os Postos de Carregamento Rápido (PCR), que tem potencias até 50kWh. Normalmente em DC, mas é possível encontrar alguns raros em AC.  
+A ficha que ganhou como standard é a CCS2 / CCS Combo.
 Existem também as CHAdeMO e Mennekes (em AC).
 
 Por ultimo, em termos de potência disponível, os  Postos de Carregamento Super-Rápido (PCSR) até 160 kWh e Ultrarrápido (PCUR) até 350kWh.
@@ -44,7 +46,8 @@ Em Portugal, ao contrário do resto da Europa, a rede pública de carregadores �
 
 Enquanto noutros países é comum cada rede ter o seu próprio explorador e precisar de uma forma de contrato com cada operador (seja cartão RFID, App, etc), ou no melhor dos casos simplesmente aceitar cartão de crédito, cá qualquer carregador que esteja na via pública ou parques, terá que obrigatoriamente ser ligado à rede MOBI.E.
 
-Se por um lado há benefícios para o utilizador, por poder usar qualquer posto com qualquer fornecedor, por outro lado limita um pouco aparecer algumas formas concorrentes. É uma das razões pelas quais não há mais postos Tesla Supercharge a serem abertos, e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir.
+Se por um lado há benefícios para o utilizador, por poder usar qualquer posto com qualquer fornecedor, por outro lado limita um pouco aparecer algumas formas concorrentes.  
+É uma das razões pelas quais não há mais postos Tesla Supercharge a serem abertos, e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir.
 
 Retirado do site da mobi.e
 > A MOBI.E, S.A., é uma empresa pública que atua, desde 2015, como Entidade Gestora da Rede de Mobilidade Elétrica (EGME), assumindo a responsabilidade da gestão e monitorização da rede de postos de carregamento elétricos, designadamente em termos de fluxos energéticos, de informação e financeiros.
