@@ -66,13 +66,13 @@ Alguns contratos envolvem papéis assinados, outros podem ser feitos totalmente 
 Uma lista dos comercializadores disponíveis pode ser encontrada em:
 [https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores](https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores)
 
-Alguns comercializadores tem descontos quando conjugado com os tarifários residenciais, como a EDP e Galp.
+Alguns comercializadores como a EDP e Galp oferecem descontos quando o contrato para carregamento elétrico é conjugado com o tarifário residencial.
 
 Exemplos de Apps são a [https://www.miio.pt/](https://www.miio.pt/) e [https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
 
 > Nota
 >
-> Um utilizador por ter conta em vários comercializadores e várias apps. Na sua grande maioria, não há custo nas contas. Isto permite optar pela melhor oferta num determinado momento.
+> Um utilizador por ter conta em vários comercializadores e várias apps. Na sua grande maioria, não há custo de abertura ou manutenção das contas, o que permite optar pela melhor oferta num determinado momento.
 
 ##### Preços de carregamento MOBI.E
 
