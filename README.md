@@ -14,7 +14,7 @@
 
 <!-- /TOC -->
 
-Este site pretende ajudar condutores que estão agora a iniciar o seu contacto com carros elétricos (BEV) bem como esclarecer dúvidas e boas práticas no uso desta nova forma de transporte.
+Este site pretende ajudar condutores que estão agora a iniciar o seu contacto com carros elétricos (battery electrical vehicles - BEV) bem como esclarecer dúvidas e boas práticas no uso desta nova forma de transporte.
 
 ## Carregamento
 
