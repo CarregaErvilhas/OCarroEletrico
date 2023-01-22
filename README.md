@@ -18,7 +18,7 @@ Este site pretende ajudar condutores que estão agora a iniciar o seu contacto c
 
 ## Carregamento
 
-Os veículos elétricos (BEV) podem recarregar a sua bateria de 3 formas diferentes, pontos de carregamento privados, rede de carregadores públicos e regeneração baseada na desaceleração do veículo.
+Os veículos elétricos (BEV) podem recarregar a sua bateria de 3 formas diferentes: pontos de carregamento privados, rede de carregadores públicos e regeneração baseada na desaceleração do veículo.
 
 ### Regeneração
 
