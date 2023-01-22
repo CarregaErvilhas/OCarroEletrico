@@ -28,7 +28,7 @@ O mesmo fenómeno apresenta uma limitação: quando a bateria está completament
 
 ### Rede Pública
 
-Já a rede pública, são todos os carregadores que podem ser usados mas não pertencem ao condutor. Por exemplo, rede [*MOBI.E*](#mobie), *destination chargers*, redes de supermercados ou shoppings, Tesla Superchargers, etc.
+Já a rede pública são todos os carregadores que podem ser usados mas não pertencem ao condutor. Por exemplo, rede [*MOBI.E*](#mobie), *destination chargers*, redes de supermercados ou shoppings, Tesla Superchargers, etc.
 
 Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC (corrente alternada, similar à que alimenta as nossas casas) e DC (corrente contínua, tipo as que existe em pilhas).
 
