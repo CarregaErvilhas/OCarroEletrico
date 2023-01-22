@@ -47,14 +47,14 @@ Em Portugal, ao contrário do resto da Europa, a rede pública de carregadores �
 Enquanto noutros países é comum cada rede ter o seu próprio explorador e precisar de uma forma de contrato com cada operador (seja cartão RFID, App, etc), ou no melhor dos casos simplesmente aceitar cartão de crédito, cá qualquer carregador que esteja na via pública ou parques, terá que obrigatoriamente ser ligado à rede MOBI.E.
 
 Se por um lado há benefícios para o utilizador, por poder usar qualquer posto com qualquer fornecedor, por outro lado limita um pouco aparecer algumas formas concorrentes.  
-É uma das razões pelas quais não há mais postos Tesla Supercharge a serem abertos, e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir.
+É uma das razões pelas quais não há mais postos Tesla Supercharge a serem abertos[1], e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir [2].
 
 Retirado do site da MOBI.E
 > A MOBI.E, S.A., é uma empresa pública que atua, desde 2015, como Entidade Gestora da Rede de Mobilidade Elétrica (EGME), assumindo a responsabilidade da gestão e monitorização da rede de postos de carregamento elétricos, designadamente em termos de fluxos energéticos, de informação e financeiros.
 
 ##### Como carregar na rede MOBI.E
 
-Para iniciar o carregamento num posto é preciso ter um contracto estabelecido com um CEME, um comercializador de energia.  
+Para iniciar o carregamento num posto é preciso ter um contrato estabelecido com um CEME, um comercializador de energia.  
 Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless).  
 Em alternativa pode ser usada uma App no telemóvel para o mesmo efeito.  
 Alguns contractos envolvem papeis assinados, outros podem ser feitos totalmente numa App em regime de pré-carregamento, cartão de crédito, ou Débito Direto em pós-pagamento mensal.
