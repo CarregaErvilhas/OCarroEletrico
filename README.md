@@ -72,7 +72,7 @@ Exemplos de Apps são a [https://www.miio.pt/](https://www.miio.pt/) e [https://
 
 > Nota
 >
-> Um utilizador por ter conta em vários comercializadores e várias apps. Na sua grande maioria, não há custo de abertura ou manutenção das contas, o que permite optar pela melhor oferta num determinado momento.
+> Um utilizador pode ter conta em vários comercializadores e várias apps. Na sua grande maioria, não há custo de abertura ou manutenção das contas, o que permite optar pela melhor oferta num determinado momento.
 
 ##### Preços de carregamento MOBI.E
 
