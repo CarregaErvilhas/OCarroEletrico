@@ -32,7 +32,7 @@ Já a rede pública são todos os carregadores que podem ser usados mas não per
 
 Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC (corrente alternada, similar à que alimenta as nossas casas) e DC (corrente contínua, tipo as que existe em pilhas).
 
-Tecnicamente designados por Postos de Carregamento Normal (PCN), tem potências de 2.3kWh até 22kWh alimentados em AC, e tem uma ficha designada tipo 2 ou Mennekes.
+Tecnicamente designados por Postos de Carregamento Normal (PCN), têm potência entre os 2.3kWh e os 22kWh, alimentados em AC, e têm uma ficha designada como tipo 2 ou Mennekes.
 
 Seguem-lhe os Postos de Carregamento Rápido (PCR), que tem potencias até 50kWh. Normalmente em DC, mas é possível encontrar alguns raros em AC.  
 A ficha que ganhou como standard é a CCS2 / CCS Combo.
