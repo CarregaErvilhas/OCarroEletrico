@@ -57,7 +57,7 @@ Retirado do site da MOBI.E
 Para iniciar o carregamento num posto é preciso ter um contrato estabelecido com um CEME, um comercializador de energia.  
 Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless).  
 Em alternativa pode ser usada uma App no telemóvel para o mesmo efeito.  
-Alguns contractos envolvem papeis assinados, outros podem ser feitos totalmente numa App em regime de pré-carregamento, cartão de crédito, ou Débito Direto em pós-pagamento mensal.
+Alguns contratos envolvem papéis assinados, outros podem ser feitos totalmente numa App em regime de pré-carregamento, cartão de crédito, ou Débito Direto em pós-pagamento mensal.
 
 > Importante
 >
