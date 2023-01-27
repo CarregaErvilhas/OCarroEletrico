@@ -208,4 +208,3 @@ https://www.uve.pt/page/distico-identificativo-ve-imt/
 * [miio](https://miioelectric.com/)
 * [ViaVerde Electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
 * [charge2go](https://charge2go.pt/) ou [ecochoice](https://www.ecochoice.pt/) empresa parceira com ViaVerde e também com a [kmlowcost (KLC)](https://www.kmlowcost.com/)
-* []()
