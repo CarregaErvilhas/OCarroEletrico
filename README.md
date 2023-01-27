@@ -33,7 +33,7 @@ O mesmo fenómeno apresenta uma limitação: quando a bateria está completament
 
 ### Rede Pública
 
-Já a rede pública são todos os carregadores que podem ser usados mas não pertencem ao condutor. Por exemplo, rede [*MOBI.E*](#mobie), *destination chargers*, redes de supermercados ou shoppings, Tesla Superchargers, etc.
+Já a rede pública são todos os carregadores que podem ser usados mas não pertencem ao condutor. Por exemplo, rede [*MOBI.E*](#mobie), *destination chargers*, redes de supermercados ou shoppings, Tesla *Superchargers*, etc.
 
 Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC (corrente alternada, similar à que alimenta as nossas casas) e DC (corrente contínua, tipo as que existe em pilhas).
 
@@ -52,7 +52,7 @@ Em Portugal, ao contrário do resto da Europa, a rede pública de carregadores �
 Enquanto noutros países é comum cada rede ter o seu próprio explorador e precisar de uma forma de contrato com cada operador (seja cartão RFID, App, etc), ou no melhor dos casos simplesmente aceitar cartão de crédito, cá qualquer carregador que esteja na via pública ou parques, terá que obrigatoriamente ser ligado à rede MOBI.E.
 
 Se por um lado há benefícios para o utilizador, por poder usar qualquer posto com qualquer fornecedor, por outro lado limita um pouco aparecer algumas formas concorrentes.  
-É uma das razões pelas quais não há mais postos `Tesla Supercharge` a serem abertos[1], e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir [2].
+É uma das razões pelas quais não há mais postos Tesla *Supercharge* a [serem abertos](https://www.motor24.pt/sites/welectric/o-que-se-passa-com-a-rede-de-carregamento-da-tesla/1556395/), e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir.
 
 Retirado do site da MOBI.E
 > A MOBI.E, S.A., é uma empresa pública que atua, desde 2015, como Entidade Gestora da Rede de Mobilidade Elétrica (EGME), assumindo a responsabilidade da gestão e monitorização da rede de postos de carregamento elétricos, designadamente em termos de fluxos energéticos, de informação e financeiros.
@@ -95,7 +95,7 @@ Em alguns casos pode ser cobrado em kW da energia fornecida. Em casos extremos p
 
 Parece complicado (e caro) não é? Vamos a um exemplo:
 
-A taxa de OPC (o tal q explora o posto, ie pagas para lá estar estacionado) em carregadores CCS2 de 50kWh ou mais, varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa), e 0,07€/kW e os 0,512€/kW (da IONITY, os postos mais caros do país, mas capazes de 350kWh).  
+A taxa de OPC (o tal q explora o posto, i.e. pagas para lá estar estacionado) em carregadores CCS2 de 50kWh ou mais, varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa), e 0,07€/kW e os 0,512€/kW (da IONITY, os postos mais caros do país, mas capazes de 350kWh).  
 A isto junta-se normalmente ~0,30€ por sessão de carregamento.
 
 A EDP e o LIDL são quem mais postos explora no país. A EDP normalmente cobra 0,09€/min e o LIDL 0,08€/min, fazendo destes os mais comuns e geralmente mais económicos. Acresce IVA.
@@ -142,14 +142,14 @@ Para casas há duas opções, relativamente simples:
 
 Uma é utilizar qualquer tomada convencional  e que limita a 16A (3,7kW). Por favor não liguem em extensões nem em cabos longos e enrolados, para evitar de sobreaquecer.
 
-A outra é adquirir uma `wallbox` das muitas ofertas no mercado e usar a ficha `type2` para carregar a viatura. O limite vai depender do que a instalação doméstica permite.
+A outra é adquirir uma *wallbox* das muitas ofertas no mercado e usar a ficha *type2* para carregar a viatura. O limite vai depender do que a instalação doméstica permite.
 
 Pode ser interessante rever o contrato com fornecedor de energia e considerar propostas bi-horário ou tri-horário. Vai sempre depender de quantas horas do dia se passa em casa.
 
 
 #### Prédios
 
-Para quem tem lugar de garagem em prédios (seja `Box` ou lugar aberto) há 3 opções:
+Para quem tem lugar de garagem em prédios (seja *Box* ou lugar aberto) há 3 opções:
 
 
 #### Ligação ao quadro elétrico do apartamento
@@ -164,8 +164,8 @@ Um pouco mais complexo, mas quando não há possibilidade de ligar ao apartament
 
 Há algumas desvantagens, pois implica reportar a quem paga as contas do condomínio o consumo mensal para fazer acertos, e nunca vai permitir mais que 3 condomínios ligar as viaturas ao mesmo tempo, devido ao total de energia que se pode ligar à instalação.
 
-Nestas situações, tem que se instalar um contador, um quadro elétrico (com disjuntor, diferencial e corte de emergência), e uma tomada ou `wallbox`.  
-Tirando o custo da `wallbox`, o custo desta instalação pode ascender a 300€, e ainda falta o custo do cabo elétrico desde o quadro dos serviços comuns até ao local onde fica a viatura.
+Nestas situações, tem que se instalar um contador, um quadro elétrico (com disjuntor, diferencial e corte de emergência), e uma tomada ou *wallbox*.  
+Tirando o custo da *wallbox*, o custo desta instalação pode ascender a 300€, e ainda falta o custo do cabo elétrico desde o quadro dos serviços comuns até ao local onde fica a viatura.
 
 Aqui as opções de carga são 3,7kW (16A), 7,4kW ou 11kW em monofásico, e até 22kW (32A) para trifásico.
 
