@@ -10,6 +10,8 @@
                 - [Como carregar na rede MOBI.E](#como-carregar-na-rede-mobie)
                 - [Preços de carregamento MOBI.E](#pre%C3%A7os-de-carregamento-mobie)
         - [Carregar em Casa](#carregar-em-casa)
+            - [Residencias](#residencias)
+            - [Prédios](#pr%C3%A9dios)
     - [Condução](#condu%C3%A7%C3%A3o)
 
 <!-- /TOC -->
@@ -84,7 +86,7 @@ A muito alto nível, os preços de carregamento na rede de postos públicos liga
 * OPC, quem monta e explora o posto que vais utilizar. Normalmente há um custo de ativação (~0,30€) e depois o custo ao minuto pelo tempo que se está a utilizar o posto, mesmo que já tenhas acabado de carregar, pois estás a ocupar o lugar que outra pessoa podia precisar de usar.  
 Em alguns casos pode ser cobrado em kW da energia fornecida. Em casos extremos pode ser cobrado ambos ao minuto e kW (uma parte é para a entidade que detém o local físico onde é montado o posto).
 
-* tarifa EGME, Entidade Gestora da rede de Mobilidade Elétrica, aka MOBI.E. Uma taxa que permita cobrir os custos da sua atividade regulada, aplicada a CEMEs, OPCs e DPCs. Coisas como o custo dos SIM cards para comunicação dos postos, etc. Este valor vem das parcelas de ativação dos dois itens anteriores.
+* Tarifa EGME, Entidade Gestora da rede de Mobilidade Elétrica, aka MOBI.E. Uma taxa que permita cobrir os custos da sua atividade regulada, aplicada a CEMEs, OPCs e DPCs. Coisas como o custo dos SIM cards para comunicação dos postos, etc. Este valor vem das parcelas de ativação dos dois itens anteriores.
 
 * Estado Português. Imposto especial sobre o consumo de energia elétrica (IEC) e o imposto sobre o valor acrescentado (IVA). 
 
@@ -122,8 +124,28 @@ E neste exemplo, com a TAR no momento em que escrevo isto a **-** 1,79€, o tot
 Se a viatura tiver um consumo médio de `17kW / 100 km`, os 27kW de energia que pusemos na bateria permitiriam percorrer 159km.  
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
-Há que ter em consideração os ganhos por regeneração.
+**Neste momento a minha recomendação passa por usar ou a miio (quando o preço está muito baixo) ou a ViaVerde (porque tem dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
 
 ### Carregar em Casa
+
+Aquilo que torna bastante cómodo os BEV é poder carregar em casa. Ao contrário os carros a combustão (vulgo ICE) que implica ir mexer numa bomba de gasolina toda suja  ;)
+
+E para carregar em casa há algumas opções. Há que distinguir uma casa de lugar garagem em Prédios.
+
+
+#### Residencias
+
+Para casas há duas opções, relativamente simples:
+
+Uma é utilizar qualquer tomada convencional  e que limita a 16A (3,7kW). Por favor não liguem em extensões nem em cabos longos e enrolados, para evitar de sobreaquecer.
+
+A outra é adquirir uma wallbox das muitas ofertas no mercado e usar a ficha `type2` para carregar a viatura. O limite vai depender do que a instalação doméstica permite.
+
+Pode ser interessante rever o contrato com fornecedor de energia e considerar propostas bi-horário ou tri-horário. Vai sempre depender de quantas horas do dia se passa em casa.
+
+
+#### Prédios
+
+
 
 ## Condução
