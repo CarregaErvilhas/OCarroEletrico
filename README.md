@@ -16,6 +16,8 @@
             - [Ligação aos serviços comuns do prédio](#liga%C3%A7%C3%A3o-aos-servi%C3%A7os-comuns-do-pr%C3%A9dio)
             - [Ligação à MOBI.E](#liga%C3%A7%C3%A3o-%C3%A0-mobie)
     - [Condução](#condu%C3%A7%C3%A3o)
+        - [Dístico Azul](#d%C3%ADstico-azul)
+    - [links](#links)
 
 <!-- /TOC -->
 
@@ -186,3 +188,24 @@ E como é para veículos elétricos não há taxa audiovisual, etc.
 
 
 ## Condução
+
+### Dístico Azul
+
+https://www.uve.pt/page/distico-identificativo-ve-imt/
+
+
+
+## links
+
+* [https://ev-database.org/](https://ev-database.org/)
+* [FAQ MOBI.E](https://www.mobie.pt/pt/redemobie/faq)
+* [Estrutura Tarifária MOBI.E](https://www.mobie.pt/pt/redemobie/estrutura-tarifaria)
+* [UVE – Associação de Utilizadores de Veículos Elétricos](https://www.uve.pt)
+* [UVE – como carregar um veiculo elétrico](https://www.uve.pt/page/como-carregar-um-veiculo-eletrico/)
+* [Encontrar Posto](https://www.mobie.pt/redemobie/encontrar-posto)
+* [Sonae Continente Plug&Charge](https://plugcharge.continente.pt/)
+* [Postos de carregamento para carros elétricos do LIDL](https://www.lidl.pt/servicos-lidl/postos-de-carregamento-para-carros-eletricos-do-lidl)
+* [miio](https://miioelectric.com/)
+* [ViaVerde Electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
+* [charge2go](https://charge2go.pt/) ou [ecochoice](https://www.ecochoice.pt/) empresa parceira com ViaVerde e também com a [kmlowcost (KLC)](https://www.kmlowcost.com/)
+* []()
