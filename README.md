@@ -172,5 +172,17 @@ Aqui as opções de carga são 3,7kW (16A), 7,4kW ou 11kW em monofásico, e até
 
 #### Ligação à MOBI.E
 
+O Fundo Ambiental tem um projecto de apoio chamado [Incentivo pela Introdução no Consumo de Veículos de Emissões Nulas](https://www.fundoambiental.pt/apoios-2022/mitigacao-das-alteracoes-climaticas1/incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-ven-2022.aspx).  
+Nele incluí-se o programa [Carregadores para veículos elétricos em condomínios multifamiliares com ligação à Rede Mobi.E](https://www.fundoambiental.pt/apoios-2022/mitigacao-das-alteracoes-climaticas1/incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-ven-2022/incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-ven-2022-faq-tipologia-7.aspx).
+
+Isto permite a quem tem lugar de garagem em condomínios candidatar-se a apoios de até 80% de 1000€ do custo de instalação de uma *wallbox*, e de até 80% de 800€ da *wallbox*.
+
+A condição é que fique ligada à Rede MOBI.E pelo menos 24 meses.
+
+A grande vantagem desta solução é que os cartões ou Apps que são usados na rede publica MOBI.E podem ser usados nesta instalação privada, ao custo que é cobrado pelo comercializador contratado, independentemente do dos serviços comuns do prédio e sem ter que haver acerto de contas, pois o mesmo é feito pela [E-REDES](https://www.e-redes.pt/) (o operador da rede de distribuição de energia elétrica em Portugal Continental das redes de alta, média e baixa tensão).
+
+Como não ha OPC (o explorador do posto), o único custo é mesmo a energia.  
+E como é para veículos elétricos não há taxa audiovisual, etc.
+
 
 ## Condução
