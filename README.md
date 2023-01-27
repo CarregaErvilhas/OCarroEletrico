@@ -10,13 +10,16 @@
                 - [Como carregar na rede MOBI.E](#como-carregar-na-rede-mobie)
                 - [Preços de carregamento MOBI.E](#pre%C3%A7os-de-carregamento-mobie)
         - [Carregar em Casa](#carregar-em-casa)
-            - [Residencias](#residencias)
+            - [Residências](#resid%C3%AAncias)
             - [Prédios](#pr%C3%A9dios)
+            - [Ligação ao quadro elétrico do apartamento](#liga%C3%A7%C3%A3o-ao-quadro-el%C3%A9trico-do-apartamento)
+            - [Ligação aos serviços comuns do prédio](#liga%C3%A7%C3%A3o-aos-servi%C3%A7os-comuns-do-pr%C3%A9dio)
+            - [Ligação à MOBI.E](#liga%C3%A7%C3%A3o-%C3%A0-mobie)
     - [Condução](#condu%C3%A7%C3%A3o)
 
 <!-- /TOC -->
 
-Este site pretende ajudar condutores que estão agora a iniciar o seu contacto com carros elétricos (battery electrical vehicles - BEV) bem como esclarecer dúvidas e boas práticas no uso desta nova forma de transporte.
+Este site pretende ajudar condutores que estão agora a iniciar o seu contacto com carros elétricos (`battery electrical vehicles` - BEV) bem como esclarecer dúvidas e boas práticas no uso desta nova forma de transporte.
 
 ## Carregamento
 
@@ -49,7 +52,7 @@ Em Portugal, ao contrário do resto da Europa, a rede pública de carregadores �
 Enquanto noutros países é comum cada rede ter o seu próprio explorador e precisar de uma forma de contrato com cada operador (seja cartão RFID, App, etc), ou no melhor dos casos simplesmente aceitar cartão de crédito, cá qualquer carregador que esteja na via pública ou parques, terá que obrigatoriamente ser ligado à rede MOBI.E.
 
 Se por um lado há benefícios para o utilizador, por poder usar qualquer posto com qualquer fornecedor, por outro lado limita um pouco aparecer algumas formas concorrentes.  
-É uma das razões pelas quais não há mais postos Tesla Supercharge a serem abertos[1], e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir [2].
+É uma das razões pelas quais não há mais postos `Tesla Supercharge` a serem abertos[1], e pelo qual os postos [Plug&Charge](https://plugcharge.continente.pt/) do Continente deixaram de expandir [2].
 
 Retirado do site da MOBI.E
 > A MOBI.E, S.A., é uma empresa pública que atua, desde 2015, como Entidade Gestora da Rede de Mobilidade Elétrica (EGME), assumindo a responsabilidade da gestão e monitorização da rede de postos de carregamento elétricos, designadamente em termos de fluxos energéticos, de informação e financeiros.
@@ -133,19 +136,41 @@ Aquilo que torna bastante cómodo os BEV é poder carregar em casa. Ao contrári
 E para carregar em casa há algumas opções. Há que distinguir uma casa de lugar garagem em Prédios.
 
 
-#### Residencias
+#### Residências
 
 Para casas há duas opções, relativamente simples:
 
 Uma é utilizar qualquer tomada convencional  e que limita a 16A (3,7kW). Por favor não liguem em extensões nem em cabos longos e enrolados, para evitar de sobreaquecer.
 
-A outra é adquirir uma wallbox das muitas ofertas no mercado e usar a ficha `type2` para carregar a viatura. O limite vai depender do que a instalação doméstica permite.
+A outra é adquirir uma `wallbox` das muitas ofertas no mercado e usar a ficha `type2` para carregar a viatura. O limite vai depender do que a instalação doméstica permite.
 
 Pode ser interessante rever o contrato com fornecedor de energia e considerar propostas bi-horário ou tri-horário. Vai sempre depender de quantas horas do dia se passa em casa.
 
 
 #### Prédios
 
+Para quem tem lugar de garagem em prédios (seja `Box` ou lugar aberto) há 3 opções:
+
+
+#### Ligação ao quadro elétrico do apartamento
+
+Esta é de longe a opção mais simples.  
+Para aqueles já tem pré-instalação com ligação ao apartamento ou a condutas para passar cablagem, podem fazer qualquer uma das instalações referidas para [Residências](#resid%C3%AAncias), pois é em tudo igual.
+
+
+#### Ligação aos serviços comuns do prédio
+
+Um pouco mais complexo, mas quando não há possibilidade de ligar ao apartamento, podemos ligar aos serviços comuns do prédio.
+
+Há algumas desvantagens, pois implica reportar a quem paga as contas do condomínio o consumo mensal para fazer acertos, e nunca vai permitir mais que 3 condomínios ligar as viaturas ao mesmo tempo, devido ao total de energia que se pode ligar à instalação.
+
+Nestas situações, tem que se instalar um contador, um quadro elétrico (com disjuntor, diferencial e corte de emergência), e uma tomada ou `wallbox`.  
+Tirando o custo da `wallbox`, o custo desta instalação pode ascender a 300€, e ainda falta o custo do cabo elétrico desde o quadro dos serviços comuns até ao local onde fica a viatura.
+
+Aqui as opções de carga são 3,7kW (16A), 7,4kW ou 11kW em monofásico, e até 22kW (32A) para trifásico.
+
+
+#### Ligação à MOBI.E
 
 
 ## Condução
