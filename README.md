@@ -140,7 +140,7 @@ Uma lista de Postos ordenados por custo do OPC está disponível em:
 
 ### Carregar em Casa
 
-Aquilo que torna bastante cómodo os BEV é poder carregar em casa. Ao contrário os carros a combustão (vulgo ICE) que implica ir mexer numa bomba de gasolina toda suja  ;)
+Aquilo que torna bastante cómodo os BEV é poder carregar em casa. Ao contrário os carros a combustão ou térmicos (vulgo ICE) que implica ir mexer numa bomba de gasolina toda suja  ;)
 
 E para carregar em casa há algumas opções. Há que distinguir uma casa de lugar garagem em Prédios.
 
