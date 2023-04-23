@@ -132,7 +132,7 @@ Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 **Neste momento a minha recomendação passa por usar ou a miio (quando o preço está muito baixo) ou a ViaVerde ou Prio (porque tem dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
 
 Uma lista de Postos ordenados por custo do OPC está disponível em:
-[Postos](Postos/)
+[Postos](https://github.com/FernandoMiguel/OCarroEletrico/tree/main/Postos)
 
 
 ### Carregar em Casa
