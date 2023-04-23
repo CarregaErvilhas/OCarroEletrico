@@ -9,6 +9,7 @@
             - [MOBI.E](#mobie)
                 - [Como carregar na rede MOBI.E](#como-carregar-na-rede-mobie)
                 - [Preços de carregamento MOBI.E](#pre%C3%A7os-de-carregamento-mobie)
+                    - [Postos ordenados por custo](#postos-ordenados-por-custo)
         - [Carregar em Casa](#carregar-em-casa)
             - [Residências](#resid%C3%AAncias)
             - [Prédios](#pr%C3%A9dios)
@@ -130,6 +131,8 @@ Se a viatura tiver um consumo médio de `17kW / 100km`, os 27kW de energia que p
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
 **Neste momento a minha recomendação passa por usar ou a miio (quando o preço está muito baixo) ou a ViaVerde ou Prio (porque tem dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
+
+###### Postos ordenados por custo
 
 Uma lista de Postos ordenados por custo do OPC está disponível em:
 [Postos](https://github.com/FernandoMiguel/OCarroEletrico/tree/main/Postos)
