@@ -126,10 +126,10 @@ A Miio não só te diz quanto pagarias usando o serviço deles, como também per
 
 E neste exemplo, com a TAR no momento em que escrevo isto a **-** 1,79€, o total deste carregamento seria, de acordo com a App da Miio, 8,19€.
 
-Se a viatura tiver um consumo médio de `17kW / 100 km`, os 27kW de energia que pusemos na bateria permitiriam percorrer 159km.  
+Se a viatura tiver um consumo médio de `17kW / 100km`, os 27kW de energia que pusemos na bateria permitiriam percorrer 159km.  
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
-**Neste momento a minha recomendação passa por usar ou a miio (quando o preço está muito baixo) ou a ViaVerde (porque tem dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
+**Neste momento a minha recomendação passa por usar ou a miio (quando o preço está muito baixo) ou a ViaVerde ou Prio (porque tem dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
 
 Uma lista de Postos ordenados por custo do OPC está disponível em:
 [Postos](Postos/)
