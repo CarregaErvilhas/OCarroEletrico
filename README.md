@@ -17,7 +17,7 @@
             - [Ligação à MOBI.E](#liga%C3%A7%C3%A3o-%C3%A0-mobie)
     - [Condução](#condu%C3%A7%C3%A3o)
         - [Dístico Azul](#d%C3%ADstico-azul)
-    - [Links uteis ÚTEIS](#links-uteis-%C3%BAteis)
+    - [Links Úteis](#links-%C3%BAteis)
 
 <!-- /TOC -->
 
@@ -130,6 +130,10 @@ Se a viatura tiver um consumo médio de `17kW / 100 km`, os 27kW de energia que 
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
 **Neste momento a minha recomendação passa por usar ou a miio (quando o preço está muito baixo) ou a ViaVerde (porque tem dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
+
+Uma lista de Postos ordenados por custo do OPC está disponível em:
+[Postos](Postos/)
+
 
 ### Carregar em Casa
 
