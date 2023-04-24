@@ -173,11 +173,11 @@ SELECT
 	format("%i", "Duração (minutos) até 130kW") AS "Duração (minutos) até 130kW",
 	format("%i", "Duração (minutos) até 7kW") AS "Duração (minutos) até 7kW",
 	format("%i", "Duração (minutos) até 22kW") AS "Duração (minutos) até 22kW",
+	"POTÊNCIA DA TOMADA (kW)",
 	"TARIFA 1",
 	"TARIFA 2",
 	"TARIFA 3",
 	"TIPO DE TOMADA",
-	"POTÊNCIA DA TOMADA (kW)",
 	"FORMATO DA TOMADA",
 	"ESTADO DO POSTO",
 	"ESTADO DA TOMADA"
@@ -185,11 +185,11 @@ FROM
 	"Porto"
 ORDER BY
 	cast("CCS2 Custo €" as NUMERIC) ASC,
-	cast("Duração (minutos) até 130kW" as NUMERIC) DESC;
+	cast("Duração (minutos) até 130kW" as NUMERIC) ASC;
 
 
-DROP VIEW IF EXISTS [Porto_CCS_20_80_percent];
-CREATE VIEW Porto_CCS_20_80_percent
+DROP VIEW IF EXISTS [Porto_CCS2_20_80_percent];
+CREATE VIEW Porto_CCS2_20_80_percent
 AS
 SELECT
 	"UID DA TOMADA",
@@ -198,10 +198,10 @@ SELECT
 	OPERADOR,
 	format("%.3f", "CCS2 Custo €") AS "CCS2 Custo €",
 	format("%i", "Duração (minutos) até 130kW") AS "Duração (minutos) até 130kW",
+	"POTÊNCIA DA TOMADA (kW)",
 	"TARIFA 1",
 	"TARIFA 2",
 	"TARIFA 3",
-	"POTÊNCIA DA TOMADA (kW)",
 	"FORMATO DA TOMADA",
 	"ESTADO DA TOMADA"
 FROM
@@ -210,7 +210,7 @@ WHERE
 	"TIPO DE TOMADA" LIKE 'CCS' AND "ESTADO DO POSTO" NOT LIKE 'Offline'
 ORDER BY
 	cast("CCS2 Custo €" as NUMERIC) ASC,
-	cast("Duração (minutos) até 130kW" as NUMERIC) DESC;
+	cast("Duração (minutos) até 130kW" as NUMERIC) ASC;
 
 
 DROP VIEW IF EXISTS [Porto_TYPE2_7kW_0_100_percent];
@@ -223,10 +223,10 @@ SELECT
 	OPERADOR,
 	format("%.3f", "TYPE2 7kW Custo €") AS "TYPE2 7kW Custo €",
 	format("%i", "Duração (minutos) até 7kW") AS "Duração (minutos) até 7kW",
+	"POTÊNCIA DA TOMADA (kW)",
 	"TARIFA 1",
 	"TARIFA 2",
 	"TARIFA 3",
-	"POTÊNCIA DA TOMADA (kW)",
 	"FORMATO DA TOMADA",
 	"ESTADO DA TOMADA"
 FROM
@@ -235,7 +235,7 @@ WHERE
 	"TIPO DE TOMADA" like 'Mennekes' AND "ESTADO DO POSTO" NOT LIKE 'Offline'
 ORDER BY
 	cast("TYPE2 7kW Custo €" as NUMERIC) ASC,
-	cast("Duração (minutos) até 7kW" as NUMERIC) DESC;
+	cast("Duração (minutos) até 7kW" as NUMERIC) ASC;
 
 DROP VIEW IF EXISTS [Porto_TYPE2_22kW_0_100_percent];
 CREATE VIEW Porto_TYPE2_22kW_0_100_percent
@@ -247,10 +247,10 @@ SELECT
 	OPERADOR,
 	format("%.3f", "TYPE2 22kW Custo €") AS "TYPE2 22kW Custo €",
 	format("%i", "Duração (minutos) até 22kW") AS "Duração (minutos) até 22kW",
+	"POTÊNCIA DA TOMADA (kW)",
 	"TARIFA 1",
 	"TARIFA 2",
 	"TARIFA 3",
-	"POTÊNCIA DA TOMADA (kW)",
 	"FORMATO DA TOMADA",
 	"ESTADO DA TOMADA"
 FROM
@@ -259,4 +259,4 @@ WHERE
 	"TIPO DE TOMADA" like 'Mennekes' AND "ESTADO DO POSTO" NOT LIKE 'Offline'
 ORDER BY
 	cast("TYPE2 22kW Custo €" as NUMERIC) ASC,
-	cast("Duração (minutos) até 22kW" as NUMERIC) DESC;
+	cast("Duração (minutos) até 22kW" as NUMERIC) ASC;
