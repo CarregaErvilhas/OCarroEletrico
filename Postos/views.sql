@@ -70,92 +70,33 @@ ADD COLUMN €min NUMERIC GENERATED ALWAYS AS
 /* Determina a duração para carregar de 0-100% para um veiculo com bateria de 60kWh a 7.4kW ou 22kW */
 ALTER TABLE "MOBIe_Lista_de_postos"
 ADD COLUMN "Duração (minutos) até 7kW" NUMERIC GENERATED ALWAYS AS
-	(
-		60
-		/
-		MIN
-		(
-			"POTÊNCIA DA TOMADA (kW) NUMERIC"
-			,
-			7.4
-		)
-		*60*1.2
-	)
+	(60/MIN("POTÊNCIA DA TOMADA (kW) NUMERIC",7.4)*60*1.2)
   VIRTUAL;
 
 ALTER TABLE "MOBIe_Lista_de_postos"
 ADD COLUMN "Duração (minutos) até 22kW" NUMERIC GENERATED ALWAYS AS
-	(
-		60
-		/
-		MIN
-		(
-			"POTÊNCIA DA TOMADA (kW) NUMERIC"
-			,
-			22
-		)
-		*60*1.2
-	)
+	(60/MIN("POTÊNCIA DA TOMADA (kW) NUMERIC",22)*60*1.2)
   VIRTUAL;
-
 
 /* Determina a duração para carregar de 20-80% para um veiculo com bateria de 60kWh a té 130kW */
 ALTER TABLE "MOBIe_Lista_de_postos"
 ADD COLUMN "Duração (minutos) até 130kW" NUMERIC GENERATED ALWAYS AS
-	(
-		MAX
-		(
-			(
-				60*.6
-				/
-				(
-					MIN
-					(
-						"POTÊNCIA DA TOMADA (kW) NUMERIC"
-						,
-						127
-					)
-				)
-				*60*1.3
-			)
-			,35
-		)
-	) /* factor cagaço */
+	(MAX((60*.6/(MIN("POTÊNCIA DA TOMADA (kW) NUMERIC",127))*60*1.3),35))
   VIRTUAL;
-
 
 ALTER TABLE "MOBIe_Lista_de_postos"
 ADD COLUMN "CCS2 Custo €" NUMERIC GENERATED ALWAYS AS
-	(
-	"ACTIVAÇÃO"
-	+
-	"€kWh" * (60*.6)
-	+
-	"€min" * "Duração (minutos) até 130kW"
-	)
+	("ACTIVAÇÃO"+"€kWh" * (60*.6)+"€min" * "Duração (minutos) até 130kW")
   VIRTUAL;
-
 
 ALTER TABLE "MOBIe_Lista_de_postos"
 ADD COLUMN "TYPE2 7kW Custo €" NUMERIC GENERATED ALWAYS AS
-	(
-	"ACTIVAÇÃO"
-	+
-	"€kWh" * (60)
-	+
-	"€min" * "Duração (minutos) até 7kW"
-	)
+	("ACTIVAÇÃO"+"€kWh" * (60)+"€min" * "Duração (minutos) até 7kW")
   VIRTUAL;
 
 ALTER TABLE "MOBIe_Lista_de_postos"
 ADD COLUMN "TYPE2 22kW Custo €" NUMERIC GENERATED ALWAYS AS
-	(
-	"ACTIVAÇÃO"
-	+
-	"€kWh" * (60)
-	+
-	"€min" * "Duração (minutos) até 22kW"
-	)
+	("ACTIVAÇÃO"+"€kWh" * (60)+"€min" * "Duração (minutos) até 22kW")
   VIRTUAL;
 
 
@@ -173,7 +114,7 @@ SELECT
 	format("%i", "Duração (minutos) até 130kW") AS "Duração (minutos) até 130kW",
 	format("%i", "Duração (minutos) até 7kW") AS "Duração (minutos) até 7kW",
 	format("%i", "Duração (minutos) até 22kW") AS "Duração (minutos) até 22kW",
-	"POTÊNCIA DA TOMADA (kW)",
+	"POTÊNCIA DA TOMADA (kW) NUMERIC" AS "POTÊNCIA DA TOMADA (kW)",
 	"TARIFA 1",
 	"TARIFA 2",
 	"TARIFA 3",
@@ -198,7 +139,7 @@ SELECT
 	OPERADOR,
 	format("%.3f", "CCS2 Custo €") AS "CCS2 Custo €",
 	format("%i", "Duração (minutos) até 130kW") AS "Duração (minutos) até 130kW",
-	"POTÊNCIA DA TOMADA (kW)",
+	"POTÊNCIA DA TOMADA (kW) NUMERIC" AS "POTÊNCIA DA TOMADA (kW)",
 	"TARIFA 1",
 	"TARIFA 2",
 	"TARIFA 3",
@@ -223,7 +164,7 @@ SELECT
 	OPERADOR,
 	format("%.3f", "TYPE2 7kW Custo €") AS "TYPE2 7kW Custo €",
 	format("%i", "Duração (minutos) até 7kW") AS "Duração (minutos) até 7kW",
-	"POTÊNCIA DA TOMADA (kW)",
+	"POTÊNCIA DA TOMADA (kW) NUMERIC" AS "POTÊNCIA DA TOMADA (kW)",
 	"TARIFA 1",
 	"TARIFA 2",
 	"TARIFA 3",
@@ -247,7 +188,7 @@ SELECT
 	OPERADOR,
 	format("%.3f", "TYPE2 22kW Custo €") AS "TYPE2 22kW Custo €",
 	format("%i", "Duração (minutos) até 22kW") AS "Duração (minutos) até 22kW",
-	"POTÊNCIA DA TOMADA (kW)",
+	"POTÊNCIA DA TOMADA (kW) NUMERIC" AS "POTÊNCIA DA TOMADA (kW)",
 	"TARIFA 1",
 	"TARIFA 2",
 	"TARIFA 3",
