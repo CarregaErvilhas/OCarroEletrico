@@ -1,0 +1,117 @@
+|UID DA TOMADA|CIDADE|MORADA|OPERADOR|CCS2 Custo €|TYPE2 7kW Custo €|TYPE2 22kW Custo €|Duração (minutos) até 130kW|Duração (minutos) até 7kW|Duração (minutos) até 22kW|POTÊNCIA DA TOMADA (kW)|TARIFA 1|TARIFA 2|TARIFA 3|TIPO DE TOMADA|FORMATO DA TOMADA|ESTADO DO POSTO|ESTADO DA TOMADA|
+|-------------|------|------|--------|------------|-----------------|------------------|---------------------------|-------------------------|--------------------------|-----------------------|--------|--------|--------|--------------|-----------------|---------------|----------------|
+|LRA-90006-1|Leiria|Avenida Heróis de Angola|HRZ - Power dot|0.281|2.160|0.533|75|583|144|37|€0,0037/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90006-3|Leiria|Avenida Heróis de Angola|HRZ - Power dot|0.281|2.160|0.533|75|583|144|37|€0,0037/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90006-4|Leiria|Avenida Heróis de Angola|HRZ - Power dot|0.281|2.160|0.533|75|583|144|37|€0,0037/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90006-2|Leiria|Avenida Heróis de Angola|HRZ - Power dot|0.281|2.160|0.533|75|583|144|37|€0,0037/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90003-2|Leiria|Rua Olimpio Duarte Alves|EDP - EDP Comercial|0.304|2.335|0.576|75|583|144|37|€0,004/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90003-1|Leiria|Rua Olimpio Duarte Alves|EDP - EDP Comercial|0.304|2.335|0.576|75|583|144|37|€0,004/min |||Mennekes|SOCKET|Disponível|Em uso|
+|LRA-90009-02|Leiria|Rua Luís Silveira Charters Azevedo|EDP - EDP Comercial|0.304|2.335|0.576|75|583|144|37|€0,004/min |||Mennekes|SOCKET|Disponível|Em uso|
+|LRA-90009-01|Leiria|Rua Luís Silveira Charters Azevedo|EDP - EDP Comercial|0.304|2.335|0.576|75|583|144|37|€0,004/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90001-02|Leiria|Rua Francisco Clemente|HRZ - Power dot|0.349|2.685|0.662|75|583|144|37|€0,0046/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90001-01|Leiria|Rua Francisco Clemente|HRZ - Power dot|0.349|2.685|0.662|75|583|144|37|€0,0046/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90002-1|Leiria|Estrada da Mata|HRZ - Power dot|0.349|2.685|0.662|75|583|144|37|€0,0046/min |||Mennekes|SOCKET|Disponível|Em uso|
+|LRA-90002-2|Leiria|Estrada da Mata|HRZ - Power dot|0.349|2.685|0.662|75|583|144|37|€0,0046/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90005-6|Leiria|Via do Polis Leiria|GLP - Galp|0.448|3.444|0.850|75|583|144|37|€0,0059/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90005-5|Leiria|Via do Polis Leiria|GLP - Galp|0.448|3.444|0.850|75|583|144|37|€0,0059/min |||Mennekes|SOCKET|Disponível|Offline|
+|LRA-90005-1|Leiria|Via do Polis Leiria|GLP - Galp|0.448|3.444|0.850|75|583|144|37|€0,0059/min |||Mennekes|SOCKET|Disponível|Offline|
+|LRA-90005-4|Leiria|Via do Polis Leiria|GLP - Galp|0.448|3.444|0.850|75|583|144|37|€0,0059/min |||Mennekes|SOCKET|Disponível|Offline|
+|LRA-90005-3|Leiria|Via do Polis Leiria|GLP - Galp|0.448|3.444|0.850|75|583|144|37|€0,0059/min |||Mennekes|SOCKET|Disponível|Offline|
+|LRA-90005-2|Leiria|Via do Polis Leiria|GLP - Galp|0.448|3.444|0.850|75|583|144|37|€0,0059/min |||Mennekes|SOCKET|Disponível|Offline|
+|LRA-90007-2|Leiria|Largo da República|EDP - EDP Comercial|0.893|4.086|1.008|127|583|144|22|€0,007/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90007-1|Leiria|Largo da República|EDP - EDP Comercial|0.893|4.086|1.008|127|583|144|22|€0,007/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00015-02|Leiria|Makro Leiria|GLP - Galp|0.982|11.353|2.997|37|583|144|74|€0,2608/charge |€0,019/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00015-01|Leiria|Makro Leiria|GLP - Galp|0.982|11.353|2.997|37|583|144|74|€0,2608/charge |€0,019/min ||Mennekes|SOCKET|Disponível|Disponível|
+|MGR-00006-02|Marinha Grande|R. de Leiria 112|HRZ - Power dot|1.249|14.895|3.900|37|583|144|74|€0,3/charge |€0,025/min ||Mennekes|SOCKET|Disponível|Disponível|
+|MGR-00006-01|Marinha Grande|R. de Leiria 112|HRZ - Power dot|1.249|14.895|3.900|37|583|144|74|€0,3/charge |€0,025/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90004-1|Leiria|Avenida 22 de Maio|KLC - Atlante|1.915|8.757|2.160|127|583|144|22|€0,015/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-90004-2|Leiria|Avenida 22 de Maio|KLC - Atlante|1.915|8.757|2.160|127|583|144|22|€0,015/min |||Mennekes|SOCKET|Disponível|Em uso|
+|LRA-00027-1|Leiria|Largo Salgueiro Maia|MAK - Maksu|3.829|17.514|4.320|127|583|144|22|€0,03/min |||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00040-1|Leiria|Rua da Europa|KLC - Atlante|4.090|17.774|4.581|127|583|144|22|€0,2609/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00041-1|Leiria|Rua da Europa|KLC - Atlante|4.090|17.774|4.581|127|583|144|22|€0,2609/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00042-1|Leiria|Rua da Europa|KLC - Atlante|4.090|17.774|4.581|127|583|144|22|€0,2609/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00043-1|Leiria|Rua da Europa|KLC - Atlante|4.090|17.774|4.581|127|583|144|22|€0,2609/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00044-1|Leiria|Rua da Europa|KLC - Atlante|4.090|17.774|4.581|127|583|144|22|€0,2609/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00045-1|Leiria|Rua da Europa|KLC - Atlante|4.090|17.774|4.581|127|583|144|22|€0,2609/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00017-02|Leiria|Praça Goa Damão e Diu|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00017-01|Leiria|Praça Goa Damão e Diu|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00081-02|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00081-01|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00082-01|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00082-02|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00083-01|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00083-02|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00084-02|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00084-01|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00085-02|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00085-01|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.126|17.811|4.617|127|583|144|22|€0,297/charge |€0,03/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00021-01|Leiria|Rua Vale de Lobos|KLC - Atlante|4.493|46.703|11.520|56|583|144|50|€0,08/min |||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00021-02|Leiria|Rua Vale de Lobos|KLC - Atlante|4.493|46.703|11.520|56|583|144|50|€0,08/min |||CCS|CABLE|Disponível|Disponível|
+|LRA-00060-03|Leiria|Avenida 25 de Abril – Bairro de São Francisco|KLC - Atlante|4.493|46.703|11.520|56|583|144|50|€0,08/min |||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00060-02|Leiria|Avenida 25 de Abril – Bairro de São Francisco|KLC - Atlante|4.493|46.703|11.520|56|583|144|50|€0,08/min |||CCS|CABLE|Disponível|Em uso|
+|LRA-00022-01|Leiria|Rua do Pisão|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00022-02|Leiria|Rua do Pisão|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00023-02|Leiria|Rua do Pisão|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00023-01|Leiria|Rua do Pisão|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00024-02|Leiria|Rua da Cooperativa|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00024-01|Leiria|Rua da Cooperativa|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00048-01|Leiria|Largo Infantaria 7|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00048-02|Leiria|Largo Infantaria 7|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00049-01|Leiria|Largo Infantaria 7|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00049-02|Leiria|Largo Infantaria 7|HRZ - Power dot|4.767|20.732|5.340|127|583|144|22|€0,3/charge |€0,035/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00079-02|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.977|58.675|14.697|46|583|144|60|€0,297/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00080-02|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|4.977|58.675|14.697|46|583|144|60|€0,297/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00021-03|Leiria|Rua Vale de Lobos|KLC - Atlante|5.224|46.703|11.520|65|583|144|43|€0,08/min |||Mennekes|CABLE|Disponível|Disponível|
+|LRA-00018-01|Leiria|Rua dos Parceiros|IBD - Iberdrola|5.876|58.638|14.660|56|583|144|50|€0,26/charge |€0,1/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00018-02|Leiria|Rua dos Parceiros|IBD - Iberdrola|5.876|58.638|14.660|56|583|144|50|€0,26/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|MGR-00007-01|Marinha Grande|R. Jornal da M.nha Grande 3|KLC - Atlante|5.912|58.675|14.696|56|583|144|50|€0,2964/charge |€0,1/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|MGR-00007-02|Marinha Grande|R. Jornal da M.nha Grande 3|KLC - Atlante|5.912|58.675|14.696|56|583|144|50|€0,2964/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00014-2|Leiria|Rua da Maceira|EDP - EDP Comercial|5.913|58.675|14.697|56|583|144|50|€0,297/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00014-1|Leiria|Rua da Maceira|EDP - EDP Comercial|5.913|58.675|14.697|56|583|144|50|€0,297/charge |€0,1/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00079-01|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|5.913|58.675|14.697|56|583|144|50|€0,297/charge |€0,1/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00080-01|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|5.913|58.675|14.697|56|583|144|50|€0,297/charge |€0,1/min ||CHAdeMO|CABLE|Disponível|Em uso|
+|MGR-00003-01|Marinha Grande|Posto de Abastecimento BP Embra|EDP - EDP Comercial|5.913|58.675|14.697|56|583|144|50|€0,297/charge |€0,1/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|MGR-00003-02|Marinha Grande|Posto de Abastecimento BP Embra|EDP - EDP Comercial|5.913|58.675|14.697|56|583|144|50|€0,297/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00032-02|Leiria|Travessa Rua das Olhalvas|HRZ - Power dot|5.916|58.678|14.700|56|583|144|50|€0,3/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00032-01|Leiria|Travessa Rua das Olhalvas|HRZ - Power dot|5.916|58.678|14.700|56|583|144|50|€0,3/charge |€0,1/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00071-02|Leiria|Rua da Baquelite Carregal|HRZ - Power dot|5.916|58.678|14.700|56|583|144|50|€0,3/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00071-01|Leiria|Rua da Baquelite Carregal|HRZ - Power dot|5.916|58.678|14.700|56|583|144|50|€0,3/charge |€0,1/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00074-01|Leiria|R. Outeiro do Pomar|HRZ - Power dot|5.916|58.678|14.700|56|583|144|50|€0,3/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00074-02|Leiria|R. Outeiro do Pomar|HRZ - Power dot|5.916|58.678|14.700|56|583|144|50|€0,3/charge |€0,1/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00061-01|Leiria|Rua da Serrada Nova|HRZ - Power dot|6.340|52.403|17.220|35|583|144|120|€0,3/charge |€0,09/kWh |€0,08/min |CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00061-03|Leiria|Rua da Serrada Nova|HRZ - Power dot|6.340|52.403|17.220|35|583|144|120|€0,3/charge |€0,09/kWh |€0,08/min |CCS|CABLE|Disponível|Disponível|
+|LRA-00075-01|Leiria|R. Virgílio Vieira da Cunha|HRZ - Power dot|6.340|52.403|17.220|35|583|144|100|€0,3/charge |€0,09/kWh |€0,08/min |CCS|CABLE|Disponível|Disponível|
+|LRA-00075-04|Leiria|R. Virgílio Vieira da Cunha|HRZ - Power dot|6.340|52.403|17.220|35|583|144|100|€0,3/charge |€0,09/kWh |€0,08/min |CCS|CABLE|Disponível|Disponível|
+|LRA-00075-02|Leiria|R. Virgílio Vieira da Cunha|HRZ - Power dot|6.340|52.403|17.220|35|583|144|100|€0,3/charge |€0,09/kWh |€0,08/min |CCS|CABLE|Disponível|Disponível|
+|LRA-00018-03|Leiria|Rua dos Parceiros|IBD - Iberdrola|6.790|58.638|14.660|65|583|144|43|€0,26/charge |€0,1/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00014-3|Leiria|Rua da Maceira|EDP - EDP Comercial|6.827|58.675|14.697|65|583|144|43|€0,297/charge |€0,1/min ||Mennekes|CABLE|Disponível|Disponível|
+|LRA-00032-03|Leiria|Travessa Rua das Olhalvas|HRZ - Power dot|6.830|58.678|14.700|65|583|144|43|€0,3/charge |€0,1/min ||Mennekes|CABLE|Disponível|Disponível|
+|LRA-00071-03|Leiria|Rua da Baquelite Carregal|HRZ - Power dot|6.830|58.678|14.700|65|583|144|43|€0,3/charge |€0,1/min ||Mennekes|CABLE|Disponível|Disponível|
+|LRA-00016-01|Leiria|Avenida da Comunidade Europeia|GLG - Galpgeste|7.000|70.315|17.541|56|583|144|50|€0,2608/charge |€0,12/min ||CHAdeMO|CABLE|Disponível|Em uso|
+|LRA-00016-02|Leiria|Avenida da Comunidade Europeia|GLG - Galpgeste|7.000|70.315|17.541|56|583|144|50|€0,2608/charge |€0,12/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00075-03|Leiria|R. Virgílio Vieira da Cunha|HRZ - Power dot|8.033|52.403|17.220|56|583|144|50|€0,3/charge |€0,09/kWh |€0,08/min |CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00016-03|Leiria|Avenida da Comunidade Europeia|GLG - Galpgeste|8.097|70.315|17.541|65|583|144|43|€0,2608/charge |€0,12/min ||Mennekes|CABLE|Disponível|Disponível|
+|LRA-00088-02|Leiria|A1 km 125,7 (Sentido Norte/Sul)|PRP - Propel - Produto do Petróleo|8.685|87.828|21.861|56|583|144|50|€0,2608/charge |€0,15/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00088-01|Leiria|A1 km 125,7 (Sentido Norte/Sul)|PRP - Propel - Produto do Petróleo|8.685|87.828|21.861|56|583|144|50|€0,2608/charge |€0,15/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00089-02|Leiria|A1 km 125,7 (Sentido Sul/Norte)|PRP - Propel - Produto do Petróleo|8.685|87.828|21.861|56|583|144|50|€0,2608/charge |€0,15/min ||CCS|CABLE|Disponível|Em uso|
+|LRA-00089-01|Leiria|A1 km 125,7 (Sentido Sul/Norte)|PRP - Propel - Produto do Petróleo|8.685|87.828|21.861|56|583|144|50|€0,2608/charge |€0,15/min ||CHAdeMO|CABLE|Disponível|Fora de Serviço|
+|LRA-00077-02|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|9.397|152.081|37.737|35|583|144|150|€0,297/charge |€0,26/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00088-03|Leiria|A1 km 125,7 (Sentido Norte/Sul)|PRP - Propel - Produto do Petróleo|10.056|87.828|21.861|65|583|144|43|€0,2608/charge |€0,15/min ||Mennekes|CABLE|Disponível|Disponível|
+|LRA-00089-03|Leiria|A1 km 125,7 (Sentido Sul/Norte)|PRP - Propel - Produto do Petróleo|10.056|87.828|21.861|65|583|144|43|€0,2608/charge |€0,15/min ||Mennekes|CABLE|Disponível|Disponível|
+|LRA-00060-01|Leiria|Avenida 25 de Abril – Bairro de São Francisco|KLC - Atlante|10.211|46.703|11.520|127|583|144|22|€0,08/min |||Mennekes|CABLE|Disponível|Disponível|
+|LRA-00037-1|Leiria|Rua da Europa|KLC - Atlante|11.961|58.639|14.661|117|583|144|24|€0,2609/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00038-1|Leiria|Rua da Europa|KLC - Atlante|11.961|58.639|14.661|117|583|144|24|€0,2609/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|LRA-00039-1|Leiria|Rua da Europa|KLC - Atlante|11.961|58.639|14.661|117|583|144|24|€0,2609/charge |€0,1/min ||CCS|CABLE|Disponível|Disponível|
+|MGR-00007-03|Marinha Grande|R. Jornal da M.nha Grande 3|KLC - Atlante|13.060|58.675|14.696|127|583|144|22|€0,2964/charge |€0,1/min ||Mennekes|CABLE|Disponível|Disponível|
+|MGR-00003-03|Marinha Grande|Posto de Abastecimento BP Embra|EDP - EDP Comercial|13.061|58.675|14.697|127|583|144|22|€0,297/charge |€0,1/min ||Mennekes|CABLE|Disponível|Disponível|
+|LRA-00074-03|Leiria|R. Outeiro do Pomar|HRZ - Power dot|13.064|58.678|14.700|127|583|144|22|€0,3/charge |€0,1/min ||Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00087-01|Leiria|Rua do Alto Vieiro|GLP - Galp|13.100|21.500|21.500|46|583|144|60|€0,5/charge |€0,35/kWh |€0/min |CCS|CABLE|Disponível|Disponível|
+|LRA-00087-02|Leiria|Rua do Alto Vieiro|GLP - Galp|13.100|21.500|21.500|46|583|144|60|€0,5/charge |€0,35/kWh |€0/min |CCS|CABLE|Disponível|Disponível|
+|LRA-00061-02|Leiria|Rua da Serrada Nova|HRZ - Power dot|13.751|52.403|17.220|127|583|144|22|€0,3/charge |€0,09/kWh |€0,08/min |Mennekes|SOCKET|Disponível|Disponível|
+|LRA-00077-01|Leiria|Rua Santo André, Leiria|EDP - EDP Comercial|14.899|152.081|37.737|56|583|144|50|€0,297/charge |€0,26/min ||CHAdeMO|CABLE|Disponível|Disponível|
+|LRA-00028-1|Leiria|Área de Serviço CEPSA A1 Leiria S-N|ION - IONITY|18.436|30.726|30.726|35|583|144|350|€0,5121/kWh |||CCS|CABLE|Disponível|Disponível|
+|LRA-00030-1|Leiria|Área de Serviço CEPSA A1 Leiria N-S|ION - IONITY|18.436|30.726|30.726|35|583|144|350|€0,5121/kWh |||CCS|CABLE|Disponível|Disponível|
+|LRA-00031-1|Leiria|Área de Serviço CEPSA A1 Leiria N-S|ION - IONITY|18.436|30.726|30.726|35|583|144|350|€0,5121/kWh |||CCS|CABLE|Disponível|Disponível|
+|LRA-00063-1|Leiria|Área de Serviço CEPSA A1 Leiria S-N, PK. 11|ION - IONITY|18.436|30.726|30.726|35|583|144|350|€0,5121/kWh |||CCS|CABLE|Disponível|Disponível|
+|LRA-00067-1|Leiria|Área de Serviço CEPSA A1 Leiria N-S|ION - IONITY|18.436|30.726|30.726|35|583|144|350|€0,5121/kWh |||CCS|CABLE|Disponível|Disponível|
+|LRA-00070-1|Leiria|Área de Serviço CEPSA A1 Leiria N-S|ION - IONITY|18.436|30.726|30.726|35|583|144|350|€0,5121/kWh |||CCS|CABLE|Disponível|Disponível|
