@@ -18,9 +18,9 @@ sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Porto_TYPE2_7kW_0_10
 sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Porto_TYPE2_22kW_0_100_percent" > Porto_TYPE2_22kW_0_100_percent.csv
 
 
-csvsql --db sqlite:///mobie.sqlite3 --create-if-not-exists --overwrite --insert leiria.csv --table Leiria
-sqlite3 mobie.sqlite3 < views_leiria.sql
-sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Leiria_Todos_Os_Postos" > Leiria_Todos_Os_Postos.csv
-sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Leiria_CCS2_20_80_percent" > Leiria_CCS2_20_80_percent.csv
-sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Leiria_TYPE2_7kW_0_100_percent" > Leiria_TYPE2_7kW_0_100_percent.csv
-sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Leiria_TYPE2_22kW_0_100_percent" > Leiria_TYPE2_22kW_0_100_percent.csv
+csvsql --db sqlite:///mobie.sqlite3 --create-if-not-exists --overwrite --insert evora.csv --table Evora
+sqlite3 mobie.sqlite3 < views_evora.sql
+sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Evora_Todos_Os_Postos" > Evora_Todos_Os_Postos.csv
+sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Evora_CCS2_20_80_percent" > Evora_CCS2_20_80_percent.csv
+sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Evora_TYPE2_7kW_0_100_percent" > Evora_TYPE2_7kW_0_100_percent.csv
+sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Evora_TYPE2_22kW_0_100_percent" > Evora_TYPE2_22kW_0_100_percent.csv
