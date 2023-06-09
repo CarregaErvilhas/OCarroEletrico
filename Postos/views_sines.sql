@@ -1,23 +1,23 @@
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN "POTÊNCIA DA TOMADA (kW) NUMERIC" NUMERIC GENERATED ALWAYS AS
 	(REPLACE("POTÊNCIA DA TOMADA (kW)", ',', '.'))
   VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN T1kWh NUMERIC GENERATED ALWAYS AS
   (CASE WHEN instr("TARIFA 1", "/kWh ") > 0
              THEN replace(substr("TARIFA 1", 2, instr("TARIFA 1", "/kWh ")-2), ',', '.')
              ELSE "0"
         END) VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN T2kWh NUMERIC GENERATED ALWAYS AS
   (CASE WHEN instr("TARIFA 2", "/kWh ") > 0
              THEN replace(substr("TARIFA 2", 2, instr("TARIFA 2", "/kWh ")-2), ',', '.')
              ELSE "0"
         END) VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN T3kWh NUMERIC GENERATED ALWAYS AS
   (CASE WHEN instr("TARIFA 3", "/kWh ") > 0
              THEN replace(substr("TARIFA 3", 2, instr("TARIFA 3", "/kWh ")-2), ',', '.')
@@ -26,21 +26,21 @@ ADD COLUMN T3kWh NUMERIC GENERATED ALWAYS AS
 
 
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN T1min NUMERIC GENERATED ALWAYS AS
   (CASE WHEN instr("TARIFA 1", "/min ") > 0
              THEN replace(substr("TARIFA 1", 2, instr("TARIFA 1", "/min ")-2), ',', '.')
              ELSE "0"
         END) VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN T2min NUMERIC GENERATED ALWAYS AS
   (CASE WHEN instr("TARIFA 2", "/min ") > 0
              THEN replace(substr("TARIFA 2", 2, instr("TARIFA 2", "/min ")-2), ',', '.')
              ELSE "0"
         END) VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN T3min NUMERIC GENERATED ALWAYS AS
   (CASE WHEN instr("TARIFA 3", "/min ") > 0
              THEN replace(substr("TARIFA 3", 2, instr("TARIFA 3", "/min ")-2), ',', '.')
@@ -49,59 +49,59 @@ ADD COLUMN T3min NUMERIC GENERATED ALWAYS AS
 
 
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN ACTIVAÇÃO NUMERIC GENERATED ALWAYS AS
   (CASE WHEN instr("TARIFA 1", "/charge ") > 0
              THEN replace(substr("TARIFA 1", 2, instr("TARIFA 1", "/charge ")-2), ',', '.')
              ELSE "0"
         END) VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN €kWh NUMERIC GENERATED ALWAYS AS
 	(T1kWh + T2kWh + T3kWh)
   VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN €min NUMERIC GENERATED ALWAYS AS
 	(T1min + T2min + T3min)
   VIRTUAL;
 
 
 /* Determina a duração para carregar de 0-100% para um veiculo com bateria de 60kWh a 7.4kW ou 22kW */
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN "Duração (minutos) até 7kW" NUMERIC GENERATED ALWAYS AS
 	(60/MIN("POTÊNCIA DA TOMADA (kW) NUMERIC",7.4)*60*1.2)
   VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN "Duração (minutos) até 22kW" NUMERIC GENERATED ALWAYS AS
 	(60/MIN("POTÊNCIA DA TOMADA (kW) NUMERIC",22)*60*1.2)
   VIRTUAL;
 
 /* Determina a duração para carregar de 20-80% para um veiculo com bateria de 60kWh a té 130kW */
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN "Duração (minutos) até 130kW" NUMERIC GENERATED ALWAYS AS
 	(MAX((60*.6/(MIN("POTÊNCIA DA TOMADA (kW) NUMERIC",127))*60*1.3),35))
   VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN "CCS2 Custo €" NUMERIC GENERATED ALWAYS AS
 	("ACTIVAÇÃO"+"€kWh" * (60*.6)+"€min" * "Duração (minutos) até 130kW")
   VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN "TYPE2 7kW Custo €" NUMERIC GENERATED ALWAYS AS
 	("ACTIVAÇÃO"+"€kWh" * (60)+"€min" * "Duração (minutos) até 7kW")
   VIRTUAL;
 
-ALTER TABLE "Evora"
+ALTER TABLE "Sines"
 ADD COLUMN "TYPE2 22kW Custo €" NUMERIC GENERATED ALWAYS AS
 	("ACTIVAÇÃO"+"€kWh" * (60)+"€min" * "Duração (minutos) até 22kW")
   VIRTUAL;
 
 
-DROP VIEW IF EXISTS [Evora_Todos_Os_Postos];
-CREATE VIEW Evora_Todos_Os_Postos
+DROP VIEW IF EXISTS [Sines_Todos_Os_Postos];
+CREATE VIEW Sines_Todos_Os_Postos
 AS
 SELECT
 	"UID DA TOMADA",
@@ -123,14 +123,14 @@ SELECT
 	"ESTADO DO POSTO",
 	"ESTADO DA TOMADA"
 FROM
-	"Evora"
+	"Sines"
 ORDER BY
 	cast("CCS2 Custo €" as NUMERIC) ASC,
 	cast("Duração (minutos) até 130kW" as NUMERIC) ASC;
 
 
-DROP VIEW IF EXISTS [Evora_CCS2_20_80_percent];
-CREATE VIEW Evora_CCS2_20_80_percent
+DROP VIEW IF EXISTS [Sines_CCS2_20_80_percent];
+CREATE VIEW Sines_CCS2_20_80_percent
 AS
 SELECT
 	"UID DA TOMADA",
@@ -146,7 +146,7 @@ SELECT
 	"FORMATO DA TOMADA",
 	"ESTADO DA TOMADA"
 FROM
-	"Evora"
+	"Sines"
 WHERE
 	"TIPO DE TOMADA" LIKE 'CCS' AND "ESTADO DO POSTO" NOT LIKE 'Offline'
 ORDER BY
@@ -154,8 +154,8 @@ ORDER BY
 	cast("Duração (minutos) até 130kW" as NUMERIC) ASC;
 
 
-DROP VIEW IF EXISTS [Evora_TYPE2_7kW_0_100_percent];
-CREATE VIEW Evora_TYPE2_7kW_0_100_percent
+DROP VIEW IF EXISTS [Sines_TYPE2_7kW_0_100_percent];
+CREATE VIEW Sines_TYPE2_7kW_0_100_percent
 AS
 SELECT
 	"UID DA TOMADA",
@@ -171,15 +171,15 @@ SELECT
 	"FORMATO DA TOMADA",
 	"ESTADO DA TOMADA"
 FROM
-	"Evora"
+	"Sines"
 WHERE
 	"TIPO DE TOMADA" like 'Mennekes' AND "ESTADO DO POSTO" NOT LIKE 'Offline'
 ORDER BY
 	cast("TYPE2 7kW Custo €" as NUMERIC) ASC,
 	cast("Duração (minutos) até 7kW" as NUMERIC) ASC;
 
-DROP VIEW IF EXISTS [Evora_TYPE2_22kW_0_100_percent];
-CREATE VIEW Evora_TYPE2_22kW_0_100_percent
+DROP VIEW IF EXISTS [Sines_TYPE2_22kW_0_100_percent];
+CREATE VIEW Sines_TYPE2_22kW_0_100_percent
 AS
 SELECT
 	"UID DA TOMADA",
@@ -195,7 +195,7 @@ SELECT
 	"FORMATO DA TOMADA",
 	"ESTADO DA TOMADA"
 FROM
-	"Evora"
+	"Sines"
 WHERE
 	"TIPO DE TOMADA" like 'Mennekes' AND "ESTADO DO POSTO" NOT LIKE 'Offline'
 ORDER BY
