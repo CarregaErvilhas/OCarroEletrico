@@ -16,11 +16,3 @@ sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Porto_Todos_Os_Posto
 sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Porto_CCS2_20_80_percent" > Porto_CCS2_20_80_percent.csv
 sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Porto_TYPE2_7kW_0_100_percent" > Porto_TYPE2_7kW_0_100_percent.csv
 sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Porto_TYPE2_22kW_0_100_percent" > Porto_TYPE2_22kW_0_100_percent.csv
-
-
-csvsql --db sqlite:///mobie.sqlite3 --create-if-not-exists --overwrite --insert sines.csv --table Sines
-sqlite3 mobie.sqlite3 < views_sines.sql
-sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Sines_Todos_Os_Postos" > Sines_Todos_Os_Postos.csv
-sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Sines_CCS2_20_80_percent" > Sines_CCS2_20_80_percent.csv
-sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Sines_TYPE2_7kW_0_100_percent" > Sines_TYPE2_7kW_0_100_percent.csv
-sql2csv --db sqlite:///mobie.sqlite3 --query "select * from Sines_TYPE2_22kW_0_100_percent" > Sines_TYPE2_22kW_0_100_percent.csv

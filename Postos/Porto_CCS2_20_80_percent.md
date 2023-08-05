@@ -1,96 +1,90 @@
 |UID DA TOMADA|CIDADE|MORADA|OPERADOR|CCS2 Custo €|Duração (minutos) até 130kW|POTÊNCIA DA TOMADA (kW)|TARIFA 1|TARIFA 2|TARIFA 3|FORMATO DA TOMADA|ESTADO DA TOMADA|
 |-------------|------|------|--------|------------|---------------------------|-----------------------|--------|--------|--------|-----------------|----------------|
-|PRT-00001-02|Porto|Avenida de França|MLT - Mobiletric|3.069|56|50|€0,2608/charge |€0,05/min ||CABLE|Em uso|
+|PRT-00001-02|Porto|Avenida de França|MLT - Mobiletric|3.069|56|50|€0,2608/charge |€0,05/min ||CABLE|Disponível|
 |MTS-00001-02|Matosinhos|Largo José Santos Leça|MLT - Mobiletric|3.574|56|50|€0,2608/charge |€0,059/min ||CABLE|Disponível|
 |VNG-00016-02|Vila Nova de Gaia|Avenida Vasco da Gama|MLT - Mobiletric|3.574|56|50|€0,2608/charge |€0,059/min ||CABLE|Disponível|
-|GDM-00004-02|Gondomar|Rua da Boavista|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
+|MAI-00022-02|Maia|Rua D. Maria Faria N.º 230|KLC - Atlante|4.221|46|60|€0,2608/charge |€0,11/kWh ||CABLE|Disponível|
+|PRT-00073-02|Porto|Rua Henrique Medina|KLC - Atlante|4.228|56|50|€0,2964/charge |€0,07/min ||CABLE|Disponível|
 |GDM-00015-02|Gondomar|Rua Dom António de Castro, 243|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
 |GDM-00028-02|Gondomar|Rua Dr. Carlos Moura Guedes (UA: 276),|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
-|MAI-00015-02|Maia|Rua Engenheiro Frederico Ulrich|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
+|MAI-00015-02|Maia|Rua Engenheiro Frederico Ulrich|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
+|MAI-00018-02|Maia|Rua Quinta da Palmeira,|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
 |MAI-00019-02|Maia|Rua Senhora da Hora, n,º 108,|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
 |MAI-00020-02|Maia|Rua Avelino Francisco Pereira, nº 55|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
 |MTS-00007-02|Matosinhos|Rua Santos Dias|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
-|MTS-00035-02|Matosinhos|Rua da Bataria|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
-|MTS-00036-02|Matosinhos|Avenida António Domingues dos Santos|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
-|MTS-00105-02|Matosinhos|Rua Eng.º António Costa Reis, 302/494|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
+|MTS-00035-02|Matosinhos|Rua da Bataria|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
+|MTS-00036-02|Matosinhos|Avenida António Domingues dos Santos|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
+|MTS-00105-02|Matosinhos|Rua Eng.º António Costa Reis, 302/494|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
 |PRT-00049-02|Porto|Rua de Agramonte|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
-|PRT-00050-02|Porto|Rua Diogo Botelho|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
-|PRT-00091-02|Porto|Rua Diamantina|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
+|PRT-00050-02|Porto|Rua Diogo Botelho|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Fora de Serviço|
+|PRT-00091-02|Porto|Rua Diamantina|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
 |PRT-00096-02|Porto|Rua Professor Joaquim Bastos|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
-|PRT-00147-02|Porto|Estrada da Circunvalação, n.º 13941 a 13975|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
+|PRT-00147-02|Porto|Estrada da Circunvalação, n.º 13941 a 13975|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
 |VLG-00016-02|Valongo|Rua Professor Joaquim Teixeira, n.º 41/71|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
-|VLG-00020-02|Valongo|Rua 1.º de Maio – São Vicente de Alfena|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
-|VNG-00062-02|Vila Nova de Gaia|Rua Doutor Francisco Sá Carneiro|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
-|VNG-00071-02|Vila Nova de Gaia|Rua Nova de Alvites, n,º 231,|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
+|VLG-00020-02|Valongo|Rua 1.º de Maio – São Vicente de Alfena|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
+|VNG-00062-02|Vila Nova de Gaia|Rua Doutor Francisco Sá Carneiro|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Fora de Serviço|
+|VNG-00071-02|Vila Nova de Gaia|Rua Nova de Alvites, n,º 231,|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Em uso|
 |VNG-00109-02|Vila Nova de Gaia|Avenida dos Descobrimentos,|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
-|VNG-00110-02|Vila Nova de Gaia|Av. Vasco da Gama – E.N. 222, km 5,9|KLC - Atlante|4.493|56|50|€0,08/min |||CABLE|Disponível|
-|MTS-00045-02|Matosinhos|Av. Dr. AntÃ³nio Macedo, 196|ECI - ECOINSIDE|4.499|35|120|€0,299/charge |€0,12/min ||CABLE|Disponível|
-|MTS-00083-02|Matosinhos|R. Dr. Manuel Rodrigues de Sousa 92|KLC - Atlante|4.508|46|60|€0,2964/charge |€0,09/min ||CABLE|Disponível|
-|MTS-00084-02|Matosinhos|R. Dr. Manuel Rodrigues de Sousa 92|KLC - Atlante|4.508|46|60|€0,2964/charge |€0,09/min ||CABLE|Disponível|
 |MTS-00085-02|Matosinhos|R. Dr. Manuel Rodrigues de Sousa 92|KLC - Atlante|4.508|46|60|€0,2964/charge |€0,09/min ||CABLE|Disponível|
 |VLG-00015-02|Valongo|Lugar Campo Barreiro, SusÃ£o, R. Dom Pedro IV|KLC - Atlante|4.508|46|60|€0,2964/charge |€0,09/min ||CABLE|Disponível|
-|PRT-00162-02|Porto|R. de O Primeiro de Janeiro|HRZ - Power dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
-|PRT-00163-02|Porto|R. de O Primeiro de Janeiro|HRZ - Power dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
-|PRT-00164-02|Porto|R. de Anselmo Braancamp 329|HRZ - Power dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Em uso|
-|PRT-00165-02|Porto|R. de Anselmo Braancamp 329|HRZ - Power dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
-|PRT-00166-02|Porto|R. de Anselmo Braancamp 329|HRZ - Power dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
-|PRT-00167-02|Porto|R. de Anselmo Braancamp 329|HRZ - Power dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
+|PRT-00162-02|Porto|R. de O Primeiro de Janeiro|HRZ - Power Dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
+|PRT-00163-02|Porto|R. de O Primeiro de Janeiro|HRZ - Power Dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
+|PRT-00164-02|Porto|R. de Anselmo Braancamp 329|HRZ - Power Dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Em uso|
+|PRT-00165-02|Porto|R. de Anselmo Braancamp 329|HRZ - Power Dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
+|PRT-00166-02|Porto|R. de Anselmo Braancamp 329|HRZ - Power Dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
+|PRT-00167-02|Porto|R. de Anselmo Braancamp 329|HRZ - Power Dot|4.512|56|50|€0,3/charge |€0,075/min ||CABLE|Disponível|
 |GDM-00003-02|Gondomar|Rua Infante Dom Henrique|KLC - Atlante|4.789|56|50|€0,2964/charge |€0,08/min ||CABLE|Disponível|
-|GDM-00027-02|Gondomar|Praceta Parque Nascente, 35|EDP - EDP Comercial|4.790|56|50|€0,297/charge |€0,08/min ||CABLE|Disponível|
+|GDM-00027-02|Gondomar|Praceta Parque Nascente, 35|EDP - EDP Comercial|4.790|56|50|€0,297/charge |€0,08/min ||CABLE|Em uso|
 |PRT-00155-02|Porto|Avenida Marechal Gomes da Costa, 855|KLC - Atlante|4.976|46|60|€0,2964/charge |€0,1/min ||CABLE|Disponível|
-|VLG-00010-02|Valongo|Rua da Passagem|KLC - Atlante|4.976|46|60|€0,2964/charge |€0,1/min ||CABLE|Disponível|
-|PRT-00073-02|Porto|Rua Henrique Medina|KLC - Atlante|5.054|56|50|€0,09/min |||CABLE|Disponível|
-|MAI-00021-02|Maia|Forum Maia|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Disponível|
-|PRT-00074-02|Porto|Rua Nove de Abril|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Disponível|
+|MTS-00045-02|Matosinhos|Av. Dr. AntÃ³nio Macedo, 196|ECI - ECOINSIDE|5.188|35|120|€0,299/charge |€0,059/kWh |€0,079/min |CABLE|Disponível|
+|MAI-00021-02|Maia|Forum Maia|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Em uso|
+|PRT-00075-02|Porto|Rua Nove de Abril|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Disponível|
 |PRT-00077-02|Porto|Praça de Francisco Sá Carneiro|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Disponível|
-|PRT-00078-02|Porto|Praça de Francisco Sá Carneiro|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Disponível|
+|PRT-00078-02|Porto|Praça de Francisco Sá Carneiro|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Em uso|
 |PRT-00079-02|Porto|Avenida Conselho da Europa|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Disponível|
-|PRT-00089-02|Porto|Rua do Jornal de Noticias|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Em uso|
-|PRT-00090-02|Porto|Rua do Jornal de Noticias|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Em uso|
-|MAI-00017-02|Maia|Rua da Fábrica|HRZ - Power dot|5.354|56|50|€0,3/charge |€0,09/min ||CABLE|Disponível|
-|VNG-00041-02|Vila Nova de Gaia|Rua Rocha Leão|HRZ - Power dot|5.354|56|50|€0,3/charge |€0,09/min ||CABLE|Disponível|
-|VNG-00042-02|Vila Nova de Gaia|Rua Rocha Leão|HRZ - Power dot|5.354|56|50|€0,3/charge |€0,09/min ||CABLE|Disponível|
-|MTS-00037-02|Matosinhos|Rua Goa 2|IBD - Iberdrola|5.484|65|43|€0,26/charge |€0,08/min ||CABLE|Disponível|
+|PRT-00089-02|Porto|Rua do Jornal de Noticias|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Disponível|
+|PRT-00090-02|Porto|Rua do Jornal de Noticias|EDP - EDP Comercial|5.351|56|50|€0,297/charge |€0,09/min ||CABLE|Disponível|
+|MAI-00017-02|Maia|Rua da Fábrica|HRZ - Power Dot|5.354|56|50|€0,3/charge |€0,09/min ||CABLE|Disponível|
+|VNG-00041-02|Vila Nova de Gaia|Rua Rocha Leão|HRZ - Power Dot|5.354|56|50|€0,3/charge |€0,09/min ||CABLE|Disponível|
+|VNG-00042-02|Vila Nova de Gaia|Rua Rocha Leão|HRZ - Power Dot|5.354|56|50|€0,3/charge |€0,09/min ||CABLE|Fora de Serviço|
 |PRT-00134-02|Porto|RUA JOSE GOMES FERREIRA 10 LT|KLC - Atlante|5.616|56|50|€0,1/min |||CABLE|Disponível|
-|PRT-00072-1|Porto|Rua da Constituição|REP - Repsol|5.661|35|160|€0,261/charge |€0,15/kWh ||CABLE|Disponível|
 |MTS-00101-01|Matosinhos|Rua de Goa, 2|IBD - Iberdrola|5.876|56|50|€0,26/charge |€0,1/min ||CABLE|Disponível|
-|PRT-00140-02|Porto|Rua da Constituição, nº 2570|REP - Repsol|5.877|46|60|€0,261/charge |€0,12/min ||CABLE|Fora de Serviço|
 |PRT-00180-02|Porto|Rua de Júlio Dinis 320|REP - Repsol|5.877|46|60|€0,261/charge |€0,12/min ||CABLE|Disponível|
 |GDM-00016-02|Gondomar|Rua de Rebordãos, 297|REP - Repsol|5.877|93|30|€0,261/charge |€0,06/min ||CABLE|Disponível|
 |MTS-00044-02|Matosinhos|Avenida da Liberdade - Prolongamento do IP4|REP - Repsol|5.877|93|30|€0,261/charge |€0,06/min ||CABLE|Disponível|
 |PRT-00152-02|Porto|Rua Monte dos Burgos, nº 316|REP - Repsol|5.877|93|30|€0,261/charge |€0,06/min ||CABLE|Disponível|
 |VLG-00014-02|Valongo|Rua Eng Duarte Pacheco, 731|REP - Repsol|5.877|93|30|€0,261/charge |€0,06/min ||CABLE|Disponível|
-|MAI-00026-02|Maia|Rua Engº Frederico Ulrich, 3369|KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Em uso|
-|MTS-00052-02|Matosinhos|Rua Brito e Cunha, 810 |KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Em uso|
-|PRT-00030-2|Porto|Campo 24 de Agosto|EVC - Evce|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Disponível|
+|MAI-00026-02|Maia|Rua Engº Frederico Ulrich, 3369|KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Disponível|
+|MAI-00027-02|Maia|R. 5 de Outubro 84|KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Em uso|
+|MTS-00052-02|Matosinhos|Rua Brito e Cunha, 810 |KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Disponível|
 |PRT-00048-02|Porto|Rua da Constituição 666|KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Disponível|
-|PRT-00153-02|Porto|Estrada Exterior da Circunvalação (EN 12)|KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Em uso|
+|PRT-00153-02|Porto|Estrada Exterior da Circunvalação (EN 12)|KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Disponível|
 |PRT-00154-02|Porto|Rua Central de Francos, 744-758|KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Disponível|
 |PRT-00156-02|Porto|Rua do Lidador, 109 -111|KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Disponível|
 |VLG-00022-02|Valongo|Gaveto - Praceta de Moçambique|KLC - Atlante|5.912|56|50|€0,2964/charge |€0,1/min ||CABLE|Disponível|
 |PRT-00172-02|Porto|Estr. da CircunvalaÃ§Ã£o 12 843,|KLC - Atlante|5.912|93|30|€0,2964/charge |€0,06/min ||CABLE|Disponível|
 |MTS-00011-02|Matosinhos|Amieira Via Norte EN13 KM 0.76|EDP - EDP Comercial|5.913|56|50|€0,297/charge |€0,1/min ||CABLE|Disponível|
-|MAI-00005-02|Maia|Rua do Barreiro|HRZ - Power dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Disponível|
-|PRT-00051-02|Porto|Estrada da Circunvalação 10853|HRZ - Power dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Disponível|
-|PRT-00052-02|Porto|Avenida do Parque|HRZ - Power dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Em uso|
-|PRT-00068-02|Porto|Rua Leonardo Coimbra 152-156|HRZ - Power dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Fora de Serviço|
-|PRT-00101-2|Porto|Rua Engenheiro Ferreira Dias|PRI - Prio|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Disponível|
-|VLG-00002-02|Valongo|R. Tristão Vaz Teixeira 260|HRZ - Power dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Disponível|
-|VNG-00059-02|Vila Nova de Gaia|Rua do Jardim|HRZ - Power dot|5.916|56|50|€0,3/charge |€0,1/min ||SOCKET|Disponível|
-|VNG-00060-02|Vila Nova de Gaia|Rua da Bélgica|HRZ - Power dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Disponível|
-|VNG-00070-02|Vila Nova de Gaia|R. Pte. Pereiro 879|HRZ - Power dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Disponível|
+|MAI-00005-02|Maia|Rua do Barreiro|HRZ - Power Dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Em uso|
+|PRT-00051-02|Porto|Estrada da Circunvalação 10853|HRZ - Power Dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Disponível|
+|PRT-00052-02|Porto|Avenida do Parque|HRZ - Power Dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Em uso|
+|VLG-00002-02|Valongo|R. Tristão Vaz Teixeira 260|HRZ - Power Dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Disponível|
+|VNG-00059-02|Vila Nova de Gaia|Rua do Jardim|HRZ - Power Dot|5.916|56|50|€0,3/charge |€0,1/min ||SOCKET|Disponível|
+|VNG-00060-02|Vila Nova de Gaia|Rua da Bélgica|HRZ - Power Dot|5.916|56|50|€0,3/charge |€0,1/min ||CABLE|Disponível|
 |GDM-00017-01|Gondomar|R. Fernão de Magalhães 584|EDP - EDP Comercial|5.967|35|90|€0,297/charge |€0,07/kWh |€0,09/min |SOCKET|Disponível|
 |GDM-00018-01|Gondomar|Rua Dr. Carlos Moura Guedes N51|EDP - EDP Comercial|5.967|35|90|€0,297/charge |€0,07/kWh |€0,09/min |SOCKET|Disponível|
+|MTS-00043-01|Matosinhos|Avenida da Liberdade|EDP - EDP Comercial|5.967|35|90|€0,297/charge |€0,07/kWh |€0,09/min |CABLE|Disponível|
 |MTS-00046-01|Matosinhos|Rua Heróis de França 905|EDP - EDP Comercial|5.967|35|90|€0,297/charge |€0,07/kWh |€0,09/min |SOCKET|Disponível|
 |VNG-00068-01|Vila Nova de Gaia|McDonald´s - Gaia|EDP - EDP Comercial|5.967|35|90|€0,297/charge |€0,07/kWh |€0,09/min |CABLE|Disponível|
 |VNG-00032-02|Vila Nova de Gaia|R. 28 de Janeiro|KLC - Atlante|6.174|65|43|€0,2964/charge |€0,09/min ||CABLE|Disponível|
-|VNG-00045-02|Vila Nova de Gaia|Rua Rio do PaÃ§o|KLC - Atlante|6.178|56|50|€0,11/min |||CABLE|Disponível|
 |VNG-00107-02|Vila Nova de Gaia|R. Dona Maria da Costa Basto 16,|KLC - Atlante|6.178|56|50|€0,11/min |||CABLE|Disponível|
 |VLG-00021-01|Valongo|Rua José Regio nº20|EDP - EDP Comercial|6.317|35|120|€0,297/charge |€0,07/kWh |€0,1/min |CABLE|Disponível|
-|PRT-00181-01|Porto|R. Sra. do Porto 930|HRZ - Power dot|6.348|35|80|€0,3/charge |€0,09/kWh |€0,08/min |CABLE|Disponível|
-|PRT-00181-05|Porto|R. Sra. do Porto 930|HRZ - Power dot|6.348|35|80|€0,3/charge |€0,09/kWh |€0,08/min |CABLE|Disponível|
-|PRT-00181-04|Porto|R. Sra. do Porto 930|HRZ - Power dot|6.348|35|80|€0,3/charge |€0,09/kWh |€0,08/min |CABLE|Em uso|
-|PRT-00173-01|Porto|Estr. da Circunvalação 10853|HRZ - Power dot|6.700|35|100|€0,3/charge |€0,1/kWh |€0,08/min |CABLE|Disponível|
+|GDM-00012-01|Gondomar|Rua da Nossa Senhora do Amparo|HRZ - Power Dot|6.340|35|100|€0,3/charge |€0,09/kWh |€0,08/min |CABLE|Disponível|
+|PRT-00181-01|Porto|R. Sra. do Porto 930|HRZ - Power Dot|6.348|35|80|€0,3/charge |€0,09/kWh |€0,08/min |CABLE|Disponível|
+|PRT-00181-05|Porto|R. Sra. do Porto 930|HRZ - Power Dot|6.348|35|80|€0,3/charge |€0,09/kWh |€0,08/min |CABLE|Disponível|
+|PRT-00181-04|Porto|R. Sra. do Porto 930|HRZ - Power Dot|6.348|35|80|€0,3/charge |€0,09/kWh |€0,08/min |CABLE|Disponível|
+|GDM-00032-02|Gondomar|Estr. Dom Miguel 1427,|KLC - Atlante|6.438|56|50|€0,2608/charge |€0,11/min ||CABLE|Em uso|
+|MAI-00031-02|Maia|R. Eng. Frederico Ulrich 15,|KLC - Atlante|6.438|56|50|€0,2608/charge |€0,11/min ||CABLE|Disponível|
+|PRT-00173-01|Porto|Estr. da Circunvalação 10853|HRZ - Power Dot|6.700|35|100|€0,3/charge |€0,1/kWh |€0,08/min |CABLE|Em uso|
 |MTS-00113-01|Matosinhos|Travessa da Bataria, 135, Leça da Palmeira|PRI - Prio|6.852|93|30|€0,3/charge |€0,07/min ||CABLE|Disponível|
 |FEUP-00001-02|Porto|FEUP - Rua Roberto Frias|GLP - Galp|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |FEUP-00002-02|Porto|FEUP - Rua Roberto Frias|GLP - Galp|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
@@ -98,16 +92,14 @@
 |MTS-00024-02|Matosinhos|Posto Galp Torres e Vaz|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |MTS-00029-02|Matosinhos|Posto Galp V.Rapida Nascente|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |MTS-00031-02|Matosinhos|Estrada Ext. Da Circunvalação En 12 Km 0,7|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
-|MTS-00032-02|Matosinhos|Rua Mário Brito|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |MTS-00038-02|Matosinhos|Av. Mario de Brito S/N|GLP - Galp|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
-|PRT-00013-02|Porto|Avenida da França|MLT - Mobiletric|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |PRT-00019-02|Porto|Av. Sidónio Pais|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |PRT-00036-02|Porto|Rua de 9 de Julho, Nr 40|MLT - Mobiletric|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |PRT-00037-02|Porto|Rua de 9 de Julho, Nr 40|MLT - Mobiletric|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |PRT-00098-02|Porto|Rua de Sá da Bandeira|GLP - Galp|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |PRT-00106-02|Porto|Rua de Sá da Bandeira|GLP - Galp|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
-|PRT-00127-02|Porto|Rua de Entrecampos|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Em uso|
-|PRT-00128-02|Porto|Estrada Exterior da Circunvalação, 82-130|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Fora de Serviço|
+|PRT-00127-02|Porto|Rua de Entrecampos|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
+|PRT-00128-02|Porto|Estrada Exterior da Circunvalação, 82-130|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |PRT-00171-02|Porto|RUA DO GÓLGOTA|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |VNG-00019-02|Vila Nova de Gaia|Avenida Vasco Da Gama|GLG - Galpgeste|7.000|56|50|€0,2608/charge |€0,12/min ||CABLE|Disponível|
 |GDM-00013-02|Gondomar|Rua Fernão de Magalhães, 431|REP - Repsol|7.000|56|50|€0,261/charge |€0,12/min ||CABLE|Disponível|
@@ -115,57 +107,65 @@
 |PRT-00132-02|Porto|Avenida Fernão de Magalhães|REP - Repsol|7.000|56|50|€0,261/charge |€0,12/min ||CABLE|Disponível|
 |PRT-00133-02|Porto|Avenida Marechal Gomes da Costa|REP - Repsol|7.000|56|50|€0,261/charge |€0,12/min ||CABLE|Disponível|
 |PRT-00185-02|Porto|PRAÇA DOUTOR FRANCISCO SÁ CARNEIRO, PORTO|GLP - Galp|7.000|56|50|€0,261/charge |€0,12/min ||CABLE|Disponível|
-|PRT-00186-02|Porto|PRAÇA DOUTOR FRANCISCO SÁ CARNEIRO, PORTO|GLP - Galp|7.000|56|50|€0,261/charge |€0,12/min ||CABLE|Em uso|
-|VNG-00072-01|Vila Nova de Gaia|Área de Serviço de V. N. de Gaia, A1 km 295,7|EDP - EDP Comercial|7.027|35|120|€0,297/charge |€0,08/kWh |€0,11/min |CABLE|Disponível|
-|VNG-00073-01|Vila Nova de Gaia|Área de Serviço de V. N. de Gaia, A1 km 295,7|EDP - EDP Comercial|7.027|35|120|€0,297/charge |€0,08/kWh |€0,11/min |CABLE|Disponível|
+|PRT-00186-02|Porto|PRAÇA DOUTOR FRANCISCO SÁ CARNEIRO, PORTO|GLP - Galp|7.000|56|50|€0,261/charge |€0,12/min ||CABLE|Disponível|
 |GDM-00019-01|Gondomar|Rua Nossa Srª do Amparo, nº 1033|EDP - EDP Comercial|7.029|46|60|€0,297/charge |€0,07/kWh |€0,09/min |CABLE|Disponível|
 |MAI-00028-01|Maia|Via Periférica c/Av. Sts de Leite, L de Cat.|EDP - EDP Comercial|7.029|46|60|€0,297/charge |€0,07/kWh |€0,09/min |CABLE|Disponível|
-|VLG-00011-02|Valongo|Av. José Joaquim Ribeiro Teles 280|PRI - Prio|7.320|56|50|€0,3/charge |€0,125/min ||CABLE|Disponível|
+|VLG-00011-01|Valongo|Av. José Joaquim Ribeiro Teles 280|PRI - Prio|7.320|56|50|€0,3/charge |€0,125/min ||CABLE|Disponível|
 |VNG-00034-1|Vila Nova de Gaia|Rua da Baiza|PRI - Prio|7.320|56|50|€0,3/charge |€0,125/min ||CABLE|Disponível|
-|VNG-00043-2|Vila Nova de Gaia|Avenida Poeta Eugénio de Andrade|PRI - Prio|7.320|56|50|€0,3/charge |€0,125/min ||CABLE|Disponível|
-|MAI-00025-04|Maia|R. Central de Mandim|HRZ - Power dot|7.400|35|100|€0,3/charge |€0,1/kWh |€0,1/min |CABLE|Em uso|
-|MAI-00025-03|Maia|R. Central de Mandim|HRZ - Power dot|7.400|35|100|€0,3/charge |€0,1/kWh |€0,1/min |CABLE|Disponível|
-|MAI-00025-01|Maia|R. Central de Mandim|HRZ - Power dot|7.400|35|150|€0,3/charge |€0,1/kWh |€0,1/min |CABLE|Em uso|
-|MAI-00025-02|Maia|R. Central de Mandim|HRZ - Power dot|7.400|35|150|€0,3/charge |€0,1/kWh |€0,1/min |CABLE|Em uso|
-|MAI-00025-06|Maia|R. Central de Mandim|HRZ - Power dot|7.400|35|100|€0,3/charge |€0,1/kWh |€0,1/min |SOCKET|Disponível|
-|MAI-00025-08|Maia|R. Central de Mandim|HRZ - Power dot|7.400|35|100|€0,3/charge |€0,1/kWh |€0,1/min |SOCKET|Disponível|
+|VNG-00043-1|Vila Nova de Gaia|Avenida Poeta Eugénio de Andrade|PRI - Prio|7.320|56|50|€0,3/charge |€0,125/min ||CABLE|Disponível|
+|PRT-00179-01|Porto|Burger King Av. Boavista - Av. Boavista 2600|EDP - EDP Comercial|7.361|35|120|€0,2608/charge |€0,1/kWh |€0,1/min |CABLE|Disponível|
+|MAI-00025-04|Maia|R. Central de Mandim|HRZ - Power Dot|7.400|35|100|€0,3/charge |€0,1/kWh |€0,1/min |CABLE|Disponível|
+|MAI-00025-03|Maia|R. Central de Mandim|HRZ - Power Dot|7.400|35|100|€0,3/charge |€0,1/kWh |€0,1/min |CABLE|Disponível|
+|MAI-00025-01|Maia|R. Central de Mandim|HRZ - Power Dot|7.400|35|150|€0,3/charge |€0,1/kWh |€0,1/min |CABLE|Disponível|
+|MAI-00025-02|Maia|R. Central de Mandim|HRZ - Power Dot|7.400|35|150|€0,3/charge |€0,1/kWh |€0,1/min |CABLE|Em uso|
+|MAI-00025-06|Maia|R. Central de Mandim|HRZ - Power Dot|7.400|35|100|€0,3/charge |€0,1/kWh |€0,1/min |SOCKET|Disponível|
+|MAI-00025-08|Maia|R. Central de Mandim|HRZ - Power Dot|7.400|35|100|€0,3/charge |€0,1/kWh |€0,1/min |SOCKET|Disponível|
+|VLG-00004-01|Valongo|Rua da Argila|PRI - Prio|7.601|56|50|€0,3/charge |€0,13/min ||CABLE|Disponível|
+|MAI-00012-02|Maia|Estrada Nacional 14|HLX - Helexia|8.116|56|50|€2,5/charge |€0/min |€0,1/min após 25min |CABLE|Em uso|
 |MAI-00013-02|Maia|Estrada Nacional 14|HLX - Helexia|8.116|56|50|€2,5/charge |€0/min |€0,1/min após 25min |CABLE|Disponível|
+|VNG-00072-01|Vila Nova de Gaia|Área de Serviço de V. N. de Gaia, A1 km 295,7|EDP - EDP Comercial|8.761|35|120|€0,2608/charge |€0,1/kWh |€0,14/min |CABLE|Disponível|
+|VNG-00073-01|Vila Nova de Gaia|Área de Serviço de V. N. de Gaia, A1 km 295,7|EDP - EDP Comercial|8.761|35|120|€0,2608/charge |€0,1/kWh |€0,14/min |CABLE|Disponível|
+|MTS-00082-02|Matosinhos|R. Dr. Manuel Rodrigues de Sousa 92|KLC - Atlante|8.816|35|150|€0,2964/charge |€0,12/kWh |€0,12/min |CABLE|Disponível|
 |MTS-00104-02|Matosinhos|Rua de Goa, 2|IBD - Iberdrola|9.010|35|180|€0,26/charge |€0,25/min ||CABLE|Disponível|
 |PRT-00139-1|Porto|Alameda Basílio Teles, 29|GRC - Evaz|9.046|35|180|€0,2964/charge |€0,25/min ||CABLE|Disponível|
 |VNG-00066-02|Vila Nova de Gaia|A1, km 295,7 Sentido Sul/Norte|EDP - EDP Comercial|9.147|35|160|€0,297/charge |€0,1/kWh |€0,15/min |CABLE|Disponível|
-|VNG-00067-02|Vila Nova de Gaia|A1, km 295,7 Sentido Norte/Sul|EDP - EDP Comercial|9.147|35|160|€0,297/charge |€0,1/kWh |€0,15/min |CABLE|Disponível|
-|MTS-00051-01|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power dot|10.000|35|120|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|MTS-00051-02|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power dot|10.000|35|120|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|VLG-00024-01|Valongo|R. TristÃ£o Vaz Teixeira 260|HRZ - Power dot|10.000|35|120|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|VLG-00024-02|Valongo|R. TristÃ£o Vaz Teixeira 260|HRZ - Power dot|10.000|35|120|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|MTS-00051-04|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|MTS-00051-07|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |SOCKET|Disponível|
-|MTS-00051-06|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |SOCKET|Em uso|
-|MTS-00051-05|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|MTS-00051-08|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |SOCKET|Disponível|
-|MTS-00051-03|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|VLG-00024-05|Valongo|R. TristÃ£o Vaz Teixeira 260|HRZ - Power dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|VLG-00024-03|Valongo|R. TristÃ£o Vaz Teixeira 260|HRZ - Power dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|VLG-00024-04|Valongo|R. TristÃ£o Vaz Teixeira 260|HRZ - Power dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
-|MTS-00053-02|Matosinhos|Av. Dr. Óscar Lopes|GLP - Galp|12.861|46|60|€0,2608/charge |€0,35/kWh |€0/min |CABLE|Em uso|
+|MTS-00051-04|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power Dot|10.000|35|100|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|MTS-00051-01|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power Dot|10.000|35|150|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|MTS-00051-02|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power Dot|10.000|35|150|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Em uso|
+|MTS-00051-06|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power Dot|10.000|35|100|€0,3/charge |€0,25/kWh |€0,02/min |SOCKET|Disponível|
+|MTS-00051-08|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power Dot|10.000|35|100|€0,3/charge |€0,25/kWh |€0,02/min |SOCKET|Disponível|
+|VLG-00024-05|Valongo|R. Tristão Vaz Teixeira 260|HRZ - Power Dot|10.000|35|150|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|VLG-00024-06|Valongo|R. Tristão Vaz Teixeira 260|HRZ - Power Dot|10.000|35|150|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|VLG-00024-02|Valongo|R. Tristão Vaz Teixeira 260|HRZ - Power Dot|10.000|35|100|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|VLG-00024-03|Valongo|R. Tristão Vaz Teixeira 260|HRZ - Power Dot|10.000|35|150|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|VLG-00024-04|Valongo|R. Tristão Vaz Teixeira 260|HRZ - Power Dot|10.000|35|150|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|VLG-00029-01|Valongo|R. Ciclo Preparatório nº 200|HRZ - Power Dot|10.000|35|150|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|VLG-00029-02|Valongo|R. Ciclo Preparatório nº 200|HRZ - Power Dot|10.000|35|150|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|VLG-00029-04|Valongo|R. Ciclo Preparatório nº 200|HRZ - Power Dot|10.000|35|100|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|MTS-00051-03|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power Dot|10.002|35|80|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|MTS-00051-05|Matosinhos|Avenida Arqº Fernando Távora 1343|HRZ - Power Dot|10.236|46|60|€0,3/charge |€0,25/kWh |€0,02/min |CABLE|Disponível|
+|VNG-00067-02|Vila Nova de Gaia|A1, km 295,7 Sentido Norte/Sul|EDP - EDP Comercial|12.661|35|160|€0,2608/charge |€0,15/kWh |€0,2/min |CABLE|Disponível|
+|MTS-00053-02|Matosinhos|Av. Dr. Óscar Lopes|GLP - Galp|12.861|46|60|€0,2608/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |GDM-00031-02|Gondomar|R. Pedro Álvares Cabral|GLG - Galpgeste|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |GDM-00031-01|Gondomar|R. Pedro Álvares Cabral|GLG - Galpgeste|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
+|MAI-00034-02|Maia|R. Conselheiro Luís Magalhães|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
+|MAI-00034-01|Maia|R. Conselheiro Luís Magalhães|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |MAI-00036-01|Maia|R. Dom Afonso Henriques 3965|GLG - Galpgeste|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |MAI-00036-02|Maia|R. Dom Afonso Henriques 3965|GLG - Galpgeste|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |MTS-00047-02|Matosinhos|Rua de Brito Capel 951, 4450-077 Matosinhos|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
-|MTS-00048-02|Matosinhos|Rua de Brito Capel 951, 4450-077 Matosinhos|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Em uso|
+|MTS-00048-02|Matosinhos|Rua de Brito Capel 951, 4450-077 Matosinhos|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
+|MTS-00092-02|Matosinhos|A4 IP4 Km3|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
+|MTS-00093-02|Matosinhos|A4 IP4 Km3|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |MTS-00094-02|Matosinhos|ESTRADA EXT. DA CIRCUNVALAÇÃO|GLG - Galpgeste|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |MTS-00111-01|Matosinhos|R. Belchior Robles, 4450-626 Leça da Palmeira|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |MTS-00111-02|Matosinhos|R. Belchior Robles, 4450-626 Leça da Palmeira|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
-|PRT-00136-02|Porto|Rua da Pasteleira 219, 4150-586 Porto|MLT - Mobiletric|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
-|PRT-00137-01|Porto|Rua da Pasteleira 219, 4150-586 Porto|MLT - Mobiletric|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
+|PRT-00136-02|Porto|Rua da Pasteleira 219, 4150-586 Porto|MLT - Mobiletric|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Em uso|
+|PRT-00137-01|Porto|Rua da Pasteleira 219, 4150-586 Porto|MLT - Mobiletric|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Em uso|
 |PRT-00137-02|Porto|Rua da Pasteleira 219, 4150-586 Porto|MLT - Mobiletric|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |PRT-00138-01|Porto|Rua da Pasteleira 219, 4150-586 Porto|MLT - Mobiletric|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |PRT-00138-02|Porto|Rua da Pasteleira 219, 4150-586 Porto|MLT - Mobiletric|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |VLG-00017-02|Valongo|Av. dos Descobrimentos 34|GLG - Galpgeste|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |VNG-00082-02|Vila Nova de Gaia|Lado Shopping, Via 8|GLG - Galpgeste|13.100|35|120|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
-|VNG-00115-01|Vila Nova de Gaia|R. Rechousa 706-710, 4410-222 Canelas|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
-|VNG-00115-02|Vila Nova de Gaia|R. Rechousa 706-710, 4410-222 Canelas|GLG - Galpgeste|13.100|35|90|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |MTS-00074-02|Matosinhos|Av. Dr. Óscar Lopes|GLP - Galp|13.100|46|60|€0,5/charge |€0,35/kWh |€0/min |CABLE|Em uso|
 |MTS-00094-01|Matosinhos|ESTRADA EXT. DA CIRCUNVALAÇÃO|GLG - Galpgeste|13.100|46|60|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
 |VNG-00081-02|Vila Nova de Gaia|Rua Escola Central, 910|GLP - Galp|13.100|46|60|€0,5/charge |€0,35/kWh |€0/min |CABLE|Disponível|
