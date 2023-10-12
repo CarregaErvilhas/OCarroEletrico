@@ -139,7 +139,7 @@ Neste exemplo, com a TAR no momento em que escrevo isto a -1,79€, o total dest
 Se a viatura tiver um consumo médio de `17kW / 100km`, os 27kW de energia que colocámos na bateria permitiriam percorrer 159km.  
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
-**Atualmente, a minha recomendação passa por utilizar a Miio (quando o preço está muito baixo), a ViaVerde ou a Prio (porque têm dos melhores preços). E, de preferência, os carregadores CCS2 do LIDL.**
+**Atualmente, a minha recomendação passa por utilizar a Miio (quando o preço está muito baixo), a ViaVerde ou a Prio (porque têm dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
 
 ###### Postos ordenados por custo
 
@@ -199,6 +199,8 @@ A grande vantagem desta solução é que os cartões ou Apps que usas na rede p�
 
 Como não há OPC (o explorador do posto), o único custo é mesmo a energia.
 E como é para veículos elétricos, não há taxa audiovisual, etc.
+
+**Recomendo a utilização dos CEME ViaVerde ou  Prio (porque têm dos melhores preços). Se optares pela Prio, contactar o suporte para escolher o tarifário ao kWh em vez do ao minuto, pois queres pagar pelos kWs que colocastes na bateria, e não pelos minutos que deixaste o carro ligado ao carregador (cenário comum, de um dia para o outro).**
 
 
 ## Condução
