@@ -84,7 +84,7 @@ Alguns contratos envolvem papéis assinados, outros podem ser feitos totalmente 
 Uma lista dos comercializadores disponíveis pode ser encontrada em:
 [https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores](https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores)
 
-Alguns comercializadores como a EDP e Galp oferecem descontos quando o contrato para carregamento elétrico é conjugado com o tarifário residencial.
+Alguns comercializadores como a EDP e Galp oferecem descontos quando o contrato para carregamento elétrico é conjugado com o tarifário residencial/comercial.
 
 Exemplos de Apps são a [https://www.miio.pt/](https://www.miio.pt/) e [https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
 
@@ -146,6 +146,11 @@ Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 Uma lista de Postos ordenados por custo do OPC está disponível em:
 [Postos](https://github.com/FernandoMiguel/OCarroEletrico/tree/main/Postos)
 
+###### CEME ordenados por custo
+
+Uma lista de Fornecedores de Energia ordenados por custo do CEME está disponível em:
+[Comparador CEME](https://docs.google.com/spreadsheets/d/1YzabINspFlcLfsF48um8UQ2wHJeYFYIc)
+
 
 ### Carregar em casa
 
@@ -200,7 +205,16 @@ A grande vantagem desta solução é que os cartões ou Apps que usas na rede p�
 Como não há OPC (o explorador do posto), o único custo é mesmo a energia.
 E como é para veículos elétricos, não há taxa audiovisual, etc.
 
-**Recomendo a utilização dos CEME ViaVerde ou  Prio (porque têm dos melhores preços). Se optares pela Prio, contactar o suporte para escolher o tarifário ao kWh em vez do ao minuto, pois queres pagar pelos kWs que colocastes na bateria, e não pelos minutos que deixaste o carro ligado ao carregador (cenário comum, de um dia para o outro).**
+**Recomendo a utilização dos CEME listados abaixo, por uma ordem de custo. Se optares pela Prio, contactar o suporte para escolher o tarifário ao kWh em vez do ao minuto, pois queres pagar pelos kWs que colocastes na bateria, e não pelos minutos que deixaste o carro ligado ao carregador (cenário comum, de um dia para o outro).**
+LUZiGÁS Tarifário Indexado Cliente  
+LUZiGÁS Tarifário Indexado Não Clientes  
+ACP Electric by EVIO - sócio ACP  
+EVIO  
+Prio Electric (EUR/kWh)  
+ViaVerde Electric  
+Galp Electric Energia Verde  
+Cartão EDP Charge  
+miio  
 
 
 ## Condução
@@ -216,6 +230,7 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 * [https://ev-database.org/](https://ev-database.org/)
 * [FAQ MOBI.E](https://www.mobie.pt/pt/redemobie/faq)
 * [Estrutura Tarifária MOBI.E](https://www.mobie.pt/pt/redemobie/estrutura-tarifaria)
+* [Simulador de CEME da ERSE](https://www.erse.pt/simuladores/mobilidade-eletrica/lista-de-ofertas-comerciais-de-mobilidade-eletrica/)
 * [UVE – Associação de Utilizadores de Veículos Elétricos](https://www.uve.pt)
 * [UVE – como carregar um veiculo elétrico](https://www.uve.pt/page/como-carregar-um-veiculo-eletrico/)
 * [Encontrar Posto](https://www.mobie.pt/redemobie/encontrar-posto)
