@@ -98,10 +98,10 @@ Ok, isto não vai ser fácil de explicar... vou tentar, mas mesmo que colocasse 
 
 A um nível muito alto, o preço do carregamento na rede de postos públicos ligados à MOBI.E é composto por 4 grandes partes:
 
-* CEME, o comercializador de energia (pensa em EDP ou Galp). É quem te vende a energia que carrega o teu carro. Normalmente há um custo de ativação (~0,07€) e depois o custo por kW de energia consumida. Em alguns casos, pode ser ao minuto.
+* CEME, o comercializador de energia (pensa em EDP ou Galp). É quem te vende a energia que carrega o teu carro. Normalmente há um custo de ativação (~0,07€) e depois o custo por kWh de energia consumida. Em alguns casos, pode ser ao minuto.
 
 * OPC, quem monta e explora o posto que vais utilizar. Normalmente há um custo de ativação (~0,30€) e depois o custo ao minuto pelo tempo que se está a utilizar o posto, mesmo que já tenhas acabado de carregar, pois estás a ocupar o lugar que outra pessoa podia precisar de usar.  
-Em alguns casos, pode ser cobrado em kW da energia fornecida. Em casos extremos, pode ser cobrado ambos ao minuto e kW (uma parte é para a entidade que detém o local físico onde é montado o posto).
+Em alguns casos, pode ser cobrado em kWh da energia fornecida. Em casos extremos, pode ser cobrado ambos ao minuto e kWh (uma parte é para a entidade que detém o local físico onde é montado o posto).
 
 * Tarifa EGME, Entidade Gestora da rede de Mobilidade Elétrica, também conhecida como MOBI.E. Uma taxa que permite cobrir os custos da sua atividade regulada, aplicada a CEMEs, OPCs e DPCs. Coisas como o custo dos SIM cards para comunicação dos postos, etc. Este valor vem das parcelas de ativação dos dois itens anteriores.
 
@@ -109,7 +109,7 @@ Em alguns casos, pode ser cobrado em kW da energia fornecida. Em casos extremos,
 
 Parece complicado (e caro), não é? Vamos a um exemplo:
 
-A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kWh ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa) e 0,07€/kW e 0,512€/kW (da IONITY, os postos mais caros do país, mas capazes de 350kWh).  
+A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kWh ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350kWh).  
 A isto junta-se normalmente ~0,30€ por sessão de carregamento.
 
 A EDP e o LIDL são quem mais postos explora no país. A EDP normalmente cobra 0,09€/min e o LIDL 0,08€/min, tornando-os os mais comuns e geralmente mais económicos. Acresce IVA.
@@ -125,21 +125,21 @@ Mas em 2023, com um maior envolvimento do Estado, ao ter tarifas de acesso às r
 Assim, para uma viatura com uma bateria com capacidade usável de 45kW, que tem 20% de bateria restante quando chega ao posto de carregamento e que se pretende carregar até aos 80%, quanto vai custar?  
 Ora, `45 * (80-20)% = 27kW` de energia necessária. Se o teu fornecedor for a ViaVerde, serão cobrados 0,1616€/kW.  
 `27*0,1616 = ~4,37€`  
-Num carregador da EDP com 50kWh, seriam precisos 33 minutos, cobrados a 0,09€/min.  
+Num carregador da EDP com 50kWh, seriam precisos 33 minutos, cobrados a 0,11€/min.  
 `33*0,09 = 2,97€`.
 
 Adiciona a isso `0,035 + 0,297€` de ativação/EGME, IEC e IVA.  
 Depois, há a TAR, que pode ser aditiva ou negativa.
 
-Enquanto isso, a aplicação da Miio é normalmente utilizada por mim para simular os custos, o que é mais fácil.  
+Enquanto isso, a aplicação da Miio é normalmente utilizada por muitos utilizadores para simular os custos, o que é mais fácil.  
 A Miio não só te informa quanto pagarias usando o serviço deles, como também permite adicionar tarifários da concorrência para que possas comparar diretamente.  
 
 Neste exemplo, com a TAR no momento em que escrevo isto a -1,79€, o total deste carregamento seria, de acordo com a aplicação da Miio, 8,19€.  
 
-Se a viatura tiver um consumo médio de `17kW / 100km`, os 27kW de energia que colocámos na bateria permitiriam percorrer 159km.  
+Se a viatura tiver um consumo médio de `17kWh / 100km`, os 27kWh de energia que colocámos na bateria permitiriam percorrer 159km.  
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
-**Atualmente, a minha recomendação passa por utilizar a Miio (quando o preço está muito baixo), a ViaVerde ou a Prio (porque têm dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
+**Atualmente, a minha recomendação passa por utilizar a ACP (ou a Luzigas quando o preço do OMIE está muito baixo), a ViaVerde ou a Prio (porque têm dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
 
 ###### Postos ordenados por custo
 
@@ -149,7 +149,7 @@ Uma lista de Postos ordenados por custo do OPC está disponível em:
 ###### CEME ordenados por custo
 
 Uma lista de Fornecedores de Energia ordenados por custo do CEME está disponível em:
-[Comparador CEME](https://docs.google.com/spreadsheets/d/1YzabINspFlcLfsF48um8UQ2wHJeYFYIc)
+[Comparador CEME](https://docs.google.com/spreadsheets/d/1WMaiaShTwp1-QzWXi-SlcB3uTigp5nfYO-v3veCcn84/)
 
 
 ### Carregar em casa
@@ -239,3 +239,4 @@ miio
 * [miio](https://miioelectric.com/)
 * [ViaVerde Electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
 * [charge2go](https://charge2go.pt/) ou [ecochoice](https://www.ecochoice.pt/) empresa parceira com ViaVerde e também com a [kmlowcost (KLC)](https://www.kmlowcost.com/)
+* [Comunidade de Utilizadores da Rede Pública de Carregamento](https://www.facebook.com/groups/utilizadoresredecarregamentopt/)
