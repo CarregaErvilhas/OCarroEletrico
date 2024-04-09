@@ -50,13 +50,13 @@ Já a rede pública é constituída por todos os carregadores que podem ser usad
 
 Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC (corrente alternada, similar à que alimenta as nossas casas) e DC (corrente contínua, como as que existem em pilhas).
 
-Tecnicamente designados por Postos de Carregamento Normal (PCN), têm potência entre os 2.3kWh e os 22kWh, alimentados em AC, e têm uma ficha designada como tipo 2 ou Mennekes.
+Tecnicamente designados por Postos de Carregamento Normal (PCN), têm potência entre os 2.3kW e os 22kW, alimentados em AC, e têm uma ficha designada como tipo 2 ou Mennekes.
 
-Seguem-lhes os Postos de Carregamento Rápido (PCR), com potências até 50kWh. Normalmente em DC, mas é possível encontrar alguns raros em AC.  
+Seguem-lhes os Postos de Carregamento Rápido (PCR), com potências até 50kW. Normalmente em DC, mas é possível encontrar alguns raros em AC.  
 A ficha que ganhou como padrão é a CCS2 / CCS Combo.  
 Existem também as CHAdeMO e Mennekes (em AC).
 
-Por último, em termos de potência disponível, existem os Postos de Carregamento Super-Rápido (PCSR) até 160 kWh e Ultrarrápido (PCUR) até 350kWh.
+Por último, em termos de potência disponível, existem os Postos de Carregamento Super-Rápido (PCSR) até 160 kW e Ultrarrápido (PCUR) até 350kW.
 
 #### MOBI.E
 
@@ -109,23 +109,23 @@ Em alguns casos, pode ser cobrado em kWh da energia fornecida. Em casos extremos
 
 Parece complicado (e caro), não é? Vamos a um exemplo:
 
-A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kWh ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350kWh).  
+A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kW ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350kW).  
 A isto junta-se normalmente ~0,30€ por sessão de carregamento.
 
 A EDP e o LIDL são quem mais postos explora no país. A EDP normalmente cobra 0,09€/min e o LIDL 0,08€/min, tornando-os os mais comuns e geralmente mais económicos. Acresce IVA.
 
 Depois, temos a taxa CEME, que é aquilo que pagas ao teu operador elétrico.  
-A EDP, por exemplo, cobra um valor fixo de 0,27€/kW, enquanto a ViaVerde cobra 0,1616€/kW.
+A EDP, por exemplo, cobra um valor fixo de 0,27€/kWh, enquanto a ViaVerde cobra 0,1616€/kWh.
 
 Já a Miio tem um preço indexado ao valor de mercado, que varia ao longo do dia.  
 Até 2022, a Miio era o operador mais prático para todos, já que tudo era feito através da aplicação, e os preços eram bastante bons.  
 Em 2022, a oferta ficou bastante mais cara, situando-se entre os 0,22 e os 0,32€.  
-Mas em 2023, com um maior envolvimento do Estado, ao ter tarifas de acesso às redes de energia elétrica (TAR) **negativas**, a Miio voltou a ter uma oferta que deve ser considerada, havendo alturas do dia em que o custo é inferior a 0,01€/kW
+Mas em 2023, com um maior envolvimento do Estado, ao ter tarifas de acesso às redes de energia elétrica (TAR) **negativas**, a Miio voltou a ter uma oferta que deve ser considerada, havendo alturas do dia em que o custo é inferior a 0,01€/kWh.
 
-Assim, para uma viatura com uma bateria com capacidade usável de 45kW, que tem 20% de bateria restante quando chega ao posto de carregamento e que se pretende carregar até aos 80%, quanto vai custar?  
-Ora, `45 * (80-20)% = 27kW` de energia necessária. Se o teu fornecedor for a ViaVerde, serão cobrados 0,1616€/kW.  
+Assim, para uma viatura com uma bateria com capacidade usável de 45kWh, que tem 20% de bateria restante quando chega ao posto de carregamento e que se pretende carregar até aos 80%, quanto vai custar?  
+Ora, `45 * (80-20)% = 27kWh` de energia necessária. Se o teu fornecedor for a ViaVerde, serão cobrados 0,1616€/kWh.  
 `27*0,1616 = ~4,37€`  
-Num carregador da EDP com 50kWh, seriam precisos 33 minutos, cobrados a 0,11€/min.  
+Num carregador da EDP com 50kW, seriam precisos 33 minutos, cobrados a 0,11€/min.  
 `33*0,09 = 2,97€`.
 
 Adiciona a isso `0,035 + 0,297€` de ativação/EGME, IEC e IVA.  
@@ -205,7 +205,7 @@ A grande vantagem desta solução é que os cartões ou Apps que usas na rede p�
 Como não há OPC (o explorador do posto), o único custo é mesmo a energia.
 E como é para veículos elétricos, não há taxa audiovisual, etc.
 
-**Recomendo a utilização dos CEME listados abaixo, por uma ordem de custo. Se optares pela Prio, contactar o suporte para escolher o tarifário ao kWh em vez do ao minuto, pois queres pagar pelos kWs que colocastes na bateria, e não pelos minutos que deixaste o carro ligado ao carregador (cenário comum, de um dia para o outro).**
+**Recomendo a utilização dos CEME listados abaixo, por uma ordem de custo. Se optares pela Prio, contactar o suporte para escolher o tarifário ao kWh em vez do ao minuto, pois queres pagar pelos kWh's que colocastes na bateria, e não pelos minutos que deixaste o carro ligado ao carregador (cenário comum, de um dia para o outro).**
 LUZiGÁS Tarifário Indexado Cliente  
 LUZiGÁS Tarifário Indexado Não Clientes  
 ACP Electric by EVIO - sócio ACP  
