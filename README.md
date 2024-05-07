@@ -94,7 +94,7 @@ Exemplos de Apps são a [https://www.miio.pt/](https://www.miio.pt/) e [https://
 
 ##### Preços de carregamento MOBI.E
 
-Ok, isto não vai ser fácil de explicar... vou tentar, mas mesmo que colocasse aqui os [detalhes técnicos](https://www.mobie.pt/pt/redemobie/estrutura-tarifaria), a maioria de vocês não conseguiria fazer as contas.
+Recomendo começar por ler os [detalhes da estrutura tarifária da MOBI.E](https://www.mobie.pt/pt/redemobie/estrutura-tarifaria) .
 
 A um nível muito alto, o preço do carregamento na rede de postos públicos ligados à MOBI.E é composto por 4 grandes partes:
 
