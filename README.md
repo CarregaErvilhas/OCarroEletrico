@@ -16,15 +16,13 @@
             - [Ligação ao quadro elétrico do apartamento](#liga%C3%A7%C3%A3o-ao-quadro-el%C3%A9trico-do-apartamento)
             - [Ligação aos serviços comuns do prédio](#liga%C3%A7%C3%A3o-aos-servi%C3%A7os-comuns-do-pr%C3%A9dio)
             - [Ligação à MOBI.E](#liga%C3%A7%C3%A3o-%C3%A0-mobie)
-    - [Condução](#condu%C3%A7%C3%A3o)
-        - [Dístico Azul](#d%C3%ADstico-azul)
     - [Links Úteis](#links-%C3%BAteis)
 
 <!-- /TOC -->
 
 Parabéns pela compra do teu primeiro carro elétrico! Agora que entraste no mundo da mobilidade elétrica, há algumas coisas que precisas saber para aproveitar ao máximo o teu novo veículo.
 
-Primeiro, vamos falar sobre a bateria. As baterias dos carros elétricos podem durar muito tempo, mas é importante que tu as mantenhas carregadas. Certifica-te de que o carro esteja sempre conectado a uma fonte de energia quando não estiver em uso e de que a bateria não fique abaixo de 20% de carga. Além disso, evita carregar a bateria até 100% com frequência, pois isso pode diminuir a vida útil da bateria. Mantendo estes cuidados simples, garantirás que a tua bateria dure o máximo possível.
+Primeiro, vamos falar sobre a bateria. As baterias dos carros elétricos podem durar muito tempo, mas é importante que tu as mantenhas carregadas. Certifica-te de que o carro esteja sempre conectado a uma fonte de energia quando não estiver em uso e de que a bateria não fique abaixo de 20% de carga. Além disso, evita carregar a bateria até 100% com frequência, pois isso pode diminuir a vida útil da bateria das de química NCA e NMC. Excepto as de LFP que o devem ser a 100% regularmente para calibração do estado de carga correto. Mantendo estes cuidados simples, garantirás que a tua bateria dure o máximo possível.
 
 Outra coisa importante é saber onde carregar o teu carro elétrico. Existem muitos pontos de carregamento disponíveis, desde estações públicas até carregadores residenciais. Certifica-te de ter os aplicativos necessários para localizar e reservar um ponto de carregamento e planeia as tuas viagens com antecedência, levando em consideração a disponibilidade de carregadores ao longo do caminho.
 
@@ -46,21 +44,22 @@ O mesmo fenómeno apresenta uma limitação: quando a bateria está completament
 
 ### Rede Pública
 
-Já a rede pública é constituída por todos os carregadores que podem ser usados, mas não pertencem ao condutor. Por exemplo, a rede [*MOBI.E*](#mobie), *destination chargers*, redes de supermercados ou shoppings, Tesla *Superchargers*, etc.
+A rede pública é constituída por todos os carregadores que podem ser usados, de acesso público e não restrito, mas não pertencem ao condutor. Por exemplo, a rede [*MOBI.E*](#mobie), *destination chargers*, redes de supermercados ou shoppings, Tesla *Superchargers*, etc.
 
-Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC (corrente alternada, similar à que alimenta as nossas casas) e DC (corrente contínua, como as que existem em pilhas).
+Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC (corrente alternada, como alimenta as nossas casas) e DC (corrente contínua, tal como nas baterias).
 
-Tecnicamente designados por Postos de Carregamento Normal (PCN), têm potência entre os 2.3kW e os 22kW, alimentados em AC, e têm uma ficha designada como tipo 2 ou Mennekes.
+Poderemos encontrar postos de carregamento públicos, com diferentes potências disponíveis e formatos de fichas:
 
-Seguem-lhes os Postos de Carregamento Rápido (PCR), com potências até 50kW. Normalmente em DC, mas é possível encontrar alguns raros em AC.  
-A ficha que ganhou como padrão é a CCS2 / CCS Combo.  
-Existem também as CHAdeMO e Mennekes (em AC).
+- PCN (Postos de Carregamento Normal): disponibilizam potência desde 2.3 kW e os 22 kW, em corrente alternada (AC). Normalmente, em fichas/tomadas de ligação do tipo Mennekes e/ou CHAdeMO.
+- PCR (Postos de Carregamento Rápido): habitualmente permitem potência desde os 30 kW até aos 50 kW, em corrente contínua, em fichas do tipo CCS2 (comummente) ou CHAdeMO (raramente).
+- PCSR (Postos de Carregamento Superrápido): permitem potência desde os 50kW até aos 150 kW, em fichas do tipo CCS2 (comummente) ou CHAdeMO (raramente).
+- PCUR (Postos de Carregamento Superrápido): permitem potência desde os 150kW até aos 350 kW, em fichas do tipo CCS2 (comummente).
 
-Por último, em termos de potência disponível, existem os Postos de Carregamento Super-Rápido (PCSR) até 160 kW e Ultrarrápido (PCUR) até 350kW.
+Nota: nos do tipo PCR, PCSR e PCUR, é também comum encontrar fichas do tipo Menekes (AC, com potência até 50 kW).
 
 #### MOBI.E
 
-Em Portugal, ao contrário do resto da Europa, a rede pública de carregadores é gerida por uma entidade designada MOBI.E [https://www.mobie.pt/](https://www.mobie.pt/). Pensa nela como o equivalente da SIBS a gerir a rede de multibancos (ATMs).
+Em Portugal, por opção do legislador, ao contrário do resto da Europa, a rede pública de carregadores é gerida por uma entidade designada MOBI.E [https://www.mobie.pt/](https://www.mobie.pt/). Pensa nela como o equivalente da SIBS a gerir a rede de multibancos (ATMs).
 
 Enquanto noutros países é comum cada rede ter o seu próprio explorador e precisar de uma forma de contrato com cada operador (seja cartão RFID, App, etc.), ou no melhor dos casos simplesmente aceitar cartão de crédito, cá qualquer carregador que esteja na via pública ou parques, terá que obrigatoriamente ser ligado à rede MOBI.E.
 
@@ -73,9 +72,9 @@ Retirado do site da MOBI.E
 ##### Como carregar na rede MOBI.E
 
 Para iniciar o carregamento num posto é preciso ter um contrato estabelecido com um CEME, um comercializador de energia.  
-Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless).  
-Em alternativa, pode ser usada uma App no telemóvel para o mesmo efeito.  
-Alguns contratos envolvem papéis assinados, outros podem ser feitos totalmente numa App em regime de pré-carregamento, cartão de crédito ou Débito Direto em pós-pagamento mensal.
+Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless), tag RFID ou através da App no telemóvel. Todos terão os mesmos efeitos.
+
+Alguns CEMEs requerem contratos físicos assinados, enquanto outros podem ser feitos totalmente numa App em regime de pré-carregamento, cartão de crédito ou Débito Direto em pós-pagamento mensal.
 
 > Importante
 >
@@ -84,7 +83,7 @@ Alguns contratos envolvem papéis assinados, outros podem ser feitos totalmente 
 Uma lista dos comercializadores disponíveis pode ser encontrada em:
 [https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores](https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores)
 
-Alguns comercializadores como a EDP e Galp oferecem descontos quando o contrato para carregamento elétrico é conjugado com o tarifário residencial/comercial.
+Alguns comercializadores, como a EDP, Galp, LuziGas, Iberdrola, oferecem descontos quando o contrato para carregamento elétrico é conjugado com um outro contrato residencial/comercial.
 
 Exemplos de Apps são a [https://www.miio.pt/](https://www.miio.pt/) e [https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
 
@@ -110,17 +109,12 @@ Em alguns casos, pode ser cobrado em kWh da energia fornecida. Em casos extremos
 Parece complicado (e caro), não é? Vamos a um exemplo:
 
 A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kW ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350kW).  
-A isto junta-se normalmente ~0,30€ por sessão de carregamento.
+A isto junta-se normalmente ~0,30€ (Acresce IVA) por sessão de carregamento.
 
 A EDP e o LIDL são quem mais postos explora no país. A EDP normalmente cobra 0,09€/min e o LIDL 0,08€/min, tornando-os os mais comuns e geralmente mais económicos. Acresce IVA.
 
-Depois, temos a taxa CEME, que é aquilo que pagas ao teu operador elétrico.  
-A EDP, por exemplo, cobra um valor fixo de 0,27€/kWh, enquanto a ViaVerde cobra 0,1616€/kWh.
-
-Já a Miio tem um preço indexado ao valor de mercado, que varia ao longo do dia.  
-Até 2022, a Miio era o operador mais prático para todos, já que tudo era feito através da aplicação, e os preços eram bastante bons.  
-Em 2022, a oferta ficou bastante mais cara, situando-se entre os 0,22 e os 0,32€.  
-Mas em 2023, com um maior envolvimento do Estado, ao ter tarifas de acesso às redes de energia elétrica (TAR) **negativas**, a Miio voltou a ter uma oferta que deve ser considerada, havendo alturas do dia em que o custo é inferior a 0,01€/kWh.
+Depois, temos o custo CEME, que é aquilo que pagas ao teu operador elétrico pela energia elétrica que carregaste efetivamente.  
+A EDP, por exemplo, cobra um valor fixo de 0,27€/kWh, enquanto a ViaVerde cobra 0,1616€/kWh. (os preços variam frequentemente!) Já a Miio tem um preço indexado ao valor de mercado, que varia ao longo do dia.  
 
 Assim, para uma viatura com uma bateria com capacidade usável de 45kWh, que tem 20% de bateria restante quando chega ao posto de carregamento e que se pretende carregar até aos 80%, quanto vai custar?  
 Ora, `45 * (80-20)% = 27kWh` de energia necessária. Se o teu fornecedor for a ViaVerde, serão cobrados 0,1616€/kWh.  
@@ -129,17 +123,14 @@ Num carregador da EDP com 50kW, seriam precisos 33 minutos, cobrados a 0,11€/m
 `33*0,09 = 2,97€`.
 
 Adiciona a isso `0,035 + 0,297€` de ativação/EGME, IEC e IVA.  
-Depois, há a TAR, que pode ser aditiva ou negativa.
+Depois, há a TAR, que pode ser aditiva ou negativa, consoante publicação pelo regulador do setor energético, a ERSE.
 
-Enquanto isso, a aplicação da Miio é normalmente utilizada por muitos utilizadores para simular os custos, o que é mais fácil.  
-A Miio não só te informa quanto pagarias usando o serviço deles, como também permite adicionar tarifários da concorrência para que possas comparar diretamente.  
-
-Neste exemplo, com a TAR no momento em que escrevo isto a -1,79€, o total deste carregamento seria, de acordo com a aplicação da Miio, 8,19€.  
+Enquanto isso, a aplicação da Miio e o site wwww.comparaervilhas.pt são normalmente utilizados por muitos utilizadores para simular os custos totais, dando maior facilidade e transparência ao consumidor.
 
 Se a viatura tiver um consumo médio de `17kWh / 100km`, os 27kWh de energia que colocámos na bateria permitiriam percorrer 159km.  
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
-**Atualmente, a minha recomendação passa por utilizar a ACP (ou a Luzigas quando o preço do OMIE está muito baixo), a ViaVerde ou a Prio (porque têm dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
+**Atualmente, a minha recomendação passa por utilizar a ACP (ou a Luzigas quando o preço do OMIE está muito baixo), a ViaVerde, a High Green Power ou a Prio (porque têm dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
 
 ###### Postos ordenados por custo
 
@@ -188,7 +179,7 @@ Há algumas desvantagens, pois implica reportar a quem paga as contas do condom�
 
 Nestas situações, temos que instalar um contador, um quadro elétrico (com disjuntor, diferencial e corte de emergência), e uma tomada ou *wallbox*. Tirando o custo da *wallbox*, o custo desta instalação pode ascender a 300€, e ainda falta o custo do cabo elétrico desde o quadro dos serviços comuns até ao local onde fica a viatura.
 
-Aqui as opções de carga são 3,7kW (16A) ou 7,4kW em monofásico, e 11kW ou até 22kW (32A) para trifásico.
+Aqui as opções de carga são 3,7kW (16A) ou 7,4kW (32A) em monofásico, e 11kW (16A) ou até 22kW (32A) em trifásico.
 
 
 #### Ligação à MOBI.E
@@ -208,22 +199,14 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 **Recomendo a utilização dos CEME listados abaixo, por uma ordem de custo. Se optares pela Prio, contactar o suporte para escolher o tarifário ao kWh em vez do ao minuto, pois queres pagar pelos kWh's que colocastes na bateria, e não pelos minutos que deixaste o carro ligado ao carregador (cenário comum, de um dia para o outro).**
 LUZiGÁS Tarifário Indexado Cliente  
 LUZiGÁS Tarifário Indexado Não Clientes  
+High Green Power (indexado)
 ACP Electric by EVIO - sócio ACP  
 EVIO  
 Prio Electric (EUR/kWh)  
 ViaVerde Electric  
 Galp Electric Energia Verde  
 Cartão EDP Charge  
-miio  
-
-
-## Condução
-
-### Dístico Azul
-
-[https://www.uve.pt/page/distico-identificativo-ve-imt/](https://www.uve.pt/page/distico-identificativo-ve-imt/)
-
-
+Miio  
 
 ## Links Úteis
 
