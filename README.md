@@ -210,7 +210,7 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 | Via Verde Electric | Fixo | Sim |  |
 | Cartão EDP Charge | Fixo | Sim |  |
 | Continente Plug & Charge | Fixo |  | Sim |
-| Miio | Fixo | Sim |  |
+| Miio | Indexado | Sim |  |
 
 ## Links Úteis
 
