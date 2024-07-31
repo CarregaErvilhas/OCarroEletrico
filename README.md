@@ -200,17 +200,17 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 
 | CEME  | Tipo de tarifa | EUR/kWh | EUR/min |
 | ------------- | ------------- | ------------- | ------------- |
-| LUZiGÁS | Indexado (cliente) | :star:  |  |
-| LUZiGÁS | Indexado (não cliente) | :star:  |  |
-| High Green Power | Fixo | :star:  |  |
-| Tesla | Fixo | :star: |  |
-| ACP Electric by EVIO - sócio ACP | Fixo | :star:  |  |
-| EVIO | Fixo | :star:  |  |
-| Prio Electric | Fixo | :star:  | :star: |
-| Via Verde Electric | Fixo | :star: |  |
-| Cartão EDP Charge | Fixo | :star: |  |
-| Continente Plug & Charge | Fixo |  | :star: |
-| Miio | Fixo | :star: |  |
+| LUZiGÁS | Indexado (cliente) | Sim  |  |
+| LUZiGÁS | Indexado (não cliente) | Sim  |  |
+| High Green Power | Fixo | Sim  |  |
+| Tesla | Fixo | Sim |  |
+| ACP Electric by EVIO - sócio ACP | Fixo | Sim  |  |
+| EVIO | Fixo | Sim  |  |
+| Prio Electric | Fixo | Sim  | Sim |
+| Via Verde Electric | Fixo | Sim |  |
+| Cartão EDP Charge | Fixo | Sim |  |
+| Continente Plug & Charge | Fixo |  | Sim |
+| Miio | Fixo | Sim |  |
 
 ## Links Úteis
 
