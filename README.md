@@ -108,7 +108,7 @@ Em alguns casos, pode ser cobrado em kWh da energia fornecida. Em casos extremos
 
 Parece complicado (e caro), não é? Vamos a um exemplo:
 
-A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kW ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350 kW ou 400 kW).  
+A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kW ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power, em Lisboa), 0,085€/kWh (em postos da Repsol) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350 kW ou 400 kW).  
 A isto junta-se normalmente ~0,30€ (acresce IVA) por sessão de carregamento.
 
 A EDP e o LIDL são quem mais postos explora no país. A EDP normalmente cobra 0,09€/min e o LIDL 0,08€/min, tornando-os os mais comuns e geralmente mais económicos. Acresce IVA.
