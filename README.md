@@ -50,10 +50,10 @@ Os carregadores públicos dividem-se em duas grandes categorias: carregadores AC
 
 Poderemos encontrar postos de carregamento públicos, com diferentes potências disponíveis e formatos de fichas:
 
-- PCN (Postos de Carregamento Normal): disponibilizam potência desde 2.3 kW e os 22 kW, em corrente alternada (AC). Normalmente, em fichas/tomadas de ligação do tipo Mennekes e/ou CHAdeMO.
+- PCN (Postos de Carregamento Normal): disponibilizam potência desde 2.3 kW e os 43 kW, em corrente alternada (AC). Normalmente, em fichas/tomadas de ligação do tipo Mennekes e/ou CHAdeMO.
 - PCR (Postos de Carregamento Rápido): habitualmente permitem potência desde os 30 kW até aos 50 kW, em corrente contínua, em fichas do tipo CCS2 (comummente) ou CHAdeMO (raramente).
 - PCSR (Postos de Carregamento Superrápido): permitem potência desde os 50kW até aos 150 kW, em fichas do tipo CCS2 (comummente) ou CHAdeMO (raramente).
-- PCUR (Postos de Carregamento Superrápido): permitem potência desde os 150kW até aos 350 kW, em fichas do tipo CCS2 (comummente).
+- PCUR (Postos de Carregamento Superrápido): permitem potência desde os 150kW até aos 400 kW, em fichas do tipo CCS2 (comummente).
 
 Nota: nos do tipo PCR, PCSR e PCUR, é também comum encontrar fichas do tipo Menekes (AC, com potência até 50 kW).
 
@@ -72,7 +72,7 @@ Retirado do site da MOBI.E
 ##### Como carregar na rede MOBI.E
 
 Para iniciar o carregamento num posto é preciso ter um contrato estabelecido com um CEME, um comercializador de energia.  
-Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless), tag RFID ou através da App no telemóvel. Todos terão os mesmos efeitos.
+Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless), tag RFID ou através da App no telemóvel. Cada uma de essas 3 opções é válida e tendencialmente universal nos postos de carregamento.
 
 Alguns CEMEs requerem contratos físicos assinados, enquanto outros podem ser feitos totalmente numa App em regime de pré-carregamento, cartão de crédito ou Débito Direto em pós-pagamento mensal.
 
@@ -108,8 +108,8 @@ Em alguns casos, pode ser cobrado em kWh da energia fornecida. Em casos extremos
 
 Parece complicado (e caro), não é? Vamos a um exemplo:
 
-A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kW ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350kW).  
-A isto junta-se normalmente ~0,30€ (Acresce IVA) por sessão de carregamento.
+A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kW ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power em Lisboa) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350 kW ou 400 kW).  
+A isto junta-se normalmente ~0,30€ (acresce IVA) por sessão de carregamento.
 
 A EDP e o LIDL são quem mais postos explora no país. A EDP normalmente cobra 0,09€/min e o LIDL 0,08€/min, tornando-os os mais comuns e geralmente mais económicos. Acresce IVA.
 
