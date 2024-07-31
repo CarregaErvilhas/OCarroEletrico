@@ -196,17 +196,21 @@ A grande vantagem desta solução é que os cartões ou Apps que usas na rede p�
 Como não há OPC (o explorador do posto), o único custo é mesmo a energia.
 E como é para veículos elétricos, não há taxa audiovisual, etc.
 
-**Recomendo a utilização dos CEME listados abaixo, por uma ordem de custo. Se optares pela Prio, contactar o suporte para escolher o tarifário ao kWh em vez do ao minuto, pois queres pagar pelos kWh's que colocastes na bateria, e não pelos minutos que deixaste o carro ligado ao carregador (cenário comum, de um dia para o outro).**
-LUZiGÁS Tarifário Indexado Cliente  
-LUZiGÁS Tarifário Indexado Não Clientes  
-High Green Power (indexado)
-ACP Electric by EVIO - sócio ACP  
-EVIO  
-Prio Electric (EUR/kWh)  
-ViaVerde Electric  
-Galp Electric Energia Verde  
-Cartão EDP Charge  
-Miio  
+**Recomendo a utilização dos CEME listados abaixo, por uma ordem (normalmente) decrescente custo.**
+
+| CEME  | Tipo de tarifa | EUR/kWh | EUR/min |
+| ------------- | ------------- | ------------- | ------------- |
+| LUZiGÁS | Indexado (cliente) | :star:  |  |
+| LUZiGÁS | Indexado (não cliente) | :star:  |  |
+| High Green Power | Fixo | :star:  |  |
+| Tesla | Fixo | :star: |  |
+| ACP Electric by EVIO - sócio ACP | Fixo | :star:  |  |
+| EVIO | Fixo | :star:  |  |
+| Prio Electric | Fixo | :star:  | :star: |
+| Via Verde Electric | Fixo | :star: |  |
+| Cartão EDP Charge | Fixo | :star: |  |
+| Continente Plug & Charge | Fixo |  | :star: |
+| Miio | Fixo | :star: |  |
 
 ## Links Úteis
 
