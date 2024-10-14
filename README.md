@@ -225,6 +225,11 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 * [ViaVerde Electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
 * [charge2go](https://charge2go.pt/) ou [ecochoice](https://www.ecochoice.pt/) empresa parceira com ViaVerde
 * [Comunidade de Utilizadores da Rede Pública de Carregamento](https://www.facebook.com/groups/utilizadoresredecarregamentopt/)
+
+
+## Lista de Simuladores
+
+* [Lista de Simuladores](https://simuladores.OCarroEletrico.com/)
 * [App Carregar - Simulador Mobi.e](https://apps.apple.com/pt/app/carregar/id6448868818?l=en-GB)
 * [Compara Ervilhas - Simulador Mobi.e](https://comparaervilhas.pt/)
 * [Plan2Charge - Simulador VE](https://play.google.com/store/apps/details?id=com.generictec.plan2charge)
