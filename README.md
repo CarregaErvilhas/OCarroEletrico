@@ -71,14 +71,11 @@ Retirado do site da MOBI.E
 
 ##### Como carregar na rede MOBI.E
 
-Para iniciar o carregamento num posto é preciso ter um contrato estabelecido com um CEME, um comercializador de energia.  
-Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless), tag RFID ou através da App no telemóvel. Cada uma de essas 3 opções é válida e tendencialmente universal nos postos de carregamento.
+Para iniciar o carregamento num posto é normalmente preciso ter um contrato estabelecido com um CEME, um comercializador de energia.  
+Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless), tag RFID ou através da App no telemóvel. Cada uma de essas 3 opções é válida e tendencialmente universal nos postos de carregamento.  
+Dada a legislaçao do [AFIR](https://transport.ec.europa.eu/transport-themes/clean-transport/alternative-fuels-sustainable-mobility-europe/alternative-fuels-infrastructure_en), começam também a aparecer postos que aceitam cartões de débido/crédito, para além do já existente ad-hoc via QR Code.
 
 Alguns CEMEs requerem contratos físicos assinados, enquanto outros podem ser feitos totalmente numa App em regime de pré-carregamento, cartão de crédito ou Débito Direto em pós-pagamento mensal.
-
-> Importante
->
-> A rede MOBI.E não permite atualmente usar um cartão Multibanco ou de Crédito para iniciar a carga.
 
 Uma lista dos comercializadores disponíveis pode ser encontrada em:
 [https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores](https://www.mobie.pt/web/mobi.e/redemobie/comercializadores-e-operadores)
@@ -106,15 +103,16 @@ Em alguns casos, pode ser cobrado em kWh da energia fornecida. Em casos extremos
 
 * Estado Português. Imposto especial sobre o consumo de energia elétrica (IEC) e o imposto sobre o valor acrescentado (IVA).
 
-Parece complicado (e caro), não é? Vamos a um exemplo:
+Vamos a um exemplo:
 
 A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kW ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power, em Lisboa), 0,085€/kWh (em postos da Repsol) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350 kW ou 400 kW).  
 A isto junta-se normalmente ~0,30€ (acresce IVA) por sessão de carregamento.
 
-A EDP e o LIDL são quem mais postos explora no país. A EDP normalmente cobra 0,09€/min e o LIDL 0,08€/min, tornando-os os mais comuns e geralmente mais económicos. Acresce IVA.
+A EDP e o LIDL são quem mais postos explora no país. A EDP normalmente cobra 0,11€/min e o LIDL 0,08€/min, tornando-os os mais comuns e geralmente mais económicos. Acresce IVA.
 
 Depois, temos o custo CEME, que é aquilo que pagas ao teu operador elétrico pela energia elétrica que carregaste efetivamente.  
-A EDP, por exemplo, cobra um valor fixo de 0,27€/kWh, enquanto a ViaVerde cobra 0,1616€/kWh. (os preços variam frequentemente!) Já a Miio tem um preço indexado ao valor de mercado, que varia ao longo do dia.  
+A EDP, por exemplo, cobra um valor fixo de 0,27€/kWh, enquanto a ViaVerde cobra 0,1616€/kWh.  
+Já a Miio tem um preço indexado ao valor de mercado, que varia ao longo do dia.
 
 Assim, para uma viatura com uma bateria com capacidade usável de 45kWh, que tem 20% de bateria restante quando chega ao posto de carregamento e que se pretende carregar até aos 80%, quanto vai custar?  
 Ora, `45 * (80-20)% = 27kWh` de energia necessária. Se o teu fornecedor for a ViaVerde, serão cobrados 0,1616€/kWh.  
@@ -123,14 +121,14 @@ Num carregador da EDP com 50kW, seriam precisos 33 minutos, cobrados a 0,11€/m
 `33*0,09 = 2,97€`.
 
 Adiciona a isso `0,035 + 0,297€` de ativação/EGME, IEC e IVA.  
-Depois, há a TAR, que pode ser aditiva ou negativa, consoante publicação pelo regulador do setor energético, a ERSE.
+Depois há a TAR, publicada pelo regulador do setor energético, a ERSE.
 
 Enquanto isso, a aplicação da Miio e o site wwww.comparaervilhas.pt são normalmente utilizados por muitos utilizadores para simular os custos totais, dando maior facilidade e transparência ao consumidor.
 
 Se a viatura tiver um consumo médio de `17kWh / 100km`, os 27kWh de energia que colocámos na bateria permitiriam percorrer 159km.  
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
-**Atualmente, a minha recomendação passa por utilizar a ACP (ou a Luzigas quando o preço do OMIE está muito baixo), a ViaVerde, a High Green Power ou a Prio (porque têm dos melhores preços). E de preferência os carregadores CCS2 do LIDL.**
+**Atualmente, a minha recomendação passa por utilizar a ACP, Luzigas (quando o preço do OMIE está mais baixo), a ViaVerde, a High Green Power ou a Prio. E de preferência os carregadores CCS2 do LIDL.**
 
 ###### Postos ordenados por custo
 
@@ -196,7 +194,7 @@ A grande vantagem desta solução é que os cartões ou Apps que usas na rede p�
 Como não há OPC (o explorador do posto), o único custo é mesmo a energia.
 E como é para veículos elétricos, não há taxa audiovisual, etc.
 
-**Recomendo a utilização dos CEME listados abaixo, por uma ordem (normalmente) decrescente custo.**
+**Alguns dos CEME recomendados.**
 
 | CEME  | Tipo de tarifa | EUR/kWh | EUR/min |
 | ------------- | ------------- | ------------- | ------------- |
@@ -225,7 +223,8 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 * [Postos de carregamento para carros elétricos do LIDL](https://www.lidl.pt/servicos-lidl/postos-de-carregamento-para-carros-eletricos-do-lidl)
 * [miio](https://miioelectric.com/)
 * [ViaVerde Electric](https://www.viaverde.pt/particulares/via-verde/onde-e-como-usar/via-verde-electric)
-* [charge2go](https://charge2go.pt/) ou [ecochoice](https://www.ecochoice.pt/) empresa parceira com ViaVerde e também com a [kmlowcost (KLC)](https://www.kmlowcost.com/)
+* [charge2go](https://charge2go.pt/) ou [ecochoice](https://www.ecochoice.pt/) empresa parceira com ViaVerde
 * [Comunidade de Utilizadores da Rede Pública de Carregamento](https://www.facebook.com/groups/utilizadoresredecarregamentopt/)
 * [App Carregar - Simulador Mobi.e](https://apps.apple.com/pt/app/carregar/id6448868818?l=en-GB)
 * [Compara Ervilhas - Simulador Mobi.e](https://comparaervilhas.pt/)
+* [Plan2Charge - Simulador VE](https://play.google.com/store/apps/details?id=com.generictec.plan2charge)
