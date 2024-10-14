@@ -234,3 +234,8 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 * [Compara Ervilhas - Simulador Mobi.e](https://comparaervilhas.pt/)
 * [Plan2Charge - Simulador VE](https://play.google.com/store/apps/details?id=com.generictec.plan2charge)
 * [Comparador CEME](https://CEME.OCarroEletrico.com/)
+
+## Contactos:
+
+ * [Messenger](https://m.me/OCarroEletricoDotCom)
+ * [email](mailto:info@ocarroeletrico.com)
