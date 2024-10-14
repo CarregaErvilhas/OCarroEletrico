@@ -138,7 +138,7 @@ Uma lista de Postos ordenados por custo do OPC está disponível em:
 ###### CEME ordenados por custo
 
 Uma lista de Fornecedores de Energia ordenados por custo do CEME está disponível em:
-[Comparador CEME](https://docs.google.com/spreadsheets/d/1WMaiaShTwp1-QzWXi-SlcB3uTigp5nfYO-v3veCcn84/)
+[Comparador CEME](https://CEME.OCarroEletrico.com/)
 
 
 ### Carregar em casa
@@ -228,3 +228,4 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 * [App Carregar - Simulador Mobi.e](https://apps.apple.com/pt/app/carregar/id6448868818?l=en-GB)
 * [Compara Ervilhas - Simulador Mobi.e](https://comparaervilhas.pt/)
 * [Plan2Charge - Simulador VE](https://play.google.com/store/apps/details?id=com.generictec.plan2charge)
+* [Comparador CEME](https://CEME.OCarroEletrico.com/)
