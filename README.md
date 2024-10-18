@@ -232,7 +232,7 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 * [Lista de Simuladores](https://simuladores.OCarroEletrico.com/)
 * [App Carregar - Simulador Mobi.e](https://apps.apple.com/pt/app/carregar/id6448868818?l=en-GB)
 * [Compara Ervilhas - Simulador Mobi.e](https://comparaervilhas.pt/)
-* [Plan2Charge - Simulador VE](https://play.google.com/store/apps/details?id=com.generictec.plan2charge)
+* [Plan2Charge - Simulador VE](https://plan2charge.app/)
 * [Comparador CEME](https://CEME.OCarroEletrico.com/)
 
 ## Contactos:
