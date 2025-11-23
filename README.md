@@ -235,6 +235,7 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 * [Plan2Charge - Simulador VE](https://plan2charge.app/)
 * [Comparador CEME](https://CEME.OCarroEletrico.com/)
 
+
 ## Contactos:
 
  * [Messenger](https://m.me/OCarroEletricoDotCom)
