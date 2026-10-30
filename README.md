@@ -5,6 +5,7 @@
 <!-- TOC -->
 
 - [O Carro Elétrico](#o-carro-el%C3%A9trico)
+    - [Ferramentas](#ferramentas)
     - [Carregamento](#carregamento)
         - [Regeneração](#regenera%C3%A7%C3%A3o)
         - [Rede Pública](#rede-p%C3%BAblica)
@@ -33,6 +34,15 @@ Não te esqueças de que os carros elétricos têm um tempo de carregamento mais
 Por fim, não deixes de experimentar todas as vantagens do teu novo carro elétrico. Além de economizar dinheiro em combustível, os carros elétricos são mais silenciosos, mais suaves e mais eficientes do que os carros a gasolina. Conduzir um carro elétrico é uma experiência única e emocionante que não vais querer perder!
 
 Espero que estas dicas sejam úteis e que aproveites ao máximo o teu novo carro elétrico. Boa sorte e boas viagens!
+
+## Ferramentas
+
+Ferramentas gratuitas d'O Carro Elétrico para carregar mais barato em Portugal:
+
+* **[ohmigo](https://ohmigo.ocarroeletrico.com/)**: pergunta ao ChatGPT ou ao Claude onde é mais barato carregar. Junta a energia do teu CEME, a tarifa OPC de cada posto e as formas de pagar sem CEME (app do operador, TPA), em todos os postos públicos do país.
+* **[Comparador CEME](https://ceme.ocarroeletrico.com/)**: qual é o tarifário CEME mais barato para o teu carregamento, com os preços em vigor e o OMIE para os indexados.
+* **[Mapa dos postos (NAP)](https://nap.ocarroeletrico.com/)**: todos os postos de carregamento públicos, com o estado em tempo real, potências, operadores e tarifas OPC.
+* **[Simuladores](https://simuladores.ocarroeletrico.com/)**: a lista de simuladores de carregamento para Portugal.
 
 ## Carregamento
 
@@ -128,7 +138,7 @@ Num carregador da EDP com 50kW, seriam precisos 33 minutos, cobrados a 0,11€/m
 Adiciona a isso `0,035 + 0,297€` de ativação/EGME, IEC e IVA.  
 Depois há a TAR, publicada pelo regulador do setor energético, a ERSE.
 
-Enquanto isso, a aplicação da Miio e o site plan2charge.app são normalmente utilizados por muitos utilizadores para simular os custos totais, dando maior facilidade e transparência ao consumidor. Para o estado live da rede (até 31-12-2026 em transição), ver também [NAP](https://nap.ocarroeletrico.com/).
+Enquanto isso, a aplicação da Miio e o site plan2charge.app são normalmente utilizados por muitos utilizadores para simular os custos totais, dando maior facilidade e transparência ao consumidor. Também podes perguntar ao ChatGPT ou ao Claude com o [ohmigo](https://ohmigo.ocarroeletrico.com/), que faz esta conta (CEME + OPC + taxas) para cada posto. Para o estado live da rede (até 31-12-2026 em transição), ver também [NAP](https://nap.ocarroeletrico.com/).
 
 Se a viatura tiver um consumo médio de `17kWh / 100km`, os 27kWh de energia que colocámos na bateria permitiriam percorrer 159km.  
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
@@ -217,6 +227,8 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 * [FAQ MOBI.E](https://www.mobie.pt/pt/redemobie/faq)
 * [Custo do Carregamento MOBI.E](https://www.mobie.pt/custo-do-carregamento)
 * [NAP — mapa live da rede (até 31-12-2026 em transição)](https://nap.ocarroeletrico.com/)
+* [ohmigo — o custo de carregar em cada posto, no ChatGPT e no Claude](https://ohmigo.ocarroeletrico.com/)
+* [Comparador CEME](https://ceme.ocarroeletrico.com/)
 * [Simulador de CEME da ERSE](https://www.erse.pt/simuladores/mobilidade-eletrica/lista-de-ofertas-comerciais-de-mobilidade-eletrica/)
 * [UVE – Associação de Utilizadores de Veículos Elétricos](https://www.uve.pt)
 * [UVE – como carregar um veiculo elétrico](https://www.uve.pt/page/como-carregar-um-veiculo-eletrico/)
