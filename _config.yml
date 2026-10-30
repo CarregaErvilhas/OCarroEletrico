@@ -1,5 +1,9 @@
 title: O Carro Elétrico
 description: Esclarecer dúvidas e boas práticas no uso desta nova forma de transporte.
+# Para o <html lang> e o endereço canónico (jekyll-seo-tag): sem isto a
+# página dizia-se em inglês e o canónico saía em http://.
+lang: pt-PT
+url: https://ocarroeletrico.com
 show_downloads: false
 
 remote_theme: pages-themes/cayman@v0.2.0
@@ -20,6 +24,12 @@ footer:
     - label: "NAP — mapa live da rede"
       icon: "fas fa-fw fa-charging-station"
       url: "https://nap.ocarroeletrico.com/"
+    - label: "ohmigo — custo de carregar no ChatGPT e no Claude"
+      icon: "fas fa-fw fa-bolt"
+      url: "https://ohmigo.ocarroeletrico.com/"
+    - label: "Comparador CEME"
+      icon: "fas fa-fw fa-scale-balanced"
+      url: "https://ceme.ocarroeletrico.com/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
