@@ -36,9 +36,16 @@
 <script type="application/ld+json">{{page.jsonld}}</script>
 <link rel="preload" href="/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script>
-  // Before the first paint: the theme someone picked. Without a choice the system's theme wins.
+  // Before the first paint: what someone picked in the appearance panel. Without a choice the system's
+  // theme wins. oce.theme is "light" or "dark"; oce.vision is {cvd, contrast, large}.
   (function () {
-    try { var t = localStorage.getItem('oce.theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    var r = document.documentElement;
+    try {
+      var t = localStorage.getItem('oce.theme');
+      if (t === 'light' || t === 'dark') r.setAttribute('data-theme', t);
+      var v = JSON.parse(localStorage.getItem('oce.vision')) || {};
+      ['cvd', 'contrast', 'large'].forEach(function (k) { if (v[k] === true) r.setAttribute('data-' + k, ''); });
+    } catch (e) {}
   })();
 </script>
 <style>
@@ -77,6 +84,22 @@
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 28px rgba(0, 0, 0, .28);
     color-scheme: dark;
   }
+  /* Vision options (appearance panel). Colour-blind palette: blue and orange, never red against green.
+     High contrast: black on white or white on black, borders on every surface, links always underlined. */
+  :root[data-cvd] { --ink: #0b5cad; --ink-strong: #083b73; --ink-soft: #dcebfa; --on-ink: #ffffff; --go: #9a4a00; --go-shadow: #5e2d00; --go-soft: #fdebd3; --go-text: #ffffff; --go-ink: #5e2d00; }
+  @media (prefers-color-scheme: dark) { :root[data-cvd]:not([data-theme="light"]) { --ink: #7cc4f0; --ink-strong: #cfe9fb; --ink-soft: #12304d; --on-ink: #06121f; --go: #f0a030; --go-shadow: #8a5200; --go-soft: #3a2608; --go-text: #1f1200; --go-ink: #fbd9a0; } }
+  :root[data-cvd][data-theme="dark"] { --ink: #7cc4f0; --ink-strong: #cfe9fb; --ink-soft: #12304d; --on-ink: #06121f; --go: #f0a030; --go-shadow: #8a5200; --go-soft: #3a2608; --go-text: #1f1200; --go-ink: #fbd9a0; }
+  :root[data-contrast] { --bg: #ffffff; --bg-alt: #f0f0f0; --card: #ffffff; --fg: #000000; --muted: #202020; --line: #000000; --ink: #0033a0; --ink-strong: #001a66; --ink-soft: #dfe8ff; --on-ink: #ffffff; --sun-soft: #fff3b0; --sun-ink: #3d2c00; --mark: #ffe14d; --go: #7a3300; --go-shadow: #3d1a00; --go-soft: #ffe9d2; --go-text: #ffffff; --go-ink: #3d1a00; --old: #e8e8e8; --old-ink: #202020; --code-bg: #f0f0f0; --shadow: 0 0 0 transparent; }
+  @media (prefers-color-scheme: dark) { :root[data-contrast]:not([data-theme="light"]) { --bg: #000000; --bg-alt: #0d0d0d; --card: #000000; --fg: #ffffff; --muted: #e6e6e6; --line: #ffffff; --ink: #8fd0ff; --ink-strong: #cfeaff; --ink-soft: #0a2a4a; --on-ink: #000000; --sun-soft: #332b00; --sun-ink: #ffe680; --mark: rgba(255, 225, 77, .5); --go: #ffb066; --go-shadow: #b8650f; --go-soft: #3a1d00; --go-text: #000000; --go-ink: #ffd2a3; --old: #1a1a1a; --old-ink: #e6e6e6; --code-bg: #111111; --shadow: 0 0 0 transparent; } }
+  :root[data-contrast][data-theme="dark"] { --bg: #000000; --bg-alt: #0d0d0d; --card: #000000; --fg: #ffffff; --muted: #e6e6e6; --line: #ffffff; --ink: #8fd0ff; --ink-strong: #cfeaff; --ink-soft: #0a2a4a; --on-ink: #000000; --sun-soft: #332b00; --sun-ink: #ffe680; --mark: rgba(255, 225, 77, .5); --go: #ffb066; --go-shadow: #b8650f; --go-soft: #3a1d00; --go-text: #000000; --go-ink: #ffd2a3; --old: #1a1a1a; --old-ink: #e6e6e6; --code-bg: #111111; --shadow: 0 0 0 transparent; }
+  :root[data-contrast] a { text-decoration: underline; }
+  :root[data-contrast] :focus-visible { outline-width: 4px; }
+  :root[data-contrast] .topic, :root[data-contrast] .tool a, :root[data-contrast] .fact, :root[data-contrast] .brief,
+  :root[data-contrast] .box, :root[data-contrast] .table, :root[data-contrast] .art-tools, :root[data-contrast] .seg,
+  :root[data-contrast] .prefs-panel, :root[data-contrast] .btn, :root[data-contrast] .news-list a { border: 2px solid var(--line); }
+  :root[data-contrast] .blob { display: none; }
+  /* Bigger text: the page is zoomed, with more room between lines, letters and words. */
+  :root[data-large] body { zoom: 1.2; line-height: 1.75; letter-spacing: .015em; word-spacing: .06em; }
   .sprite { position: absolute; }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -113,6 +136,20 @@
   .seg [aria-current="page"] { background: var(--ink-soft); color: var(--ink-strong); }
   @media (max-width: 820px) { .links { display: none; } .controls { margin-left: auto; } }
   @media (max-width: 440px) { .logo span { display: none; } }
+  .prefs { position: relative; }
+  .prefs summary { list-style: none; cursor: pointer; display: grid; place-items: center; min-width: 38px; height: 34px; border-radius: 999px; color: var(--muted); }
+  .prefs summary::-webkit-details-marker { display: none; }
+  .prefs summary svg { width: 20px; height: 20px; }
+  .prefs[open] summary { background: var(--ink-soft); color: var(--ink-strong); }
+  .prefs-panel { position: absolute; right: 0; top: calc(100% + 12px); z-index: 30; width: min(22rem, calc(100vw - 32px));
+    background: var(--card); color: var(--fg); border-radius: var(--radius); box-shadow: var(--shadow), 0 0 0 1px var(--line);
+    padding: 18px 20px 14px; font-size: 16px; line-height: 1.4; }
+  .prefs-panel fieldset { border: 0; margin: 0 0 12px; padding: 0; }
+  .prefs-panel legend { font-weight: 900; margin-bottom: 4px; padding: 0; }
+  .prefs-panel label { display: flex; align-items: center; gap: 12px; min-height: 44px; cursor: pointer; font-weight: 700; }
+  .prefs-panel input { width: 22px; height: 22px; flex: none; accent-color: var(--ink); margin: 0; }
+  .prefs-note { margin: 0; color: var(--muted); font-size: 14px; }
+  .prefs-note button { font: inherit; font-weight: 800; color: var(--ink); background: none; border: 0; padding: 12px 6px; cursor: pointer; text-decoration: underline; }
   /* Buttons */
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font: 800 18px var(--font); text-decoration: none;
     border-radius: 999px; padding: 14px 26px; min-height: 54px; transition: transform .15s ease; }
@@ -292,7 +329,7 @@
       <circle cx="78" cy="176" r="22" fill="#fff"/><circle cx="182" cy="176" r="22" fill="#fff"/>
       <path d="M140 150 L114 190 H130 L120 222 L150 178 H134 Z" fill="#facc15" stroke="#ca8a04" stroke-width="4" stroke-linejoin="round"/>
     </symbol>
-    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-adjust" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></symbol>
   </defs>
 </svg>
 <a class="skip" href="#conteudo">{{s.skip}}</a>
@@ -310,7 +347,26 @@
         <a href="{{page.href.pt}}" hreflang="pt-PT" lang="pt-PT" {{page.current.pt}}>PT</a>
         <a href="{{page.href.en}}" hreflang="en" lang="en" {{page.current.en}}>EN</a>
       </nav>
-      <div class="seg"><button type="button" id="theme" aria-label="{{s.theme.label}}" title="{{s.theme.label}}"><svg aria-hidden="true"><use href="#i-sun"/></svg></button></div>
+      <div class="seg">
+        <details class="prefs" id="prefs">
+          <summary aria-label="{{s.prefs.label}}" title="{{s.prefs.label}}"><svg aria-hidden="true"><use href="#i-adjust"/></svg></summary>
+          <form class="prefs-panel" aria-label="{{s.prefs.label}}">
+            <fieldset>
+              <legend>{{s.prefs.theme}}</legend>
+              <label><input type="radio" name="theme" value="auto"> {{s.prefs.auto}}</label>
+              <label><input type="radio" name="theme" value="light"> {{s.prefs.light}}</label>
+              <label><input type="radio" name="theme" value="dark"> {{s.prefs.dark}}</label>
+            </fieldset>
+            <fieldset>
+              <legend>{{s.prefs.vision}}</legend>
+              <label><input type="checkbox" name="cvd"> {{s.prefs.cvd}}</label>
+              <label><input type="checkbox" name="contrast"> {{s.prefs.contrast}}</label>
+              <label><input type="checkbox" name="large"> {{s.prefs.large}}</label>
+            </fieldset>
+            <p class="prefs-note">{{s.prefs.note}} <button type="button" id="prefs-reset">{{s.prefs.reset}}</button></p>
+          </form>
+        </details>
+      </div>
     </div>
   </div>
 </header>
@@ -331,15 +387,40 @@
   </div>
 </footer>
 <script>
-  // The theme button: flips between light and dark and remembers it. Without JavaScript the page
-  // follows the system's theme.
-  document.getElementById('theme').addEventListener('click', function () {
-    var r = document.documentElement, cur = r.getAttribute('data-theme');
-    if (!cur) cur = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    var next = cur === 'dark' ? 'light' : 'dark';
-    r.setAttribute('data-theme', next);
-    try { localStorage.setItem('oce.theme', next); } catch (e) {}
-  });
+  // The appearance panel: theme (system, light, dark) and the vision options. Each choice is applied
+  // at once and remembered in this browser (oce.theme, oce.vision). Without JavaScript the page
+  // follows the system's theme and the panel does nothing.
+  (function () {
+    var r = document.documentElement, box = document.getElementById('prefs'), f = box.querySelector('form');
+    var KEYS = ['cvd', 'contrast', 'large'];
+    function load() { try { return JSON.parse(localStorage.getItem('oce.vision')) || {}; } catch (e) { return {}; } }
+    function show() {
+      var t = r.getAttribute('data-theme'), v = load();
+      f.elements.theme.value = t === 'light' || t === 'dark' ? t : 'auto';
+      KEYS.forEach(function (k) { f.elements[k].checked = v[k] === true; });
+    }
+    function put(k, v) { try { if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
+    f.addEventListener('change', function () {
+      var t = f.elements.theme.value, v = {};
+      if (t === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', t);
+      put('oce.theme', t === 'auto' ? null : t);
+      KEYS.forEach(function (k) {
+        v[k] = f.elements[k].checked;
+        if (v[k]) r.setAttribute('data-' + k, ''); else r.removeAttribute('data-' + k);
+      });
+      put('oce.vision', JSON.stringify(v));
+    });
+    f.addEventListener('submit', function (e) { e.preventDefault(); });
+    document.getElementById('prefs-reset').addEventListener('click', function () {
+      ['data-theme', 'data-cvd', 'data-contrast', 'data-large'].forEach(function (a) { r.removeAttribute(a); });
+      put('oce.theme', null); put('oce.vision', null); show();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && box.open) { box.open = false; box.querySelector('summary').focus(); }
+    });
+    document.addEventListener('click', function (e) { if (box.open && !box.contains(e.target)) box.open = false; });
+    show();
+  })();
 </script>
 </body>
 </html>
