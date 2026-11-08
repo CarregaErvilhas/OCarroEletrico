@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'pt-PT' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- O GitHub Pages não deixa definir cabeçalhos HTTP; estes <meta> são o que se consegue daqui. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6faf9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c1716" media="(prefers-color-scheme: dark)">
+  {% seo %}
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <!-- Bloqueante de propósito: aplica as preferências antes da primeira pintura (sem flash de tema). -->
+  <script src="{{ '/assets/js/preferences.js' | relative_url }}"></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="masthead">
+    <div class="wrap masthead-row">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/favicon.svg' | relative_url }}" alt="" width="32" height="32">
+        <span>O Carro Elétrico</span>
+      </a>
+      <details class="prefs" id="prefs">
+        <summary>Aparência e acessibilidade</summary>
+        <form class="prefs-panel" aria-label="Preferências de aparência e acessibilidade">
+          <fieldset>
+            <legend>Tema</legend>
+            <label><input type="radio" name="theme" value="auto"> Do sistema</label>
+            <label><input type="radio" name="theme" value="light"> Claro</label>
+            <label><input type="radio" name="theme" value="dark"> Escuro</label>
+          </fieldset>
+          <fieldset>
+            <legend>Visão</legend>
+            <label><input type="checkbox" name="cvd"> Cores para daltonismo</label>
+            <label><input type="checkbox" name="contrast"> Contraste alto</label>
+            <label><input type="checkbox" name="large"> Letra maior e mais espaçada</label>
+          </fieldset>
+          <p class="prefs-note">Guardadas só neste navegador (<a href="{{ '/privacidade/' | relative_url }}">privacidade</a>).
+          <button type="button" id="prefs-reset">Repor</button></p>
+        </form>
+      </details>
+    </div>
+    <div class="wrap hero">
+      <h1>{{ page.title | default: site.title }}</h1>
+      <p>{{ page.description | default: site.description }}</p>
+    </div>
+    <div class="charge" aria-hidden="true"></div>
+  </header>
+
+  <main id="conteudo" class="wrap prose">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        {% for l in site.footer_links %}<li><a href="{{ l.url | relative_url }}">{{ l.label }}</a></li>{% endfor %}
+        <li><a href="{{ '/privacidade/' | relative_url }}">Privacidade</a></li>
+      </ul>
+      <p>Contacto: <a href="mailto:info@ocarroeletrico.com">info@ocarroeletrico.com</a></p>
+    </div>
+  </footer>
+  <script src="{{ '/assets/js/prefs-ui.js' | relative_url }}" defer></script>
+</body>
+</html>

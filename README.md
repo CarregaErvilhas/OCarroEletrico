@@ -2,27 +2,6 @@
 
 > Última revisão: 2026-09-11. A rede está em transição até 31-12-2026 (coexistem postos ligados e não ligados à MOBI.E) — para dados live ver [NAP](https://nap.ocarroeletrico.com/).
 
-<!-- TOC -->
-
-- [O Carro Elétrico](#o-carro-el%C3%A9trico)
-    - [Ferramentas](#ferramentas)
-    - [Carregamento](#carregamento)
-        - [Regeneração](#regenera%C3%A7%C3%A3o)
-        - [Rede Pública](#rede-p%C3%BAblica)
-            - [MOBI.E](#mobie)
-                - [Como carregar na rede MOBI.E](#como-carregar-na-rede-mobie)
-                - [Preços de carregamento MOBI.E](#pre%C3%A7os-de-carregamento-mobie)
-                    - [Postos ordenados por custo](#postos-ordenados-por-custo)
-        - [Carregar em casa](#carregar-em-casa)
-            - [Residências](#resid%C3%AAncias)
-            - [Prédios](#pr%C3%A9dios)
-            - [Ligação ao quadro elétrico do apartamento](#liga%C3%A7%C3%A3o-ao-quadro-el%C3%A9trico-do-apartamento)
-            - [Ligação aos serviços comuns do prédio](#liga%C3%A7%C3%A3o-aos-servi%C3%A7os-comuns-do-pr%C3%A9dio)
-            - [Ligação à MOBI.E](#liga%C3%A7%C3%A3o-%C3%A0-mobie)
-    - [Links Úteis](#links-%C3%BAteis)
-
-<!-- /TOC -->
-
 Parabéns pela compra do teu primeiro carro elétrico! Agora que entraste no mundo da mobilidade elétrica, há algumas coisas que precisas saber para aproveitar ao máximo o teu novo veículo.
 
 Primeiro, vamos falar sobre a bateria. As baterias dos carros elétricos podem durar muito tempo, mas é importante que tu as mantenhas carregadas. Certifica-te de que o carro esteja sempre conectado a uma fonte de energia quando não estiver em uso e de que a bateria não fique abaixo de 20% de carga. Além disso, evita carregar a bateria até 100% com frequência, pois isso pode diminuir a vida útil da bateria das de química NCA e NMC. Excepto as de LFP que o devem ser a 100% regularmente para calibração do estado de carga correto. Mantendo estes cuidados simples, garantirás que a tua bateria dure o máximo possível.
@@ -148,7 +127,7 @@ Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 ###### Postos ordenados por custo
 
 Uma lista de Postos ordenados por custo do OPC está disponível em:
-[Postos](https://github.com/CarregaErvilhas/OCarroEletrico/tree/main/Postos)
+[Postos](Postos/)
 
 ###### CEME ordenados por custo
 

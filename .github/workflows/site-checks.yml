@@ -1,0 +1,20 @@
+name: site-checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 6 * * 1"   # segunda-feira: apanha ligações externas que morreram
+permissions:
+  contents: read
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Build
+        run: |
+          sudo gem install jekyll jekyll-seo-tag jekyll-sitemap webrick --no-document
+          jekyll build -d _site
+      - name: Ligações internas (falha) e externas (aviso)
+        run: python3 scripts/check_links.py --site _site

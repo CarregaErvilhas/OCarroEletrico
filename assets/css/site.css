@@ -1,0 +1,167 @@
+/* Tokens. light-dark() segue color-scheme, que o painel de preferências
+   fixa em claro/escuro ou deixa ao sistema ("auto"). */
+:root {
+  color-scheme: light dark;
+  --bg:        light-dark(#f6faf9, #0c1716);
+  --surface:   light-dark(#ffffff, #132322);
+  --text:      light-dark(#14282a, #e3efed);
+  --muted:     light-dark(#455d5f, #a3bbb8);
+  --line:      light-dark(#cddddb, #26403e);
+  --link:      light-dark(#075e5a, #72d6cb);
+  --link-hover:light-dark(#03403d, #b4efe8);
+  --head-bg:   #0c2b2a;
+  --head-text: #eaf6f4;
+  --bar-a:     #c8f03c;
+  --bar-b:     #1fb5a5;
+  --focus:     light-dark(#0b3fd1, #ffd54a);
+  --font: ui-sans-serif, "Avenir Next", "Segoe UI Variable Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --size: 1.0625rem;
+  --leading: 1.65;
+  --tracking: 0;
+}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"]  { color-scheme: dark; }
+
+/* Daltonismo: azul e laranja (Okabe-Ito) em vez de verde-teal e lima,
+   nada depende de distinguir vermelho de verde. */
+:root[data-cvd] {
+  --link:      light-dark(#00569b, #7cc4f0);
+  --link-hover:light-dark(#003a6b, #bfe2fa);
+  --bar-a:     #e69f00;
+  --bar-b:     #56b4e9;
+  --head-bg:   #0b2540;
+}
+:root[data-contrast] {
+  --bg:        light-dark(#ffffff, #000000);
+  --surface:   light-dark(#ffffff, #000000);
+  --text:      light-dark(#000000, #ffffff);
+  --muted:     light-dark(#1a1a1a, #ececec);
+  --line:      light-dark(#000000, #ffffff);
+  --link:      light-dark(#00228f, #8fd0ff);
+  --link-hover:light-dark(#000000, #ffffff);
+  --head-bg:   #000000;
+  --head-text: #ffffff;
+}
+:root[data-large] {
+  --font: Verdana, Tahoma, ui-sans-serif, "Segoe UI", sans-serif;
+  --size: 1.25rem;
+  --leading: 1.9;
+  --tracking: 0.02em;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 1rem; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: var(--size)/var(--leading) var(--font);
+  letter-spacing: var(--tracking);
+  word-spacing: calc(var(--tracking) * 4);
+}
+.wrap { max-width: 68rem; margin-inline: auto; padding-inline: max(1rem, env(safe-area-inset-left)); }
+img, svg, video { max-width: 100%; height: auto; }
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
+
+.skip {
+  position: absolute; left: .5rem; top: -4rem; z-index: 10;
+  background: var(--surface); color: var(--link); padding: .6rem 1rem;
+  border: 2px solid var(--link); border-radius: .4rem;
+}
+.skip:focus { top: .5rem; }
+
+/* Cabeçalho */
+.masthead { background: var(--head-bg); color: var(--head-text); }
+.masthead-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: .9rem; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; gap: .6rem; color: inherit; font-weight: 700; text-decoration: none; }
+.brand:hover { text-decoration: underline; }
+.hero { padding-block: 1.5rem 2.25rem; }
+.hero h1 { margin: 0 0 .4rem; font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.05; letter-spacing: -.02em; }
+.hero p { margin: 0; max-width: 40rem; font-size: 1.15em; opacity: .92; }
+/* Barra de carga: 10 células, as 8 primeiras cheias (carregar até 80%). */
+.charge {
+  height: .6rem;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 calc(10% - 3px), var(--head-bg) calc(10% - 3px) 10%),
+    linear-gradient(90deg, var(--bar-a) 0 80%, color-mix(in srgb, var(--head-text) 22%, transparent) 80%);
+}
+
+/* Painel de preferências */
+.prefs { position: relative; }
+.prefs summary {
+  cursor: pointer; list-style: none; padding: .5rem .9rem;
+  border: 2px solid currentColor; border-radius: 2rem; font-size: .9rem; font-weight: 600;
+  min-height: 2.75rem; display: inline-flex; align-items: center;
+}
+.prefs summary::-webkit-details-marker { display: none; }
+.prefs summary:focus-visible { outline-color: #ffd54a; }
+.prefs-panel {
+  position: absolute; right: 0; top: calc(100% + .5rem); z-index: 5; width: min(20rem, calc(100vw - 2rem));
+  background: var(--surface); color: var(--text); border: 2px solid var(--line);
+  border-radius: .75rem; padding: 1rem; box-shadow: 0 .75rem 2rem rgb(0 0 0 / .25);
+  font-size: .95rem; line-height: 1.4; text-align: left;
+}
+.prefs-panel fieldset { border: 0; margin: 0 0 .9rem; padding: 0; }
+.prefs-panel legend { font-weight: 700; margin-bottom: .3rem; padding: 0; }
+.prefs-panel label { display: flex; align-items: center; gap: .6rem; min-height: 2.75rem; cursor: pointer; }
+.prefs-panel input { width: 1.25rem; height: 1.25rem; accent-color: var(--link); flex: none; }
+.prefs-note { margin: 0; color: var(--muted); font-size: .85rem; }
+.prefs-note button {
+  margin-left: .25rem; font: inherit; color: var(--link); background: none; border: 0;
+  padding: .5rem; text-decoration: underline; cursor: pointer; min-height: 2.75rem;
+}
+
+/* Texto corrido: ~70 caracteres por linha */
+.prose { padding-block: 2rem 3rem; }
+.prose > * { max-width: 44rem; }
+.prose > ul, .prose > ol, .prose > blockquote, .prose > p, .prose > h2, .prose > h3 { margin-inline: 0; }
+.prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { line-height: 1.2; margin: 2.2em 0 .6em; text-wrap: balance; }
+.prose h2 { font-size: 1.7rem; border-bottom: 2px solid var(--line); padding-bottom: .25em; }
+.prose h3 { font-size: 1.35rem; }
+.prose h4 { font-size: 1.15rem; }
+.prose h5, .prose h6 { font-size: 1rem; }
+.prose h1:first-child { display: none; } /* o título já está no cabeçalho */
+.prose p, .prose li { text-wrap: pretty; }
+.prose li + li { margin-top: .3em; }
+.prose blockquote {
+  margin-block: 1.2rem; padding: .6rem 1rem; background: var(--surface);
+  border-inline-start: .35rem solid var(--link); border-radius: 0 .5rem .5rem 0; color: var(--text);
+}
+.prose blockquote p { margin: .3rem 0; }
+.prose code { font-size: .9em; background: var(--surface); border: 1px solid var(--line); border-radius: .25rem; padding: .05em .3em; }
+.prose pre { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); padding: 1rem; border-radius: .5rem; }
+.prose pre code { border: 0; padding: 0; background: none; }
+.prose table { display: block; overflow-x: auto; max-width: 100%; border-collapse: collapse; }
+.prose th, .prose td { border: 1px solid var(--line); padding: .4rem .7rem; text-align: left; }
+.prose th { background: var(--surface); }
+/* Ligações sempre sublinhadas: a cor sozinha não chega a quem não distingue cores. */
+.prose a, .site-footer a { color: var(--link); text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: .08em; overflow-wrap: anywhere; }
+.prose a:hover, .site-footer a:hover { color: var(--link-hover); text-decoration-thickness: .16em; }
+.prose a[href^="http"]:not([href*="ocarroeletrico.com"])::after { content: " ↗"; font-size: .8em; }
+
+.site-footer { border-top: 2px solid var(--line); background: var(--surface); padding-block: 1.5rem 2.5rem; font-size: .95rem; }
+.site-footer ul { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: .1rem .2rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+.site-footer li a { display: inline-block; padding-block: .5rem; }
+.site-footer p { margin: 0; color: var(--muted); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .prefs-panel { animation: pop .12s ease-out; }
+  @keyframes pop { from { opacity: 0; transform: translateY(-.25rem); } }
+}
+@media (forced-colors: active) {
+  .charge { background: CanvasText; }
+  .prose blockquote { border-inline-start-color: LinkText; }
+}
+@media print {
+  .prefs, .skip, .charge, .site-footer ul { display: none; }
+  .masthead { background: none; color: #000; }
+  body { background: #fff; color: #000; }
+}
+
+/* Índice da página inicial */
+.toc { margin: 0 0 1.5rem; background: var(--surface); border: 1px solid var(--line); border-radius: .5rem; padding: .25rem 1rem; }
+.toc summary { cursor: pointer; font-weight: 700; min-height: 2.75rem; display: flex; align-items: center; }
+.toc ul { margin: 0 0 .75rem; padding-inline-start: 1.25rem; }
+.toc ul ul { margin: .2rem 0; }
+.prose > h1 { display: none; }

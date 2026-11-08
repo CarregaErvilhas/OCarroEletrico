@@ -1,35 +1,45 @@
 title: O Carro Elétrico
 description: Esclarecer dúvidas e boas práticas no uso desta nova forma de transporte.
-# Para o <html lang> e o endereço canónico (jekyll-seo-tag): sem isto a
-# página dizia-se em inglês e o canónico saía em http://.
+# Para o <html lang> e o endereço canónico (jekyll-seo-tag).
 lang: pt-PT
+locale: pt_PT
 url: https://ocarroeletrico.com
-show_downloads: false
+image: /assets/og-image.png
+logo: /assets/og-image.png
 
-remote_theme: pages-themes/cayman@v0.2.0
+# Tema próprio (sem remote_theme): sem pedidos ao Google Fonts, sem CSS que
+# não controlamos. Ver _layouts/default.html e assets/css/site.css.
 plugins:
-  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-footer:
-  links:
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/CarregaErvilhas/OCarroEletrico"
-    - label: "Postos Mobi.e ordenados por custo do OPC"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/CarregaErvilhas/OCarroEletrico/tree/main/Postos"
-    - label: "NAP — mapa live da rede"
-      icon: "fas fa-fw fa-charging-station"
-      url: "https://nap.ocarroeletrico.com/"
-    - label: "ohmigo — custo de carregar no ChatGPT e no Claude"
-      icon: "fas fa-fw fa-bolt"
-      url: "https://ohmigo.ocarroeletrico.com/"
-    - label: "Comparador CEME"
-      icon: "fas fa-fw fa-scale-balanced"
-      url: "https://ceme.ocarroeletrico.com/"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Documentos de trabalho que não são páginas do site.
+exclude:
+  - AUDITORIA.md
+  - README.md
+  - LICENSE
+  - scripts
+  - .github
+
+footer_links:
+  - label: GitHub
+    url: https://github.com/CarregaErvilhas/OCarroEletrico
+  - label: Postos MOBI.E ordenados por custo do OPC
+    url: /Postos/
+  - label: NAP, mapa live da rede
+    url: https://nap.ocarroeletrico.com/
+  - label: ohmigo, custo de carregar no ChatGPT e no Claude
+    url: https://ohmigo.ocarroeletrico.com/
+  - label: Comparador CEME
+    url: https://ceme.ocarroeletrico.com/
+  - label: Simuladores
+    url: https://simuladores.ocarroeletrico.com/
+
+kramdown:
+  toc_levels: 2..3
