@@ -15,3 +15,6 @@ jobs:
         with:
           submodules: true
       - run: scripts/check.py
+      - run: scripts/build.py --out _site
+      # Broken internal links and anchors fail the PR; external links are checked weekly in links.yml.
+      - run: scripts/check_links.py --site _site --no-external

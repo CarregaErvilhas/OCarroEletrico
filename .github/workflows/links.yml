@@ -1,0 +1,18 @@
+# Weekly check of the external links in the published pages. Servers that refuse robots answer 403
+# without being broken, so this reports, it doesn't fail; internal links are a hard check in checks.yml.
+name: Links
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 6 * * 1"
+permissions:
+  contents: read
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          submodules: true
+      - run: scripts/build.py --out _site
+      - run: scripts/check_links.py --site _site

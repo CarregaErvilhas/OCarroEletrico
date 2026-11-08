@@ -82,7 +82,14 @@
     "news.lead": "A lei muda, os apoios abrem e fecham, as regras afinam-se. Aqui fica o que mudou, em poucas linhas e com a fonte.",
     "news.feed": "Seguir por RSS (Atom)",
     "news.home.title": "O que mudou",
-    "news.all": "Todas as novidades"
+    "news.all": "Todas as novidades",
+    "og.alt": "O carrinho repórter laranja do site, com chapéu de imprensa e microfone, ao lado do título «O Carro Elétrico».",
+    "foot.privacy": "Privacidade",
+    "privacy.title": "Privacidade",
+    "privacy.lead": "Este site não recolhe dados sobre ti. Aqui está o pouco que guarda no teu navegador e quem mais está pelo caminho.",
+    "privacy.meta": "O que o ocarroeletrico.com guarda no teu navegador e o que não recolhe: sem cookies, sem análise de visitas, sem anúncios.",
+    "privacy.date": "Última revisão: 8 de novembro de 2026.",
+    "privacy.body": "<h2>O que não recolhemos</h2><p>Não há contas, formulários, cookies, análise de visitas nem anúncios. O tipo de letra é servido pelo próprio site, por isso o teu navegador não contacta terceiros para o desenhar.</p>\n<h2>O que fica no teu navegador</h2><p>Se mudares o tema (claro ou escuro), guardamos essa escolha no armazenamento local do navegador, na chave <code>oce.theme</code>, para a lembrar na visita seguinte. Fica só no teu dispositivo, não é enviada a ninguém e não é um cookie. Apagas esta chave ao limpar os dados do site no navegador.</p>\n<h2>Quem serve o site</h2><p>O site está alojado no GitHub Pages. Como em qualquer alojamento, o GitHub regista o endereço IP e o pedido de cada visita, segundo a sua <a href=\"https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement\">declaração de privacidade</a>. Nós não temos acesso a esses registos.</p>\n<h2>Ligações para outros sítios</h2><p>As ligações para o Messenger (Meta), para as fontes oficiais e para as ferramentas em outros endereços, como o ohmigo, o Comparador CEME e o mapa NAP, levam-te a sítios com as suas próprias regras de privacidade.</p>\n<h2>Contacto</h2><p>Para qualquer pergunta sobre os teus dados, escreve para <a href=\"mailto:info@ocarroeletrico.com\">info@ocarroeletrico.com</a>.</p>"
   },
   "en": {
     "site.name": "O Carro Elétrico",
@@ -167,6 +174,13 @@
     "news.lead": "Laws change, grants open and close, rules get refined. Here's what changed, in a few lines and with the source.",
     "news.feed": "Follow by RSS (Atom)",
     "news.home.title": "What changed",
-    "news.all": "All the news"
+    "news.all": "All the news",
+    "og.alt": "The site’s orange reporter car with a press hat and microphone, next to the title “O Carro Elétrico”.",
+    "foot.privacy": "Privacy",
+    "privacy.title": "Privacy",
+    "privacy.lead": "This site collects no data about you. Here is the little it keeps in your browser, and who else is along the way.",
+    "privacy.meta": "What ocarroeletrico.com keeps in your browser and what it does not collect: no cookies, no analytics, no ads.",
+    "privacy.date": "Last reviewed: 8 November 2026.",
+    "privacy.body": "<h2>What we don’t collect</h2><p>There are no accounts, forms, cookies, analytics or ads. The typeface is served by the site itself, so your browser doesn’t contact third parties to draw it.</p>\n<h2>What stays in your browser</h2><p>If you change the theme (light or dark), we save that choice in the browser’s local storage, under the key <code>oce.theme</code>, to remember it on your next visit. It stays on your device, is sent to no one, and is not a cookie. Clearing the site’s data in your browser removes it.</p>\n<h2>Who serves the site</h2><p>The site is hosted on GitHub Pages. As with any host, GitHub logs the IP address and request of each visit, under its <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">privacy statement</a>. We have no access to those logs.</p>\n<h2>Links to other sites</h2><p>Links to Messenger (Meta), to official sources and to tools at other addresses, such as ohmigo, the CEME comparator and the NAP map, take you to sites with their own privacy rules.</p>\n<h2>Contact</h2><p>For any question about your data, write to <a href=\"mailto:info@ocarroeletrico.com\">info@ocarroeletrico.com</a>.</p>"
   }
 }

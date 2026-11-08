@@ -391,7 +391,7 @@ class Renderer:
         width = len(cells[0])
         if any(len(r) != width for r in cells):
             raise PageError(f"line {n}: every table row needs {width} cells")
-        head = "".join(f"<th>{self.inline(c)}</th>" for c in cells[0])
+        head = "".join(f"<th>{self.inline(c)}</th>" if c.strip() else "<td></td>" for c in cells[0])
         body = "".join("<tr>" + "".join(f"<td>{self.inline(c)}</td>" for c in r) + "</tr>" for r in cells[2:])
         return f'<div class="table"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
 
