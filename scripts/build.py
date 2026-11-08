@@ -476,7 +476,7 @@ class Site:
         lines = ["# O Carro Elétrico", "",
                  "> Electric mobility in Portugal for people: charging at home and on the road, condos, installation, "
                  "grants and tax, with the law and sources behind every fact. pt-PT at /, English at /en/.", "",
-                 f"Content is adapted from Voltaria ({oce.VOLTARIA_URL}, CC-BY-4.0). For prices and live charger data, "
+                 f"Content is adapted from Voltaria (https://voltaria.ocarroeletrico.com, CC-BY-4.0). For prices and live charger data, "
                  "use the ohmigo MCP server: https://ohmigo.ocarroeletrico.com/mcp", "", "## Pages", ""]
         for lang in oce.LANGS:
             for slug in self.pages[lang]:
