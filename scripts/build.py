@@ -12,6 +12,8 @@
 Usage: scripts/build.py [--out DIR] [--today YYYY-MM-DD]   (stdlib only; run from anywhere)
 """
 import argparse
+import base64
+import hashlib
 import html
 import json
 import re
@@ -27,6 +29,10 @@ SITE = oce.ROOT / "site"
 KEY_RE = re.compile(r"\{\{([\w.-]+)\}\}")
 OG_LOCALE = {"pt": "pt_PT", "en": "en_GB"}
 HTML_LANG = {"pt": "pt-PT", "en": "en"}
+# Pages that exist in both languages under the same slug without being a Voltaria skill.
+EXTRA_PAGES = ("novidades", "privacidade")
+PRIVACY_DATE = "2026-11-08"
+INLINE_RE = re.compile(r"<(script|style)>(.*?)</\1>", re.S)
 
 
 def esc(s):
@@ -65,7 +71,7 @@ class Site:
     # ------------------------------------------------------------ the frame
     def render(self, lang, main, *, title, desc, slug=None, jsonld, og_type="website", robots=""):
         canonical = url_for(lang, slug) if slug != "404" else oce.SITE_URL + "/404.html"
-        has = lambda l, x: x is None or x in self.pages[l] or x == "novidades"  # noqa: E731
+        has = lambda l, x: x is None or x in self.pages[l] or x in EXTRA_PAGES  # noqa: E731
         both = slug == "404" or all(has(l, slug) for l in oce.LANGS)
         if slug == "404":
             alternates = ""
@@ -83,6 +89,7 @@ class Site:
             "page.robots": robots,
             "page.canonical": canonical,
             "page.alternates": alternates,
+            "page.image": oce.SITE_URL + "/og.png",
             "page.og.type": og_type,
             "page.og.locale": OG_LOCALE[lang],
             "page.jsonld": json.dumps(jsonld, ensure_ascii=False).replace("<", "\\u003c"),
@@ -106,7 +113,20 @@ class Site:
                 raise SystemExit(f"base.html: unknown key {key!r}")
             return P[key]
 
-        return KEY_RE.sub(fill, self.template)
+        return self.with_csp(KEY_RE.sub(fill, self.template))
+
+    @staticmethod
+    def with_csp(page):
+        """A Content-Security-Policy <meta> that lets the page run only its own inline script and style
+        (by hash) and nothing from other origins. GitHub Pages can't send headers, so this is the one
+        way to get a CSP. frame-ancestors, report-uri and sandbox are ignored in a <meta>."""
+        def digest(kind):
+            return " ".join(
+                "'sha256-" + base64.b64encode(hashlib.sha256(body.encode("utf-8")).digest()).decode() + "'"
+                for k, body in INLINE_RE.findall(page) if k == kind)
+        csp = ("default-src 'self'; script-src 'self' " + digest("script") + "; style-src 'self' " + digest("style")
+               + "; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'")
+        return page.replace("<!--CSP-->", f'<meta http-equiv="Content-Security-Policy" content="{csp}">', 1)
 
     def write(self, rel, text):
         path = self.out / rel
@@ -408,6 +428,24 @@ class Site:
 </section>
 """
 
+    def privacy_page(self, lang):
+        S = lambda k: self.s(lang, k)  # noqa: E731
+        main = f"""<div class="wrap legal">
+  <header class="art-head">
+    <h1>{S("privacy.title")}</h1>
+    <p class="lead">{S("privacy.lead")}</p>
+    <p class="meta">{S("privacy.date")}</p>
+  </header>
+  <div class="prose">{S("privacy.body")}</div>
+  <a class="back" href="{lang_prefix(lang)}/">← {S("art.home")}</a>
+</div>"""
+        jsonld = {"@context": "https://schema.org", "@type": "WebPage", "name": S("privacy.title"),
+                  "url": url_for(lang, "privacidade"), "inLanguage": HTML_LANG[lang]}
+        page = self.render(lang, main, title=f'{S("privacy.title")} | O Carro Elétrico', desc=S("privacy.meta"),
+                           slug="privacidade", jsonld=jsonld)
+        self.write(f"{lang_prefix(lang).lstrip('/')}/privacidade/index.html".lstrip("/"), page)
+        self.sitemap["privacidade"] = PRIVACY_DATE
+
     def not_found(self):
         parts = []
         for lang in oce.LANGS:
@@ -426,7 +464,7 @@ class Site:
         rows = []
         for slug, mod in urls:
             for lang in oce.LANGS:
-                if slug and slug not in self.pages[lang]:
+                if slug and slug not in self.pages[lang] and slug not in EXTRA_PAGES:
                     continue
                 alts = "".join(f'<xhtml:link rel="alternate" hreflang="{HTML_LANG[l]}" href="{url_for(l, slug)}"/>'
                                for l in oce.LANGS if slug is None or slug in self.pages[l])
@@ -470,6 +508,7 @@ class Site:
             for slug in self.pages[lang]:
                 self.article(lang, slug)
             self.news_page(lang)
+            self.privacy_page(lang)
             self.home(lang)
         self.not_found()
         self.extras()
