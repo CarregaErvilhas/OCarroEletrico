@@ -1,0 +1,18 @@
+# Every commit in a PR must carry a Signed-off-by matching its author (see
+# CONTRIBUTING.md). Same check as scripts/check-dco.sh, which runs locally.
+name: DCO
+on: pull_request
+permissions:
+  contents: read
+jobs:
+  dco:
+    # Dependabot signs off as support@github.com but authors as its noreply address, so the check
+    # would always fail. Skipped only when Dependabot opened the PR and triggered this run: a
+    # spoofed commit author is not enough. A skipped job counts as passing for the ruleset.
+    if: ${{ !(github.event.pull_request.user.login == 'dependabot[bot]' && github.actor == 'dependabot[bot]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - run: scripts/check-dco.sh "${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
