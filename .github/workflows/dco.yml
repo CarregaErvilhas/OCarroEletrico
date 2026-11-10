@@ -1,5 +1,6 @@
 # Every commit in a PR must carry a Signed-off-by matching its author (see
-# CONTRIBUTING.md). Same check as scripts/check-dco.sh, which runs locally.
+# CONTRIBUTING.md). Same check as scripts/check-dco.sh, which runs locally; CI runs the base
+# branch's copy of that script, so changes to it only take effect once merged.
 name: DCO
 on: pull_request
 permissions:
@@ -12,7 +13,17 @@ jobs:
     if: ${{ !(github.event.pull_request.user.login == 'dependabot[bot]' && github.actor == 'dependabot[bot]') }}
     runs-on: ubuntu-latest
     steps:
+      # The script runs from the base commit, never from the PR: otherwise the PR could edit it to
+      # always pass. The PR checkout is only data (its commits); no file from it is executed.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: pr
           fetch-depth: 0
-      - run: scripts/check-dco.sh "${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
+          persist-credentials: false
+      - working-directory: pr
+        run: ../base/scripts/check-dco.sh "${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
