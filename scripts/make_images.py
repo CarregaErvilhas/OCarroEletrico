@@ -14,6 +14,7 @@ base = (ROOT / "site" / "base.html").read_text(encoding="utf-8")
 reporter = re.search(r'<symbol id="reporter"[^>]*>(.*?)</symbol>', base, re.S).group(1)
 grad = re.search(r'<linearGradient id="shineC".*?</linearGradient>', base, re.S).group(0)
 icon = (STATIC / "icon.svg").read_text(encoding="utf-8")
+_, _, vw, vh = map(float, re.search(r'viewBox="([^"]+)"', icon).group(1).split())
 font = "data:font/woff2;base64," + base64.b64encode((STATIC / "fonts" / "nunito-latin.woff2").read_bytes()).decode()
 
 OG = f"""<style>@font-face{{font-family:N;src:url({font}) format("woff2");font-weight:400 900}}
@@ -34,7 +35,7 @@ with sync_playwright() as pw:
     def render(size):
         p = b.new_page(viewport={"width": size, "height": size})
         p.set_content(f'<body style="margin:0;background:#fbfaf5;display:grid;place-items:center;width:{size}px;height:{size}px">'
-                      + icon.replace("<svg ", f'<svg width="{int(size*.8)}" height="{int(size*.68)}" ', 1))
+                      + icon.replace("<svg ", f'<svg width="{int(size*.8)}" height="{int(size*.8*vh/vw)}" ', 1))
         data = p.screenshot(); p.close(); return Image.open(io.BytesIO(data)).convert("RGB")
     render(180).save(STATIC / "apple-touch-icon.png", optimize=True)
     render(96).resize((48, 48), Image.LANCZOS).save(STATIC / "favicon.ico", sizes=[(48, 48)])
