@@ -58,6 +58,11 @@ class Site:
         self.vdate = oce.voltaria_date()
         self.pages = {lang: oce.pages(lang) for lang in oce.LANGS}
         self.meta = {lang: {s: oce.load_page(lang, s)[0] for s in self.pages[lang]} for lang in oce.LANGS}
+        # The share image's URL carries a hash of the file. X (and Facebook, LinkedIn) cache the image they
+        # fetched per URL for days, a failed fetch included: a new URL makes them fetch it again whenever
+        # the image changes, and a page URL they re-crawl never keeps pointing at a stale or missing image.
+        og = (SITE / "static" / "og.png").read_bytes()
+        self.og_image = f"{oce.SITE_URL}/og.png?v={hashlib.sha256(og).hexdigest()[:10]}"
         self.news = {lang: oce.news(lang) for lang in oce.LANGS}
         self.sitemap = {}
         self.anchors = {}
@@ -89,7 +94,7 @@ class Site:
             "page.robots": robots,
             "page.canonical": canonical,
             "page.alternates": alternates,
-            "page.image": oce.SITE_URL + "/og.png",
+            "page.image": self.og_image,
             "page.og.type": og_type,
             "page.og.locale": OG_LOCALE[lang],
             "page.jsonld": json.dumps(jsonld, ensure_ascii=False).replace("<", "\\u003c"),
