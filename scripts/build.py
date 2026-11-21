@@ -30,8 +30,9 @@ KEY_RE = re.compile(r"\{\{([\w.-]+)\}\}")
 OG_LOCALE = {"pt": "pt_PT", "en": "en_GB"}
 HTML_LANG = {"pt": "pt-PT", "en": "en"}
 # Pages that exist in both languages under the same slug without being a Voltaria skill.
-EXTRA_PAGES = ("novidades", "privacidade")
+EXTRA_PAGES = ("novidades", "privacidade", "grupo")
 PRIVACY_DATE = "2026-11-08"
+GRUPO_DATE = "2026-11-21"
 INLINE_RE = re.compile(r"<(script|style)>(.*?)</\1>", re.S)
 
 
@@ -330,6 +331,7 @@ class Site:
       <a class="btn btn-main" href="https://m.me/OCarroEletricoDotCom">{S("sobre.messenger")}</a>
       <a class="btn" href="mailto:info@ocarroeletrico.com">{S("sobre.email")}</a>
     </div>
+    <p><a href="{lang_prefix(lang)}/grupo/">{S("sobre.grupo")} →</a></p>
   </div>
 </section>"""
         jsonld = {
@@ -451,6 +453,62 @@ class Site:
         self.write(f"{lang_prefix(lang).lstrip('/')}/privacidade/index.html".lstrip("/"), page)
         self.sitemap["privacidade"] = PRIVACY_DATE
 
+    def group_page(self, lang):
+        """/grupo/: the group's sites, one mascot and one speech bubble each (oce.GRUPO). The other sites of
+        the group have the same page in their own style; keep the text in step with theirs."""
+        S = lambda k: self.s(lang, k)  # noqa: E731
+        items = ""
+        for g in oce.GRUPO:
+            k = f"grupo.{g['id']}"
+            svg = SITE / "static" / "grupo" / f"{g['id']}.svg"
+            w, h = re.search(r'viewBox="[\d.-]+ [\d.-]+ ([\d.]+) ([\d.]+)"', svg.read_text(encoding="utf-8")).groups()
+            if g.get("here"):
+                go = f'<span class="here">{S("grupo.here")}</span>'
+            elif g["site"]:
+                go = f'<a class="btn btn-sm btn-main" href="{g["site"]}">{S("grupo.open")} →</a>'
+            else:
+                go = ""
+            code = S("grupo.private") if g.get("private") else S("grupo.code")
+            lock = '<svg aria-hidden="true"><use href="#i-lock"/></svg>' if g.get("private") else '<svg aria-hidden="true"><use href="#i-code"/></svg>'
+            note = f'<p class="mate-note">{S(k + ".note")}</p>' if g.get("private") else ""
+            items += f"""
+    <li class="mate m-{g['id']}">
+      <div class="mate-pic"><img src="/grupo/{g['id']}.svg" alt="{esc(S(k + ".mascot"))}" width="{w}" height="{h}" loading="lazy"></div>
+      <div class="mate-bubble">
+        <p class="mate-host">{S(k + ".host")}</p>
+        <h2>{S(k + ".name")}</h2>
+        <p>{S(k + ".desc")}</p>{note}
+        <p class="mate-links">{go}<a class="btn btn-sm btn-line" href="{g["repo"]}">{lock}{code}</a></p>
+      </div>
+    </li>"""
+        main = f"""<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">{S("grupo.eyebrow")}</span>
+      <h1>{S("grupo.title")}</h1>
+      <p class="lead">{S("grupo.lead")}</p>
+    </div>
+    <div class="stage">
+      <div class="blob"></div>
+      <svg class="mascot" viewBox="0 0 270 300" role="img" aria-label="{esc(S("mascot.alt"))}"><use href="#reporter"/></svg>
+      <p class="bubble">{S("grupo.bubble")}</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <ol class="mates">{items}
+    </ol>
+  </div>
+</section>"""
+        jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": S("grupo.title"),
+                  "url": url_for(lang, "grupo"), "inLanguage": HTML_LANG[lang],
+                  "hasPart": [{"@type": "WebSite", "name": S(f"grupo.{g['id']}.name"), "url": g["site"]}
+                              for g in oce.GRUPO if g["site"]]}
+        page = self.render(lang, main, title=S("meta.grupo.title"), desc=S("meta.grupo.desc"), slug="grupo", jsonld=jsonld)
+        self.write(f"{lang_prefix(lang).lstrip('/')}/grupo/index.html".lstrip("/"), page)
+        self.sitemap["grupo"] = GRUPO_DATE
+
     def not_found(self):
         parts = []
         for lang in oce.LANGS:
@@ -514,6 +572,7 @@ class Site:
                 self.article(lang, slug)
             self.news_page(lang)
             self.privacy_page(lang)
+            self.group_page(lang)
             self.home(lang)
         self.not_found()
         self.extras()

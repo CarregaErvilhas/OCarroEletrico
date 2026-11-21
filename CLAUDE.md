@@ -15,7 +15,8 @@ drivers, in pt-PT and English. ohmigo (`CarregaErvilhas/ohmigo-mcp`) serves the 
   (pt) date in a page must be in the skill; no money in the prose; glossary; no assistant voice;
   pages current with their SKILL.md (`sourceSha`). Tone problems are warnings.
 - `scripts/oce.py`: shared code. `SKIP` (skills without a page: `regime-2010`), `GROUPS` (home page),
-  `PAGE_TOOLS` (which tools each page points to).
+  `PAGE_TOOLS` (which tools each page points to),
+  `GRUPO` (the group's sites on `/grupo/`; the other sites of the group carry the same page in their own style).
 - `pages.yml` builds and publishes on every push to `main` and every Monday, so open and closed
   incentives follow the calendar without a new commit.
 

@@ -39,6 +39,18 @@ TOOLS = {
     "nap": "https://nap.ocarroeletrico.com/",
     "simuladores": "https://simuladores.ocarroeletrico.com/",
 }
+# The group's sites, in the order of /grupo/. Each has its mascot in site/static/grupo/<id>.svg (copied from
+# that site: the art is each site's brand, see README) and its text in strings.json (grupo.<id>.*). `site` is
+# None where there is no page to open; `private` marks a repository that isn't public yet, linked anyway so the
+# link works the day it opens. The other sites of the group carry the same page, in their own style.
+GRUPO = [
+    {"id": "carro", "site": "https://ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/OCarroEletrico", "here": True},
+    {"id": "ohmigo", "site": "https://ohmigo.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/ohmigo-mcp"},
+    {"id": "voltaria", "site": "https://voltaria.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/voltaria"},
+    {"id": "ceme", "site": "https://ceme.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/CEME"},
+    {"id": "nap", "site": "https://nap.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/nap-dashboard"},
+    {"id": "ampere", "site": None, "repo": "https://github.com/CarregaErvilhas/AmpereArchive", "private": True},
+]
 # Which tools each page points to at the end. Everything else gets ohmigo.
 PAGE_TOOLS = {
     "carregar-em-casa": ["ohmigo", "simuladores"],

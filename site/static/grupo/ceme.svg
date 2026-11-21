@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300"><defs><linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".32"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<ellipse cx="130" cy="288" rx="88" ry="9" fill="#0f172a" opacity=".12"/>
+<path d="M54 176 Q22 188 28 222" stroke="#be185d" stroke-width="16" fill="none" stroke-linecap="round"/><circle cx="28" cy="226" r="13" fill="#ec4899"/>
+<path d="M206 150 Q240 124 232 86" stroke="#be185d" stroke-width="16" fill="none" stroke-linecap="round"/><circle cx="232" cy="80" r="14" fill="#ec4899"/>
+<rect x="50" y="28" width="160" height="250" rx="40" fill="#db2777"/><rect x="50" y="28" width="160" height="250" rx="40" fill="url(#shine)"/>
+<rect x="70" y="48" width="120" height="56" rx="12" fill="#831843"/>
+<rect x="84" y="62" width="14" height="30" rx="3" fill="#f9a8d4"/><rect x="104" y="72" width="14" height="20" rx="3" fill="#f9a8d4"/><rect x="124" y="80" width="14" height="12" rx="3" fill="#facc15"/>
+<path d="M170 58 L154 80 H164 L158 94 L176 70 H166 Z" fill="#facc15" stroke="#ca8a04" stroke-width="2" stroke-linejoin="round"/>
+<g class="blink"><ellipse cx="104" cy="138" rx="12" ry="15" fill="#0f172a"/><ellipse cx="156" cy="138" rx="12" ry="15" fill="#0f172a"/><circle cx="108" cy="132" r="4.5" fill="#fff"/><circle cx="160" cy="132" r="4.5" fill="#fff"/></g>
+<ellipse cx="86" cy="164" rx="12" ry="8" fill="#fda4af" opacity=".8"/><ellipse cx="174" cy="164" rx="12" ry="8" fill="#fda4af" opacity=".8"/>
+<path d="M114 164 Q130 180 146 164" stroke="#0f172a" stroke-width="7" fill="#7f1d1d" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#fbcfe8"><rect x="74" y="196" width="32" height="24" rx="9"/><rect x="114" y="196" width="32" height="24" rx="9"/><rect x="154" y="196" width="32" height="24" rx="9"/>
+<rect x="74" y="230" width="32" height="24" rx="9"/><rect x="114" y="230" width="32" height="24" rx="9"/></g>
+<rect x="154" y="230" width="32" height="24" rx="9" fill="#facc15" stroke="#ca8a04" stroke-width="2.5"/><path d="M162 238 H178 M162 246 H178" stroke="#ca8a04" stroke-width="3" stroke-linecap="round"/>
+</svg>

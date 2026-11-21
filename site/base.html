@@ -202,6 +202,46 @@
   @media (max-width: 520px) { .tools { grid-template-columns: 1fr; } }
   .sobre { display: flex; flex-direction: column; gap: 16px; max-width: 44em; }
   .sobre .ctas a { font-size: 17px; }
+  /* The group (/grupo/): each site's mascot beside a speech bubble, alternating sides. --c is that site's colour,
+     only for the blob and the dot: text stays in the page's own colours. */
+  .m-carro { --c: #ff6b4a; } .m-ohmigo { --c: #22c55e; } .m-voltaria { --c: #2f5bd0; }
+  .m-ceme { --c: #db2777; } .m-nap { --c: #0284c7; } .m-ampere { --c: #8b5cf6; }
+  .mates { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 44px; }
+  .mate { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 30px; align-items: center; max-width: 900px; }
+  .mate:nth-child(even) { grid-template-columns: minmax(0, 1fr) 190px; margin-left: auto; }
+  .mate:nth-child(even) .mate-pic { order: 2; }
+  .mate-pic { position: relative; display: grid; place-items: center; aspect-ratio: 1; }
+  .mate-pic::before { content: ""; position: absolute; inset: 4%; border-radius: 50%; background: color-mix(in srgb, var(--c) 22%, var(--bg)); }
+  .mate-pic img { position: relative; width: 76%; height: auto; max-height: 86%; object-fit: contain; animation: bob 3.4s ease-in-out infinite;
+    filter: drop-shadow(0 12px 12px rgba(15, 23, 42, .16)); }
+  .mate:nth-child(2n) .mate-pic img { animation-delay: -1.1s; } .mate:nth-child(3n) .mate-pic img { animation-delay: -2.2s; }
+  .mate-bubble { position: relative; background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px 26px;
+    display: flex; flex-direction: column; gap: 10px; }
+  .mate-bubble::before { content: ""; position: absolute; top: 50%; left: -17px; width: 18px; height: 30px; margin-top: -15px; background: var(--card);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%); }
+  .mate:nth-child(even) .mate-bubble::before { left: auto; right: -17px; clip-path: polygon(0 0, 100% 50%, 0 100%); }
+  .mate-bubble h2 { font-size: clamp(26px, 3.2vw, 32px); }
+  .mate-host { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 800; color: var(--muted); overflow-wrap: anywhere; }
+  .mate-host::before { content: ""; flex: none; width: 11px; height: 11px; border-radius: 50%; background: var(--c); }
+  .mate-note { font-size: 16px; color: var(--muted); font-weight: 700; }
+  .mate-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 6px; }
+  .btn-sm { min-height: 46px; padding: 10px 20px; font-size: 16px; }
+  .btn-sm.btn-main { box-shadow: 0 4px 0 var(--ink-strong); }
+  .btn-line { background: var(--card); color: var(--fg); box-shadow: inset 0 0 0 2px var(--line); }
+  .btn-line:hover { box-shadow: inset 0 0 0 2px var(--ink); }
+  .btn-line svg { width: 18px; height: 18px; }
+  .here { display: inline-flex; align-items: center; min-height: 46px; padding: 0 18px; border-radius: 999px; font-weight: 900; font-size: 16px;
+    background: var(--go-soft); color: var(--go-ink); }
+  :root[data-contrast] .mate-bubble { border: 2px solid var(--line); }
+  :root[data-contrast] .mate-bubble::before, :root[data-contrast] .mate-pic::before { display: none; }
+  @media (max-width: 720px) {
+    .mates { gap: 36px; }
+    .mate, .mate:nth-child(even) { grid-template-columns: minmax(0, 1fr); gap: 4px; margin-left: 0; }
+    .mate .mate-pic, .mate:nth-child(even) .mate-pic { order: 0; width: 150px; margin: 0 auto; }
+    .mate-bubble::before, .mate:nth-child(even) .mate-bubble::before { top: -17px; left: 50%; right: auto; width: 30px; height: 18px; margin: 0 0 0 -15px;
+      clip-path: polygon(0 100%, 50% 0, 100% 100%); }
+    .mate-bubble { padding: 22px 20px; }
+  }
   /* Article */
   .art-head { padding-block: 40px 8px; display: flex; flex-direction: column; gap: 16px; max-width: 46em; }
   .meta { color: var(--muted); font-size: 15px; font-weight: 700; }
@@ -334,6 +374,8 @@
       <path d="M140 150 L114 190 H130 L120 222 L150 178 H134 Z" fill="#facc15" stroke="#ca8a04" stroke-width="4" stroke-linejoin="round"/>
     </symbol>
     <symbol id="i-adjust" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
   </defs>
 </svg>
 <a class="skip" href="#conteudo">{{s.skip}}</a>
@@ -383,6 +425,7 @@
     <p>{{page.credit}} {{s.foot.disclaimer}}</p>
     <nav>
       <a href="{{page.home}}novidades/">{{s.nav.novidades}}</a>
+      <a href="{{page.home}}grupo/">{{s.nav.grupo}}</a>
       <a href="{{page.home}}privacidade/">{{s.foot.privacy}}</a>
       <a href="https://m.me/OCarroEletricoDotCom">Messenger</a>
       <a href="mailto:info@ocarroeletrico.com">Email</a>
