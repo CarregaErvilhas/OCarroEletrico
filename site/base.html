@@ -205,7 +205,7 @@
   /* The group (/grupo/): each site's mascot beside a speech bubble, alternating sides. --c is that site's colour,
      only for the blob and the dot: text stays in the page's own colours. */
   .m-carro { --c: #ff6b4a; } .m-ohmigo { --c: #22c55e; } .m-voltaria { --c: #2f5bd0; }
-  .m-ceme { --c: #16a34a; } .m-nap { --c: #0284c7; } .m-ampere { --c: #8b5cf6; }
+  .m-ceme { --c: #db2777; } .m-nap { --c: #0284c7; } .m-ampere { --c: #8b5cf6; }
   .mates { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 44px; }
   .mate { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 30px; align-items: center; max-width: 900px; }
   .mate:nth-child(even) { grid-template-columns: minmax(0, 1fr) 190px; margin-left: auto; }
@@ -215,7 +215,6 @@
   .mate-pic img { position: relative; width: 76%; height: auto; max-height: 86%; object-fit: contain; animation: bob 3.4s ease-in-out infinite;
     filter: drop-shadow(0 12px 12px rgba(15, 23, 42, .16)); }
   .mate:nth-child(2n) .mate-pic img { animation-delay: -1.1s; } .mate:nth-child(3n) .mate-pic img { animation-delay: -2.2s; }
-  .m-ceme .mate-pic img { width: 62%; }
   .mate-bubble { position: relative; background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px 26px;
     display: flex; flex-direction: column; gap: 10px; }
   .mate-bubble::before { content: ""; position: absolute; top: 50%; left: -17px; width: 18px; height: 30px; margin-top: -15px; background: var(--card);
