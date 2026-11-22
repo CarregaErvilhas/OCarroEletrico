@@ -557,6 +557,17 @@ class Site:
             for slug in self.pages[lang]:
                 m = self.meta[lang][slug]
                 lines.append(f"- [{m['title']}]({url_for(lang, slug)}) ({lang}): {m['description']}")
+        # The pages outside content/ (news, privacy, the group), when they were built: the same
+        # ones the sitemap lists.
+        extra = {"novidades": ("news.title", "news.lead"), "privacidade": ("privacy.title", "privacy.meta"),
+                 "grupo": ("meta.grupo.title", "meta.grupo.desc")}
+        lines += ["", "## Other pages", ""]
+        for lang in oce.LANGS:
+            for slug in EXTRA_PAGES:
+                if slug in self.sitemap:
+                    t, d = extra[slug]
+                    title = self.s(lang, t).removesuffix(" | O Carro Elétrico")
+                    lines.append(f"- [{title}]({url_for(lang, slug)}) ({lang}): {self.s(lang, d)}")
         self.write("llms.txt", "\n".join(lines) + "\n")
 
     def check_anchors(self):
