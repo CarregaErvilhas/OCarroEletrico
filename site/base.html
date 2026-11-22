@@ -98,7 +98,7 @@
   :root[data-contrast][data-theme="dark"] { --bg: #000000; --bg-alt: #0d0d0d; --card: #000000; --fg: #ffffff; --muted: #e6e6e6; --line: #ffffff; --ink: #8fd0ff; --ink-strong: #cfeaff; --ink-soft: #0a2a4a; --on-ink: #000000; --sun-soft: #332b00; --sun-ink: #ffe680; --mark: rgba(255, 225, 77, .5); --go: #ffb066; --go-shadow: #b8650f; --go-soft: #3a1d00; --go-text: #000000; --go-ink: #ffd2a3; --old: #1a1a1a; --old-ink: #e6e6e6; --code-bg: #111111; --shadow: 0 0 0 transparent; }
   :root[data-contrast] a { text-decoration: underline; }
   :root[data-contrast] :focus-visible { outline-width: 4px; }
-  :root[data-contrast] .topic, :root[data-contrast] .tool a, :root[data-contrast] .fact, :root[data-contrast] .brief,
+  :root[data-contrast] .topic, :root[data-contrast] .mini a, :root[data-contrast] .fact, :root[data-contrast] .brief,
   :root[data-contrast] .box, :root[data-contrast] .table, :root[data-contrast] .art-tools, :root[data-contrast] .seg,
   :root[data-contrast] .prefs-panel, :root[data-contrast] .btn, :root[data-contrast] .news-list a { border: 2px solid var(--line); }
   :root[data-contrast] .blob { display: none; }
@@ -192,14 +192,19 @@
   .topic.soon em { font-style: normal; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
   @media (max-width: 900px) { .topics { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 560px) { .topics { grid-template-columns: 1fr; } }
-  .tools { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-  .tool a { display: flex; flex-direction: column; gap: 8px; background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; color: inherit; text-decoration: none; height: 100%; }
-  .tool b { font-size: 19px; }
-  .tool span { color: var(--muted); font-size: 16px; flex: 1; }
-  .tool i { font-style: normal; font-weight: 800; color: var(--ink); }
-  .tool.ohmigo b { color: var(--go-ink); }
-  @media (max-width: 900px) { .tools { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 520px) { .tools { grid-template-columns: 1fr; } }
+  /* The home page's mini group: one card per sibling site, its mascot on a blob of its colour (--c, below). */
+  .minis { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+  .mini a { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; background: var(--card); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 20px 16px; color: inherit; text-decoration: none; height: 100%; }
+  .mini-pic { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; margin-bottom: 4px;
+    background: color-mix(in srgb, var(--c) 22%, var(--bg)); }
+  .mini-pic img { width: 64px; height: 64px; object-fit: contain; }
+  .mini a:hover .mini-pic img { animation: bob 1.6s ease-in-out infinite; }
+  .mini b { font-size: 18px; }
+  .mini span:last-child { color: var(--muted); font-size: 15px; }
+  #grupo .more { margin-top: 20px; }
+  @media (max-width: 1000px) { .minis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 620px) { .minis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .sobre { display: flex; flex-direction: column; gap: 16px; max-width: 44em; }
   .sobre .ctas a { font-size: 17px; }
   /* The group (/grupo/): each site's mascot beside a speech bubble, alternating sides. --c is that site's colour,
@@ -385,7 +390,7 @@
     <nav class="links" aria-label="{{s.site.name}}">
       <a href="{{page.home}}#temas">{{s.nav.temas}}</a>
       <a href="{{page.home}}novidades/">{{s.nav.novidades}}</a>
-      <a href="{{page.home}}#ferramentas">{{s.nav.ferramentas}}</a>
+      <a href="{{page.home}}#grupo">{{s.nav.grupo}}</a>
       <a href="{{page.home}}#sobre">{{s.nav.sobre}}</a>
     </nav>
     <div class="controls">
