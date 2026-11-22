@@ -38,3 +38,34 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+  # IndexNow (https://www.indexnow.org): tells Bing and the other engines that
+  # share submissions which URLs to crawl again, right after a deploy. Google
+  # doesn't take part; it reads the sitemap. The key isn't a secret: it's
+  # published at /<key>.txt so the engines can check that the submission comes
+  # from whoever controls the host. Failing here never fails the deploy.
+  indexnow:
+    needs: deploy
+    if: github.event_name != 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+      HOST: ocarroeletrico.com
+      KEY: 5162276ff8f52857dee877725610e84e
+    steps:
+      - name: Submit the sitemap's URLs
+        run: |
+          curl -fsS --retry 5 --retry-all-errors --retry-delay 20 "https://$HOST/$KEY.txt" | grep -qx "$KEY"
+          curl -fsS --retry 3 "https://$HOST/sitemap.xml" -o sitemap.xml
+          python3 - <<'PY'
+          import json, os, urllib.request, xml.etree.ElementTree as ET
+          host, key = os.environ["HOST"], os.environ["KEY"]
+          ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          urls = [e.text.strip() for e in ET.parse("sitemap.xml").findall("s:url/s:loc", ns)]
+          body = json.dumps({"host": host, "key": key, "keyLocation": f"https://{host}/{key}.txt",
+                             "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", body,
+                                       {"content-type": "application/json; charset=utf-8"})
+          with urllib.request.urlopen(req, timeout=30) as r:
+              print(f"IndexNow: HTTP {r.status}, {len(urls)} URLs")
+          PY
