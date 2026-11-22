@@ -2,9 +2,9 @@
 title: "Charging on the road: how to pay, how long, who to complain to"
 description: "Normal or rapid chargers, the two payment models until 2027, ad hoc with no contract, queues, plugs, and what to do when a charger fails."
 source: "carregamento-publico"
-sourceCommit: "7e5bac3b6622e0bb1f1aa676e581bfd4658adc16"
-sourceSha: "f299c0eee5bd616cb948523eff8a0fcc8aa6b9764de81eaf17e50d585d1b5ef0"
-updated: "2026-11-08"
+sourceCommit: "b8653aa0772ca2c74c6eb36d71084b03b4136cab"
+sourceSha: "37795b91af8ffc70a7ff9b3f6694fccdd209693fd4d184c5f5753e73399688d8"
+updated: "2026-11-22"
 ---
 
 To charge on the road, a card or an app is enough, and at chargers installed or renewed you don't
@@ -135,6 +135,9 @@ There's no single time for everyone. According to the UVE, it depends on four th
   the model. With the battery very low, the car can take a while to reach maximum power. Near full it
   slows a lot: power usually drops sharply from about 80 %.
 - **The charger's power.** What counts is the lower of the charger's power and what the car accepts.
+  In DC, the nameplate is the charger's maximum: a 400 V car often gets less, and with another car
+  plugged into the same charger the power is shared. [Why a fast charger gives less than its
+  nameplate](/tecnologia-de-carregamento/#potencia-em-dc).
 - **The temperature.** Extreme cold and heat make charging slower. The battery charges best between
   about 20 and 30 °C; below 10 °C, the power can drop.
 

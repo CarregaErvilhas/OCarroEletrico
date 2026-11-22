@@ -1,10 +1,10 @@
 ---
 title: "From card to Plug & Charge: what runs behind the charger"
-description: "Why your card works at another operator's charger, what OCPP and OCPI do, why Plug & Charge is slow to arrive and what a battery at the charger is for."
+description: "Why your card works at another operator's charger, what OCPP and OCPI do, Plug & Charge, and why a fast charger gives less than its nameplate."
 source: "tecnologia-de-carregamento"
-sourceCommit: "7e5bac3b6622e0bb1f1aa676e581bfd4658adc16"
-sourceSha: "2bb814be6dbad3f03c92d772ceb03977a42e010384e2a24df6795cc0049efffa"
-updated: "2026-11-08"
+sourceCommit: "b8653aa0772ca2c74c6eb36d71084b03b4136cab"
+sourceSha: "41818693b8027d59714e3164a74cb81de52e7e947863dc602c4722d58f941593"
+updated: "2026-11-22"
 ---
 
 Charging with one company's card at another company's charger, one you have no contract with, is
@@ -186,6 +186,51 @@ can confirm.
 **An undersized BESS runs flat at the peaks** and stops cutting the power, just when it was needed. Sizing is a case-by-case study.
 :::
 
+## Why a fast charger gives you less than its nameplate {#potencia-em-dc}
+
+The power on a fast charger's nameplate is the charger's maximum, not what each car gets. In DC,
+power is voltage times current, and the voltage is that of the car's battery. That's why the same
+charger gives different cars different power.
+
+### Voltage and current decide {#tensao-e-corrente}
+
+- **Current has a ceiling**: the charger's and the cable's. A 500 A cable on a 400 V car gives at
+  most about 200 kW, whatever the nameplate says. An 800 V car, with the same current, can get twice
+  that.
+- **Battery voltage changes with the charge.** With the battery nearly empty it's lower, and so is
+  the power.
+- **Cables for the highest power are liquid-cooled.** That's what lets high currents through a cable
+  you can still handle.
+
+### 800 V cars at 500 V chargers {#carros-de-800-v}
+
+Many older fast chargers only reach 500 V. A 400 V car charges at them without trouble. An 800 V car
+only charges there if it has a converter that raises the voltage, sometimes called a *boost*. Most
+have one, but charge more slowly than at an 800 V or higher charger. Without one, it doesn't charge.
+Check the manual for your car's exact version.
+
+### Two cars, the same power {#potencia-partilhada}
+
+Many fast chargers are a power cabinet with modules, connected to one or more guns or dispensers.
+The cabinet's power is shared among the cars plugged in at the same time: alone, your car gets
+almost all of it; with another one alongside, each gets less, according to Alexandre Moleiro's list
+of chargers.
+
+- **How it's shared depends on the model.** Some split it in half, others give modules to whoever
+  needs them most.
+- **CCS and CHAdeMO on the same charger**: only one of the DC connectors charges at a time. An AC
+  socket alongside is usually independent.
+- **At a hub, pick the charger with nobody plugged in.** It can give you more power than the free gun
+  next to a car that's charging.
+
+### The operator can limit it too {#o-operador-pode-limitar}
+
+The operator can limit each socket's power below what the charger can do, for example because of the
+site's grid connection. A stationary battery can make up for part of that ([what a BESS
+does](/tecnologia-de-carregamento/#bess)). What the charger declares on the National Access Point (Ponto de Acesso Nacional) is
+the operator's own declaration. ohmigo tells you, for many chargers, which charger model it is and
+how much it gives a 400 V or 800 V car, alone or with another one plugged in.
+
 ## Myths and mistakes {#mitos-e-enganos}
 
 - **"If my card has no agreement with that operator, I can't charge."** At a new or renewed public
@@ -201,3 +246,9 @@ can confirm.
   that adds ISO 15118-20 and bidirectional charging.
 - **"A battery at the charger always pays for itself."** It depends on the usage profile, the power
   tariffs and the grid services in each country. And an undersized BESS runs flat at the peaks.
+- **"A 300 kW charger charges my car at 300 kW."** Only if the car accepts that power and the battery
+  voltage and cable current allow it. A 400 V car often gets much less.
+- **"Two cars on the same charger both charge at full power."** On most fast chargers, the power is
+  shared.
+- **"An 800 V car charges faster at any charger."** At a 500 V charger it charges more slowly than a
+  400 V car, or not at all without a converter.

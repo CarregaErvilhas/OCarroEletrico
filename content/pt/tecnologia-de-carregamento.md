@@ -1,10 +1,10 @@
 ---
 title: "Do cartão ao Plug & Charge: o que corre por trás do posto"
-description: "Porque o teu cartão funciona no posto de outro operador, o que fazem o OCPP e o OCPI, porque o Plug & Charge tarda e para que serve uma bateria no posto."
+description: "Porque o teu cartão funciona no posto de outro operador, o que fazem o OCPP e o OCPI, o Plug & Charge, e porque o posto rápido dá menos do que a placa."
 source: "tecnologia-de-carregamento"
-sourceCommit: "7e5bac3b6622e0bb1f1aa676e581bfd4658adc16"
-sourceSha: "2bb814be6dbad3f03c92d772ceb03977a42e010384e2a24df6795cc0049efffa"
-updated: "2026-11-08"
+sourceCommit: "b8653aa0772ca2c74c6eb36d71084b03b4136cab"
+sourceSha: "41818693b8027d59714e3164a74cb81de52e7e947863dc602c4722d58f941593"
+updated: "2026-11-22"
 ---
 
 Carregar com o cartão de uma empresa no posto de outra, com quem não tens contrato, é roaming: as
@@ -181,6 +181,51 @@ de retorno dados de cor. E para saber se um posto concreto tem BESS, só o OPC c
 **Um BESS subdimensionado esgota-se nos picos** e deixa de cortar a potência, justamente quando fazia falta. O dimensionamento é um estudo de cada caso.
 :::
 
+## Porque o posto rápido te dá menos do que diz a placa {#potencia-em-dc}
+
+A potência na placa de um posto rápido é o máximo do carregador, não o que cada carro recebe. Em DC,
+a potência é a tensão vezes a corrente, e a tensão é a da bateria do carro. Por isso o mesmo posto
+dá potências diferentes a carros diferentes.
+
+### Tensão e corrente decidem {#tensao-e-corrente}
+
+- **A corrente tem um teto**: o do carregador e o do cabo. Um cabo de 500 A num carro de 400 V dá
+  no máximo cerca de 200 kW, diga a placa o que disser. Um carro de 800 V, com a mesma corrente, pode
+  receber o dobro.
+- **A tensão da bateria muda com a carga.** Com a bateria quase vazia é mais baixa, e a potência
+  também.
+- **Os cabos das potências mais altas são arrefecidos por líquido.** É o que deixa passar correntes
+  altas por um cabo que ainda se consegue manusear.
+
+### Carros de 800 V em postos de 500 V {#carros-de-800-v}
+
+Muitos postos rápidos mais antigos só chegam a 500 V. Um carro de 400 V carrega neles sem problema.
+Um carro de 800 V só carrega lá se tiver um conversor que eleva a tensão, às vezes chamado *boost*.
+A maioria tem, mas carrega mais devagar do que num posto de 800 V ou mais. Sem conversor, não
+carrega. Confirma no manual da versão exata do teu carro.
+
+### Dois carros, a mesma potência {#potencia-partilhada}
+
+Muitos carregadores rápidos são um armário de potência com módulos, ligado a uma ou mais pistolas ou
+dispensadores. A potência do armário divide-se pelos carros ligados ao mesmo tempo: sozinho, o teu
+carro recebe quase tudo; com outro ao lado, cada um recebe menos, segundo a lista de carregadores de
+Alexandre Moleiro.
+
+- **Como se divide depende do modelo.** Há os que dividem a meias e os que dão módulos a quem mais
+  precisa.
+- **CCS e CHAdeMO no mesmo carregador**: só uma das fichas DC carrega de cada vez. Uma tomada AC ao
+  lado costuma ser independente.
+- **Num hub, escolhe o carregador sem ninguém ligado.** Pode dar-te mais potência do que a pistola
+  livre ao lado de um carro a carregar.
+
+### O operador também pode limitar {#o-operador-pode-limitar}
+
+O operador pode limitar a potência de cada tomada abaixo do que o carregador consegue, por exemplo
+por causa da ligação à rede do local. Uma bateria estacionária pode compensar parte disso ([o que faz
+um BESS](/tecnologia-de-carregamento/#bess)). O que o posto declara no Ponto de Acesso Nacional é a declaração do operador. O
+ohmigo diz, para muitos postos, que modelo de carregador é e quanto dá a um carro de 400 V ou de
+800 V, sozinho ou com outro ligado.
+
 ## Mitos e enganos {#mitos-e-enganos}
 
 - **"Se o meu cartão não tem acordo com aquele operador, não carrego."** Num posto público novo ou
@@ -197,3 +242,10 @@ de retorno dados de cor. E para saber se um posto concreto tem BESS, só o OPC c
   acrescenta a ISO 15118-20 e o carregamento bidirecional.
 - **"Uma bateria no posto paga-se sempre."** Depende do perfil de uso, das tarifas de potência e dos
   serviços de rede de cada país. E um BESS subdimensionado esgota-se nos picos.
+- **"Um posto de 300 kW carrega o meu carro a 300 kW."** Só se o carro aceitar essa potência e a
+  tensão da bateria e a corrente do cabo a permitirem. Um carro de 400 V recebe muitas vezes bem
+  menos.
+- **"Dois carros no mesmo carregador carregam ambos à potência máxima."** Na maioria dos
+  carregadores rápidos, a potência divide-se.
+- **"Um carro de 800 V carrega mais depressa em qualquer posto."** Num posto de 500 V carrega mais
+  devagar do que um de 400 V, ou nem carrega, se não tiver conversor.
