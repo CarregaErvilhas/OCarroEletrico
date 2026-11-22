@@ -2,9 +2,9 @@
 title: "Carregar na rua: como pagar, quanto demora e a quem reclamar"
 description: "Posto normal ou rápido, os dois modelos de pagamento até 2027, o ad hoc sem contrato, a fila, as fichas e o que fazer quando o posto falha."
 source: "carregamento-publico"
-sourceCommit: "7e5bac3b6622e0bb1f1aa676e581bfd4658adc16"
-sourceSha: "f299c0eee5bd616cb948523eff8a0fcc8aa6b9764de81eaf17e50d585d1b5ef0"
-updated: "2026-11-08"
+sourceCommit: "b8653aa0772ca2c74c6eb36d71084b03b4136cab"
+sourceSha: "37795b91af8ffc70a7ff9b3f6694fccdd209693fd4d184c5f5753e73399688d8"
+updated: "2026-11-22"
 ---
 
 Para carregar na rua chega um cartão ou uma app, e nos postos instalados ou renovados nem isso: têm
@@ -134,7 +134,10 @@ Não há um tempo igual para todos. Segundo a UVE, depende de quatro coisas:
 - **O nível da bateria.** Em DC, a potência mais alta costuma estar entre cerca de 20 % e 80 %,
   conforme o modelo. Com a bateria muito baixa, o carro pode demorar a chegar à potência máxima. Perto
   do cheio abranda muito: a potência costuma cair bastante a partir de cerca de 80 %.
-- **A potência do posto.** A que conta é a menor entre a do posto e a que o carro aceita.
+- **A potência do posto.** A que conta é a menor entre a do posto e a que o carro aceita. Em DC, a
+  placa é o máximo do carregador: um carro de 400 V recebe muitas vezes menos, e com outro carro
+  ligado ao mesmo carregador a potência divide-se. [Porque o posto rápido dá menos do que diz a
+  placa](/tecnologia-de-carregamento/#potencia-em-dc).
 - **A temperatura.** O frio e o calor extremos tornam o carregamento mais lento. A bateria carrega
   melhor entre cerca de 20 e 30 °C; abaixo de 10 °C, a potência pode cair.
 

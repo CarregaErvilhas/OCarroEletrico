@@ -60,6 +60,7 @@ PAGE_TOOLS = {
     "empresas-e-frotas": ["simuladores", "ceme"],
     "sub-cpe": ["ohmigo", "simuladores"],
     "afir-nap": ["nap", "ohmigo"],
+    "tecnologia-de-carregamento": ["ohmigo"],
 }
 
 FACT_KINDS = {"apoio", "fiscal", "municipal", "mercado"}
