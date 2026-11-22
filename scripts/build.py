@@ -289,9 +289,6 @@ class Site:
             if not cards:
                 continue
             groups += f'<div class="group" id="{g}"><h3>{S("group." + g)}</h3><ul class="topics">{cards}</ul></div>'
-        tools = "".join(
-            f'<li class="tool {t}"><a href="{u}"><b>{S(f"tool.{t}.name")}</b><span>{S(f"tool.{t}.desc")}</span><i>{S("tool.open")} →</i></a></li>'
-            for t, u in oce.TOOLS.items())
         main = f"""<section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-text">
@@ -316,12 +313,7 @@ class Site:
     {groups}
   </div>
 </section>
-{self.news_home(lang)}<section id="ferramentas">
-  <div class="wrap">
-    <div class="head"><span class="eyebrow">{S("tools.eyebrow")}</span><h2>{S("tools.title")}</h2><p class="lead">{S("tools.lead")}</p></div>
-    <ul class="tools">{tools}</ul>
-  </div>
-</section>
+{self.news_home(lang)}{self.group_mini(lang)}
 <section class="alt" id="sobre">
   <div class="wrap sobre">
     <span class="eyebrow">{S("sobre.eyebrow")}</span>
@@ -331,7 +323,6 @@ class Site:
       <a class="btn btn-main" href="https://m.me/OCarroEletricoDotCom">{S("sobre.messenger")}</a>
       <a class="btn" href="mailto:info@ocarroeletrico.com">{S("sobre.email")}</a>
     </div>
-    <p><a href="{lang_prefix(lang)}/grupo/">{S("sobre.grupo")} →</a></p>
   </div>
 </section>"""
         jsonld = {
@@ -385,7 +376,7 @@ class Site:
     <p class="lead">{S("news.lead")}</p>
     <p class="meta"><a href="{lang_prefix(lang)}/novidades/feed.xml">{S("news.feed")}</a></p>
   </header>
-  <div class="briefs">{items}</div>
+  <div class="briefs">{items or f'<p class="lead">{S("news.empty")}</p>'}</div>
   <a class="back" href="{lang_prefix(lang)}/#temas">← {S("art.home")}</a>
 </div>"""
         jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": S("news.title"),
@@ -452,6 +443,27 @@ class Site:
                            slug="privacidade", jsonld=jsonld)
         self.write(f"{lang_prefix(lang).lstrip('/')}/privacidade/index.html".lstrip("/"), page)
         self.sitemap["privacidade"] = PRIVACY_DATE
+
+    def group_mini(self, lang):
+        """The home page's small version of /grupo/: the other sites, a mascot and one line each. Prices live
+        there, not here, so this is also where the home page sends people to do the maths."""
+        S = lambda k: self.s(lang, k)  # noqa: E731
+        cards = ""
+        for g in oce.GRUPO:
+            if g.get("here"):
+                continue
+            k = f"grupo.{g['id']}"
+            href = g["site"] or f"{lang_prefix(lang)}/grupo/"
+            cards += (f'<li class="mini m-{g["id"]}"><a href="{href}">'
+                      f'<span class="mini-pic"><img src="/grupo/{g["id"]}.svg" alt="" width="64" height="64" loading="lazy"></span>'
+                      f'<b>{S(k + ".name")}</b><span>{S(k + ".short")}</span></a></li>')
+        return f"""<section id="grupo">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">{S("nav.grupo")}</span><h2>{S("grupo.mini.title")}</h2><p class="lead">{S("grupo.mini.lead")}</p></div>
+    <ul class="minis">{cards}</ul>
+    <p class="more"><a href="{lang_prefix(lang)}/grupo/">{S("grupo.mini.all")} →</a></p>
+  </div>
+</section>"""
 
     def group_page(self, lang):
         """/grupo/: the group's sites, one mascot and one speech bubble each (oce.GRUPO). The other sites of
