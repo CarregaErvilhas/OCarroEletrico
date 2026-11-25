@@ -269,7 +269,11 @@ class Site:
             "url": url_for(lang, slug),
             "isBasedOn": f"{oce.VOLTARIA_URL}/blob/main/skills/{slug}/SKILL.md",
             "license": "https://creativecommons.org/licenses/by/4.0/",
+            "author": {"@type": "Organization", "name": "O Carro Elétrico", "url": oce.SITE_URL},
             "publisher": {"@type": "Organization", "name": "O Carro Elétrico", "url": oce.SITE_URL},
+            "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": self.s(lang, "art.home"), "item": url_for(lang)},
+                {"@type": "ListItem", "position": 2, "name": fields["title"], "item": url_for(lang, slug)}]},
         }
         page = self.render(lang, main, title=f'{fields["title"]} | O Carro Elétrico', desc=fields["description"],
                            slug=slug, jsonld=jsonld, og_type="article")
@@ -547,21 +551,35 @@ class Site:
         self.write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
                    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
                    + "\n".join(rows) + "\n</urlset>\n")
-        self.write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {oce.SITE_URL}/sitemap.xml\n")
+        ai_bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot",
+                   "PerplexityBot", "Google-Extended", "Applebot-Extended"]
+        self.write("robots.txt", "User-agent: *\nAllow: /\n\n"
+                   + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ai_bots)
+                   + f"Sitemap: {oce.SITE_URL}/sitemap.xml\n")
         lines = ["# O Carro Elétrico", "",
                  "> Electric mobility in Portugal for people: charging at home and on the road, condos, installation, "
                  "grants and tax, with the law and sources behind every fact. pt-PT at /, English at /en/.", "",
                  f"Content is adapted from Voltaria (https://voltaria.ocarroeletrico.com, CC-BY-4.0). For prices and live charger data, "
-                 "use the ohmigo MCP server: https://ohmigo.ocarroeletrico.com/mcp", "", "## Pages", ""]
+                 "use the ohmigo MCP server: https://ohmigo.ocarroeletrico.com/mcp", "",
+                 f"Full text of every guide in one file: {oce.SITE_URL}/llms-full.txt", ""]
+        full = ["# O Carro Elétrico: full text", "",
+                "> Guides in Markdown as written in the repository. Amounts and incentive deadlines are not in this "
+                "file: they are computed on each page at build time.", ""]
         for lang in oce.LANGS:
+            lines += [f"## Guides ({lang})", ""]
             for slug in self.pages[lang]:
                 m = self.meta[lang][slug]
-                lines.append(f"- [{m['title']}]({url_for(lang, slug)}) ({lang}): {m['description']}")
+                lines.append(f"- [{m['title']}]({url_for(lang, slug)}): {m['description']}")
+                _, body = oce.load_page(lang, slug)
+                body = "\n".join(l for l in body.splitlines() if not l.startswith("{{factos"))
+                full += [f"## {m['title']} ({lang})", "", f"URL: {url_for(lang, slug)}", "", body.strip(), ""]
+            lines.append("")
+        self.write("llms-full.txt", "\n".join(full) + "\n")
         # The pages outside content/ (news, privacy, the group), when they were built: the same
         # ones the sitemap lists.
         extra = {"novidades": ("news.title", "news.lead"), "privacidade": ("privacy.title", "privacy.meta"),
                  "grupo": ("meta.grupo.title", "meta.grupo.desc")}
-        lines += ["", "## Other pages", ""]
+        lines += ["## Other pages", ""]
         for lang in oce.LANGS:
             for slug in EXTRA_PAGES:
                 if slug in self.sitemap:
