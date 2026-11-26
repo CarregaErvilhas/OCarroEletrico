@@ -32,7 +32,8 @@ origens e digas se alteraste:
 As licenças cobrem o conteúdo e o código, não a marca. Não estão licenciados o nome **O Carro
 Elétrico**, o domínio, a mascote (o carrinho repórter, laranja), o ícone e as imagens feitas com eles (os
 desenhos em `site/base.html` e os ficheiros em `site/static/`, menos a fonte). As mascotes em `site/static/grupo/`
-são dos outros sites do grupo, cada uma com a marca do seu site. Podes usar o nome para
+são dos outros sites do grupo, cada uma com a marca do seu site; o `pano.svg` é o logótipo do
+[Panoramax](https://panoramax.fr/), do projeto Panoramax, tirado do visualizador dele (`@panoramax/web-viewer`). Podes usar o nome para
 dizer de onde vem o conteúdo. Um fork precisa de nome e de imagem próprios.
 
 A fonte Nunito tem a sua licença: [SIL OFL 1.1](site/static/fonts/OFL-Nunito.txt).

@@ -49,6 +49,9 @@ GRUPO = [
     {"id": "voltaria", "site": "https://voltaria.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/voltaria"},
     {"id": "ceme", "site": "https://ceme.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/CEME"},
     {"id": "nap", "site": "https://nap.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/nap-dashboard"},
+    {"id": "oop", "site": "https://olhaoposto.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/OlhaOPosto"},
+    # The olh'o'posto's own Panoramax server: its config lives in the olh'o'posto repo. It shows the Panoramax logo.
+    {"id": "pano", "site": "https://panoramax.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/OlhaOPosto/tree/main/panoramax"},
     {"id": "ampere", "site": None, "repo": "https://github.com/CarregaErvilhas/AmpereArchive", "private": True},
 ]
 # Which tools each page points to at the end. Everything else gets ohmigo.
