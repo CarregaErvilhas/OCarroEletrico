@@ -228,7 +228,7 @@ class Site:
         toc = "".join(f'<li><a href="#{hid}">{text}</a></li>' for hid, text in r.headings)
         group = self.group_of(slug)
         tools = "".join(
-            f'<li><a href="{oce.TOOLS[t]}"><b>{self.s(lang, f"tool.{t}.name")}</b><span>{self.s(lang, f"tool.{t}.desc")}</span></a></li>'
+            f'<li><a href="{oce.TOOLS[t]}" target="_blank" rel="noopener"><b>{self.s(lang, f"tool.{t}.name")}</b><span>{self.s(lang, f"tool.{t}.desc")}</span></a></li>'
             for t in oce.PAGE_TOOLS.get(slug, ["ohmigo"]))
         updated = fields.get("updated") or self.today
         main = f"""<article>
@@ -236,7 +236,7 @@ class Site:
   <header class="art-head">
     <a class="eyebrow" href="{lang_prefix(lang)}/#{group}">{self.s(lang, "group." + group)}</a>
     <h1>{esc(fields["title"])}</h1>
-    <p class="meta">{esc(self.s(lang, "art.updated", date=oce.fmt_date(updated, lang)))} · <a href="{oce.VOLTARIA_URL}/blob/main/skills/{slug}/SKILL.md">{self.s(lang, "art.based")}</a></p>
+    <p class="meta">{esc(self.s(lang, "art.updated", date=oce.fmt_date(updated, lang)))} · <a href="{oce.VOLTARIA_URL}/blob/main/skills/{slug}/SKILL.md" target="_blank" rel="noopener">{self.s(lang, "art.based")}</a></p>
   </header>
   <div class="art-grid">
     <nav class="toc" aria-label="{esc(self.s(lang, "art.toc"))}"><b>{self.s(lang, "art.toc")}</b><ol>{toc}</ol></nav>
@@ -301,7 +301,7 @@ class Site:
       <p class="lead">{S("hero.lead")}</p>
       <div class="ctas">
         <a class="btn btn-main" href="#temas">{S("hero.cta1")}</a>
-        <a class="btn btn-go" href="{oce.TOOLS["ohmigo"]}">{S("hero.cta2")}</a>
+        <a class="btn btn-go" href="{oce.TOOLS["ohmigo"]}" target="_blank" rel="noopener">{S("hero.cta2")}</a>
       </div>
     </div>
     <div class="stage">
@@ -324,7 +324,7 @@ class Site:
     <h2>{S("sobre.title")}</h2>
     <p class="lead">{S("sobre.text")}</p>
     <div class="ctas">
-      <a class="btn btn-main" href="https://m.me/OCarroEletricoDotCom">{S("sobre.messenger")}</a>
+      <a class="btn btn-main" href="https://m.me/OCarroEletricoDotCom" target="_blank" rel="noopener">{S("sobre.messenger")}</a>
       <a class="btn" href="mailto:info@ocarroeletrico.com">{S("sobre.email")}</a>
     </div>
   </div>
@@ -458,7 +458,8 @@ class Site:
                 continue
             k = f"grupo.{g['id']}"
             href = g["site"] or f"{lang_prefix(lang)}/grupo/"
-            cards += (f'<li class="mini m-{g["id"]}"><a href="{href}">'
+            tab = ' target="_blank" rel="noopener"' if g["site"] else ""
+            cards += (f'<li class="mini m-{g["id"]}"><a href="{href}"{tab}>'
                       f'<span class="mini-pic"><img src="/grupo/{g["id"]}.svg" alt="" width="64" height="64" loading="lazy"></span>'
                       f'<b>{S(k + ".name")}</b><span>{S(k + ".short")}</span></a></li>')
         return f"""<section id="grupo">
@@ -481,7 +482,7 @@ class Site:
             if g.get("here"):
                 go = f'<span class="here">{S("grupo.here")}</span>'
             elif g["site"]:
-                go = f'<a class="btn btn-sm btn-main" href="{g["site"]}">{S("grupo.open")} →</a>'
+                go = f'<a class="btn btn-sm btn-main" href="{g["site"]}" target="_blank" rel="noopener">{S("grupo.open")} →</a>'
             else:
                 go = ""
             code = S("grupo.private") if g.get("private") else S("grupo.code")
@@ -494,7 +495,7 @@ class Site:
         <p class="mate-host">{S(k + ".host")}</p>
         <h2>{S(k + ".name")}</h2>
         <p>{S(k + ".desc")}</p>{note}
-        <p class="mate-links">{go}<a class="btn btn-sm btn-line" href="{g["repo"]}">{lock}{code}</a></p>
+        <p class="mate-links">{go}<a class="btn btn-sm btn-line" href="{g["repo"]}" target="_blank" rel="noopener">{lock}{code}</a></p>
       </div>
     </li>"""
         main = f"""<section class="hero">
