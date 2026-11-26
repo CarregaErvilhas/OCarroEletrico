@@ -32,7 +32,7 @@ HTML_LANG = {"pt": "pt-PT", "en": "en"}
 # Pages that exist in both languages under the same slug without being a Voltaria skill.
 EXTRA_PAGES = ("novidades", "privacidade", "grupo")
 PRIVACY_DATE = "2026-11-08"
-GRUPO_DATE = "2026-11-21"
+GRUPO_DATE = "2026-11-26"
 INLINE_RE = re.compile(r"<(script|style)>(.*?)</\1>", re.S)
 
 

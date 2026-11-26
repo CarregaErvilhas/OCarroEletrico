@@ -193,7 +193,7 @@
   @media (max-width: 900px) { .topics { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 560px) { .topics { grid-template-columns: 1fr; } }
   /* The home page's mini group: one card per sibling site, its mascot on a blob of its colour (--c, below). */
-  .minis { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+  .minis { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
   .mini a { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; background: var(--card); border-radius: var(--radius);
     box-shadow: var(--shadow); padding: 20px 16px; color: inherit; text-decoration: none; height: 100%; }
   .mini-pic { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; margin-bottom: 4px;
@@ -211,6 +211,7 @@
      only for the blob and the dot: text stays in the page's own colours. */
   .m-carro { --c: #ff6b4a; } .m-ohmigo { --c: #22c55e; } .m-voltaria { --c: #2f5bd0; }
   .m-ceme { --c: #db2777; } .m-nap { --c: #0284c7; } .m-ampere { --c: #8b5cf6; }
+  .m-oop { --c: #f2b33d; } .m-pano { --c: #8f2a85; }
   .mates { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 44px; }
   .mate { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 30px; align-items: center; max-width: 900px; }
   .mate:nth-child(even) { grid-template-columns: minmax(0, 1fr) 190px; margin-left: auto; }
