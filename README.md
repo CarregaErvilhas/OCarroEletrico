@@ -11,6 +11,12 @@ scripts/check.py      # o que o CI corre
 
 Como funciona e como se reescrevem as páginas: [AGENTS.md](AGENTS.md). A voz do site: [agent/TOM.md](agent/TOM.md).
 
+Este repositório guarda também o que é comum ao grupo (em inglês):
+
+- [CI partilhado](docs/shared-ci.md): IndexNow, DCO e CLA.
+- [Como se expõe um serviço Zerops](docs/zerops-exposure.md): DNS, Cloudflare, Access Policy, utilizador sem root e *readiness checks*.
+- [Regras da zona Cloudflare](docs/cloudflare-zone.md): o que vale para todos os projetos (TLS, *rate limiting*, WAF, cache) e que CLI gere o quê.
+
 ## Licença
 
 - **Conteúdo** (`content/`, `agent/` e o resto do texto): [CC-BY-4.0](LICENSE). É uma adaptação do Voltaria, que tem a mesma licença.
