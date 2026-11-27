@@ -22,10 +22,11 @@ jobs:
           # The commit of this workflow file, which is the SHA the caller pinned. When the host
           # repo calls itself, that commit is the PR's merge commit, so the base commit is used.
           SCRIPT_REF: ${{ job.workflow_repository == github.repository && github.event.pull_request.base.sha || job.workflow_sha }}
+          WORKFLOW_SHA: ${{ job.workflow_sha }}
           BASE: ${{ github.event.pull_request.base.sha }}
           HEAD: ${{ github.event.pull_request.head.sha }}
         run: |
-          echo "script: $HOST_REPO@$SCRIPT_REF"
+          echo "script: $HOST_REPO@$SCRIPT_REF (workflow at $WORKFLOW_SHA)"
           if [ -z "$HOST_REPO" ] || [ -z "$SCRIPT_REF" ]; then echo "::error::unknown script source"; exit 1; fi
           if [ -z "$BASE" ] || [ -z "$HEAD" ]; then echo "::error::call this workflow from a pull_request run"; exit 1; fi
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
