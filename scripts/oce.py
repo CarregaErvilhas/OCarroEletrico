@@ -37,7 +37,6 @@ TOOLS = {
     "ohmigo": "https://ohmigo.ocarroeletrico.com/",
     "ceme": "https://ceme.ocarroeletrico.com/",
     "nap": "https://nap.ocarroeletrico.com/",
-    "simuladores": "https://simuladores.ocarroeletrico.com/",
 }
 # The group's sites, in the order of /grupo/. Each has its mascot in site/static/grupo/<id>.svg (copied from
 # that site: the art is each site's brand, see README) and its text in strings.json (grupo.<id>.*). `site` is
@@ -56,12 +55,12 @@ GRUPO = [
 ]
 # Which tools each page points to at the end. Everything else gets ohmigo.
 PAGE_TOOLS = {
-    "carregar-em-casa": ["ohmigo", "simuladores"],
+    "carregar-em-casa": ["ohmigo"],
     "carregamento-publico": ["ohmigo", "ceme", "nap"],
     "autonomia": ["ohmigo", "nap"],
-    "incentivos": ["simuladores", "ohmigo"],
-    "empresas-e-frotas": ["simuladores", "ceme"],
-    "sub-cpe": ["ohmigo", "simuladores"],
+    "incentivos": ["ohmigo"],
+    "empresas-e-frotas": ["ceme"],
+    "sub-cpe": ["ohmigo"],
     "afir-nap": ["nap", "ohmigo"],
     "tecnologia-de-carregamento": ["ohmigo"],
 }
