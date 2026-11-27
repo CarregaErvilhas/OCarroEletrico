@@ -9,7 +9,7 @@ scripts/build.py      # gera _site/
 scripts/check.py      # o que o CI corre
 ```
 
-Como funciona e como se reescrevem as páginas: [CLAUDE.md](CLAUDE.md). A voz do site: [agent/TOM.md](agent/TOM.md).
+Como funciona e como se reescrevem as páginas: [AGENTS.md](AGENTS.md). A voz do site: [agent/TOM.md](agent/TOM.md).
 
 ## Licença
 

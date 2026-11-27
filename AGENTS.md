@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 ocarroeletrico.com: the site for people built from Voltaria's skills (`voltaria/`, a git submodule of `CarregaErvilhas/voltaria`). Voltaria writes for assistants; this site rewrites the same knowledge for drivers, in pt-PT and English. ohmigo (`CarregaErvilhas/ohmigo-mcp`) serves the same skills over MCP.
 
@@ -14,7 +14,10 @@ Stdlib Python only. No CI step calls a model: there is no Claude key in CI.
 
 ## Rewriting after Voltaria changes (by hand, locally)
 
-When Voltaria has significant changes:
+When Voltaria has significant changes, or Dependabot opens a submodule bump (weekly, `.github/dependabot.yml`):
+
+- A bump PR fails `scripts/check.py` when a published skill changed. That failure is the alert: on its branch, `scripts/rewrite.py` lists the stale pages.
+- Don't push the rewrite to Dependabot's branch: `dco.yml` would then run and reject Dependabot's commit. Use your own signed-off branch; Dependabot closes its PR once `main` has the new pointer.
 
 1. `git -C voltaria fetch origin && git -C voltaria checkout origin/main` (the submodule pointer moves; commit it with the pages).
 2. `scripts/rewrite.py`: which pages are stale or missing. `scripts/rewrite.py diff <skill>`: what changed in that SKILL.md since its page was written.
