@@ -1,0 +1,68 @@
+# Reusable CLA check: every pull request author must have signed the caller's CLA.md, with CLA
+# Assistant Lite. Signing is a comment on the pull request with the exact sign-comment sentence;
+# the action stores it in the caller's repo, at signatures-path on the signatures branch.
+#
+# The caller runs this on pull_request_target, with write permissions even for pull requests from
+# forks, so this workflow must never check out or run the pull request's code. The action doesn't.
+#
+# This repo uses the DCO and doesn't call it. See docs/shared-ci.md.
+name: CLA check
+on:
+  workflow_call:
+    inputs:
+      document-url:
+        description: URL of the CLA the author signs.
+        required: true
+        type: string
+      sign-comment:
+        description: Exact comment that signs the CLA.
+        required: true
+        type: string
+      notsigned-comment:
+        description: Comment posted on a pull request with unsigned authors.
+        required: true
+        type: string
+      allsigned-comment:
+        description: Comment posted once every author has signed.
+        required: true
+        type: string
+      allowlist:
+        description: Comma-separated logins that don't need to sign.
+        required: true
+        type: string
+      signatures-path:
+        description: Signatures file. Bump the version when the CLA's terms change.
+        required: false
+        type: string
+        default: signatures/v1/cla.json
+      branch:
+        description: Branch that holds the signatures, outside the default branch's ruleset.
+        required: false
+        type: string
+        default: cla-signatures
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+  statuses: write
+jobs:
+  cla:
+    if: >-
+      github.event_name == 'pull_request_target' ||
+      (github.event.issue.pull_request &&
+       (github.event.comment.body == 'recheck' ||
+        github.event.comment.body == inputs.sign-comment))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: contributor-assistant/github-action@ca4a40a7d1004f18d9960b404b97e5f30a505a08 # v2.6.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          path-to-document: ${{ inputs.document-url }}
+          path-to-signatures: ${{ inputs.signatures-path }}
+          branch: ${{ inputs.branch }}
+          allowlist: ${{ inputs.allowlist }}
+          custom-pr-sign-comment: ${{ inputs.sign-comment }}
+          custom-notsigned-prcomment: ${{ inputs.notsigned-comment }}
+          custom-allsigned-prcomment: ${{ inputs.allsigned-comment }}
+          lock-pullrequest-aftermerge: false

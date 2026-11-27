@@ -9,6 +9,7 @@ ocarroeletrico.com: the site for people built from Voltaria's skills (`voltaria/
 - `scripts/check.py`: what keeps the agent honest. Every diploma, article, number with a unit and (pt) date in a page must be in the skill; no money in the prose; glossary; no assistant voice; pages current with their SKILL.md (`sourceSha`). Tone problems are warnings.
 - `scripts/oce.py`: shared code. `SKIP` (skills without a page: `regime-2010`), `GROUPS` (home page), `PAGE_TOOLS` (which tools each page points to), `GRUPO` (the group's sites on `/grupo/`; the other sites of the group carry the same page in their own style).
 - `pages.yml` builds and publishes on every push to `main` and every Monday, so open and closed incentives follow the calendar without a new commit.
+- `indexnow.yml`, `dco-check.yml` and `cla.yml` are reusable workflows the group's other repos call by SHA: a change to their inputs, to a job id or to `scripts/check-dco.sh` affects the callers once they move their pin. Read `docs/shared-ci.md` first.
 
 Stdlib Python only. No CI step calls a model: there is no Claude key in CI.
 
