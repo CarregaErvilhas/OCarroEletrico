@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Which pages need rewriting after Voltaria changed, and the bookkeeping after you rewrite them.
-It never calls a model: the rewriting is done by a Claude Code session (CLAUDE.md, agent/SYSTEM.md).
+It never calls a model: the rewriting is done by a Claude Code session (AGENTS.md, agent/SYSTEM.md).
 
   scripts/rewrite.py                 status of every published skill: ok, stale or missing
   scripts/rewrite.py diff SKILL      what changed in that SKILL.md since its page was written

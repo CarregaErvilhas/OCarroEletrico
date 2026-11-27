@@ -7,3 +7,10 @@ updates:
     open-pull-requests-limit: 1
     labels: ["dependencies", "github-actions"]
     commit-message: { prefix: "deps(actions)", include: "scope" }
+
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule: { interval: "weekly", day: "monday", time: "09:00" }
+    open-pull-requests-limit: 1
+    labels: ["dependencies", "submodules"]
+    commit-message: { prefix: "deps(voltaria)" }
