@@ -1,3 +1,6 @@
 [submodule "voltaria"]
 	path = voltaria
 	url = https://github.com/CarregaErvilhas/voltaria.git
+[submodule "brand"]
+	path = brand
+	url = https://github.com/CarregaErvilhas/Brand.git

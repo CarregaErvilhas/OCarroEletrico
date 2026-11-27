@@ -5,6 +5,7 @@ O site https://ocarroeletrico.com: a mobilidade elétrica em Portugal explicada 
 O conhecimento vem do [Voltaria](https://github.com/CarregaErvilhas/voltaria) (submodule em `voltaria/`), o mesmo que o [ohmigo](https://ohmigo.ocarroeletrico.com/) serve aos assistentes. Aqui é reescrito para pessoas, em português e em inglês.
 
 ```sh
+git submodule update --init   # voltaria/ e brand/
 scripts/build.py      # gera _site/
 scripts/check.py      # o que o CI corre
 ```
@@ -22,9 +23,9 @@ Podes usar, adaptar e redistribuir, incluindo para fins comerciais, desde que cr
 
 ### O nome e a imagem ficam de fora
 
-As licenças cobrem o conteúdo e o código, não a marca. Não estão licenciados o nome **O Carro Elétrico**, o domínio, a mascote (o carrinho repórter, laranja), o ícone e as imagens feitas com eles (os desenhos em `site/base.html` e os ficheiros em `site/static/`, menos a fonte). As mascotes em `site/static/grupo/` são dos outros sites do grupo, cada uma com a marca do seu site; o `pano.svg` é o logótipo do [Panoramax](https://panoramax.fr/), do projeto Panoramax, tirado do visualizador dele (`@panoramax/web-viewer`). Podes usar o nome para dizer de onde vem o conteúdo. Um fork precisa de nome e de imagem próprios.
+As licenças cobrem o conteúdo e o código, não a marca. Não estão licenciados o nome **O Carro Elétrico**, o domínio, a mascote (o carrinho repórter, laranja), o ícone e as imagens feitas com eles (os desenhos em `site/base.html` e os ficheiros em `site/static/`). As mascotes e a fonte vêm do [Brand](https://github.com/CarregaErvilhas/Brand), o kit do grupo (submodule em `brand/`, com as suas licenças). Cada mascote em `brand/grupo/` é a marca do seu site; o `pano.svg` é o logótipo do [Panoramax](https://panoramax.fr/), do projeto Panoramax, tirado do visualizador dele (`@panoramax/web-viewer`). Podes usar o nome para dizer de onde vem o conteúdo. Um fork precisa de nome e de imagem próprios.
 
-A fonte Nunito tem a sua licença: [SIL OFL 1.1](site/static/fonts/OFL-Nunito.txt).
+A fonte Nunito tem a sua licença: [SIL OFL 1.1](https://ocarroeletrico.com/fonts/OFL-Nunito.txt).
 
 ## Contribuir
 

@@ -7,7 +7,10 @@
   date. Amounts and dates never come from the agent.
 - The "Fontes" of each page come from the skill's "## Fontes".
 - site/base.html is the one template, site/strings.json the site's own text in pt and en.
-- Also: the home page per language, 404.html, sitemap.xml, robots.txt, llms.txt, site/static/.
+- /grupo/ takes its order and text from brand/group.json; its own title, lead and bubble stay in
+  strings.json.
+- Also: the home page per language, 404.html, sitemap.xml, robots.txt, llms.txt, site/static/, and
+  the mascots, fonts and install.js from brand/.
 
 Usage: scripts/build.py [--out DIR] [--today YYYY-MM-DD]   (stdlib only; run from anywhere)
 """
@@ -54,6 +57,12 @@ class Site:
         self.out = out
         self.today = today
         self.strings = json.loads((SITE / "strings.json").read_text(encoding="utf-8"))
+        for lang in oce.LANGS:
+            group = oce.group_strings(lang)
+            twice = sorted(group.keys() & self.strings[lang].keys())
+            if twice:
+                raise SystemExit(f"strings.json ({lang}): these come from brand/group.json, remove them: {', '.join(twice)}")
+            self.strings[lang].update(group)
         self.template = (SITE / "base.html").read_text(encoding="utf-8")
         self.facts = oce.facts()
         self.vdate = oce.voltaria_date()
@@ -472,13 +481,11 @@ class Site:
 
     def group_page(self, lang):
         """/grupo/: the group's sites, one mascot and one speech bubble each (oce.GRUPO). The other sites of
-        the group have the same page in their own style; keep the text in step with theirs."""
+        the group have the same page in their own style, from the same brand/group.json."""
         S = lambda k: self.s(lang, k)  # noqa: E731
         items = ""
         for g in oce.GRUPO:
             k = f"grupo.{g['id']}"
-            svg = SITE / "static" / "grupo" / f"{g['id']}.svg"
-            w, h = re.search(r'viewBox="[\d.-]+ [\d.-]+ ([\d.]+) ([\d.]+)"', svg.read_text(encoding="utf-8")).groups()
             if g.get("here"):
                 go = f'<span class="here">{S("grupo.here")}</span>'
             elif g["site"]:
@@ -490,7 +497,7 @@ class Site:
             note = f'<p class="mate-note">{S(k + ".note")}</p>' if g.get("private") else ""
             items += f"""
     <li class="mate m-{g['id']}">
-      <div class="mate-pic"><img src="/grupo/{g['id']}.svg" alt="{esc(S(k + ".mascot"))}" width="{w}" height="{h}" loading="lazy"></div>
+      <div class="mate-pic"><img src="/grupo/{g['id']}.svg" alt="{esc(S(k + ".mascot"))}" width="{g["width"]}" height="{g["height"]}" loading="lazy"></div>
       <div class="mate-bubble">
         <p class="mate-host">{S(k + ".host")}</p>
         <h2>{S(k + ".name")}</h2>
@@ -609,6 +616,10 @@ class Site:
         if self.out.exists():
             shutil.rmtree(self.out)
         shutil.copytree(SITE / "static", self.out)
+        # The group's shared files, at the paths this site serves them from.
+        shutil.copytree(oce.BRAND / "grupo", self.out / "grupo")
+        shutil.copytree(oce.BRAND / "fonts", self.out / "fonts")
+        shutil.copy(oce.BRAND / "install.js", self.out)
         for lang in oce.LANGS:
             for slug in self.pages[lang]:
                 self.article(lang, slug)
