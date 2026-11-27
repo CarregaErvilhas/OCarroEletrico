@@ -9,7 +9,7 @@ As páginas deste site são reescritas a partir do [Voltaria](https://github.com
 Neste repo entram PRs de:
 
 - código do site (`scripts/`, `site/`, `.github/`);
-- design, textos do próprio site (`site/strings.json`) e a mascote;
+- design, textos do próprio site (`site/strings.json`) e a mascote (o texto da página do grupo e os ficheiros das mascotes mudam-se no [Brand](https://github.com/CarregaErvilhas/Brand));
 - a voz do site (`agent/TOM.md`) e as regras do agente (`agent/SYSTEM.md`);
 - uma página que leia mal, quando o problema é a forma e não o facto.
 
@@ -36,6 +36,7 @@ O nome, a mascote e os ícones não estão em nenhuma das licenças (ver o READM
 Antes de abrir um PR, na raiz do repo (só precisam de `python3`):
 
 ```sh
+git submodule update --init   # voltaria/ e brand/
 scripts/check.py      # as páginas contra o Voltaria, o tom e o build completo
 scripts/build.py      # gera _site/ para veres no browser
 ```

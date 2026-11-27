@@ -15,7 +15,7 @@ reporter = re.search(r'<symbol id="reporter"[^>]*>(.*?)</symbol>', base, re.S).g
 grad = re.search(r'<linearGradient id="shineC".*?</linearGradient>', base, re.S).group(0)
 icon = (STATIC / "icon.svg").read_text(encoding="utf-8")
 _, _, vw, vh = map(float, re.search(r'viewBox="([^"]+)"', icon).group(1).split())
-font = "data:font/woff2;base64," + base64.b64encode((STATIC / "fonts" / "nunito-latin.woff2").read_bytes()).decode()
+font = "data:font/woff2;base64," + base64.b64encode((ROOT / "brand" / "fonts" / "nunito-latin.woff2").read_bytes()).decode()
 
 OG = f"""<style>@font-face{{font-family:N;src:url({font}) format("woff2");font-weight:400 900}}
 body{{margin:0;width:1200px;height:630px;background:#fbfaf5;font-family:N;color:#14203a;position:relative;overflow:hidden}}

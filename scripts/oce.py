@@ -1,7 +1,8 @@
 """What build.py, check.py and rewrite.py share: where things live, the pages in content/, the small
 Markdown renderer, the facts from Voltaria and the "## Fontes" of each skill.
 
-Stdlib only. Voltaria is the folder voltaria/ (a git submodule), never a copy.
+Stdlib only. Voltaria is the folder voltaria/ and the group's brand kit is brand/: both git submodules,
+never copies.
 """
 import datetime as dt
 import hashlib
@@ -14,6 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 VOLTARIA = ROOT / "voltaria"
+BRAND = ROOT / "brand"
 CONTENT = ROOT / "content"
 SITE_URL = "https://ocarroeletrico.com"
 VOLTARIA_URL = "https://github.com/CarregaErvilhas/voltaria"
@@ -38,21 +40,27 @@ TOOLS = {
     "ceme": "https://ceme.ocarroeletrico.com/",
     "nap": "https://nap.ocarroeletrico.com/",
 }
-# The group's sites, in the order of /grupo/. Each has its mascot in site/static/grupo/<id>.svg (copied from
-# that site: the art is each site's brand, see README) and its text in strings.json (grupo.<id>.*). `site` is
-# None where there is no page to open; `private` marks a repository that isn't public yet, linked anyway so the
-# link works the day it opens. The other sites of the group carry the same page, in their own style.
+# The group's sites, in the order of /grupo/, from brand/group.json: the order, the links, the text and the
+# mascots read the same on every site of the group. `site` is None where there is no page to open; `private`
+# marks a repository that isn't public yet, linked anyway so the link works the day it opens.
+BRAND_GROUP = json.loads((BRAND / "group.json").read_text(encoding="utf-8"))
 GRUPO = [
-    {"id": "carro", "site": "https://ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/OCarroEletrico", "here": True},
-    {"id": "ohmigo", "site": "https://ohmigo.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/ohmigo-mcp"},
-    {"id": "voltaria", "site": "https://voltaria.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/voltaria"},
-    {"id": "ceme", "site": "https://ceme.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/CEME"},
-    {"id": "nap", "site": "https://nap.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/nap-dashboard"},
-    {"id": "oop", "site": "https://olhaoposto.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/OlhaOPosto"},
-    # The olh'o'posto's own Panoramax server: its config lives in the olh'o'posto repo. It shows the Panoramax logo.
-    {"id": "pano", "site": "https://panoramax.ocarroeletrico.com/", "repo": "https://github.com/CarregaErvilhas/OlhaOPosto/tree/main/panoramax"},
-    {"id": "ampere", "site": None, "repo": "https://github.com/CarregaErvilhas/AmpereArchive", "private": True},
+    {"id": s["id"], "site": s["url"], "repo": s["repo"], "private": s["private"], "here": s["id"] == "carro",
+     "width": s["mascot"]["width"], "height": s["mascot"]["height"]}
+    for s in BRAND_GROUP["sites"]
 ]
+
+
+def group_strings(lang):
+    """brand/group.json's text in one language, under the keys the templates use (grupo.<id>.*)."""
+    out = {f"grupo.{k}": v[lang] for k, v in BRAND_GROUP["labels"].items()}
+    for s in BRAND_GROUP["sites"]:
+        k = f"grupo.{s['id']}"
+        out[f"{k}.host"] = s["host"]
+        out[f"{k}.mascot"] = s["mascot"]["alt"][lang]
+        out.update({f"{k}.{f}": s[f][lang] for f in ("name", "desc", "short", "note") if f in s})
+    return out
+
 # Which tools each page points to at the end. Everything else gets ohmigo.
 PAGE_TOOLS = {
     "carregar-em-casa": ["ohmigo"],
